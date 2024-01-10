@@ -1,0 +1,6 @@
+2024-01-05 02:24:51	?	?	SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'SystemUpdater' for key 'modules.class' (in /wire/core/WireDatabasePDOStatement.php line 168)
+2024-01-05 02:24:52	?	?	SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'SystemUpdater' for key 'modules.class' (in /wire/core/WireDatabasePDOStatement.php line 168)
+2024-01-05 02:24:52	?	?	SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'FieldtypePageTitle' for key 'modules.class' (in /wire/core/WireDatabasePDOStatement.php line 168)
+2024-01-05 02:24:52	?	?	SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'FieldtypeText' for key 'modules.class' (in /wire/core/WireDatabasePDOStatement.php line 168)
+2024-01-05 02:36:14	guest	http://localhost/http404/worker.js	SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'ProcessLogger' for key 'modules.class' (in /wire/core/WireDatabasePDOStatement.php line 168)
+2024-01-05 02:36:14	guest	http://localhost/http404/worker.js	SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'InputfieldIcon' for key 'modules.class' (in /wire/core/WireDatabasePDOStatement.php line 168)
