@@ -1,0 +1,33 @@
+version: '3'
+services:
+  infosite-server:
+    build: 
+      context: ./
+      dockerfile: Dockerfile_server
+    container_name: server
+    ports:
+      - 80:80
+    volumes:
+      - ./src:/var/www/USC_Infosite/src
+      - ./public:/var/www/USC_Infosite/public
+      - ./vendor:/var/www/USC_Infosite/vendor
+    networks:
+      - backend
+    depends_on:
+      - infosite-database
+  infosite-database:
+    build: 
+      context: ./
+      dockerfile: Dockerfile_database
+    container_name: database
+    restart: "unless-stopped"
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql:/var/lib/mysql
+    networks:
+      - backend
+networks:
+  backend:
+volumes:
+  mysql:
