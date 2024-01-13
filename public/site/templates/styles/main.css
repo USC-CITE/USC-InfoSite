@@ -107,6 +107,10 @@ a .bxs-chevron-down {
     padding-top: 15px;
 }
 
+.search-container a {
+    height: 20px;
+}
+
 .search-container .bx-search {
     font-size: 20px;
 }
