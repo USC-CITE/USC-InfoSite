@@ -43,10 +43,12 @@ body {
 }
 
 .USC .USC-logo {
+    height: 50px;
     margin-left: 70px;
 }
 
 .USC .text {
+    height: 90px;
     padding: 7px 0 4px;
     margin-left: 14px;
 }
