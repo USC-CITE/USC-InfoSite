@@ -48,7 +48,7 @@ body {
 }
 
 .USC .text {
-    height: 90px;
+    width: 230px;
     padding: 7px 0 4px;
     margin-left: 14px;
 }
@@ -117,6 +117,52 @@ a .bxs-chevron-down {
     font-size: 20px;
 }
 
+body .container-card {
+    max-width: 1000px;
+    max-height: 610px;
+    margin: 0 140px 0;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-card p {
+    font-size: 20px;
+}
+
+.container-card a {
+    text-decoration: underline;
+    color: var(--link-color);
+}
+
+.container-card h1 {
+    width: 608px;
+    height: 117px;
+    color: var(--heading-color);
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 80px 196px 28px;
+}
+
+.container-card .text {
+    max-width: 942px;
+    max-height: 74px;
+    margin: 0 29px 19px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    justify-content: center;
+}
+
+.container-card div {
+    width: 100%;
+    padding: 0 214px 0;
+}
+
+
+/* Breakpoints */
 @media screen and (max-width: 900px) {
     .USC .USC-logo {
         margin-left: 0;
