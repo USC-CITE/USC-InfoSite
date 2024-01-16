@@ -119,7 +119,7 @@ a .bxs-chevron-down {
 
 body .container-card {
     max-width: 1000px;
-    max-height: 610px;
+    height: 610px;
     margin: 0 10.94% 0;
     text-align: center;
     align-items: center;
@@ -131,7 +131,7 @@ body .container-card {
     font-size: 20px;
 }
 
-.container-card a {
+.container-card a, .footer-card a {
     text-decoration: underline;
     color: var(--link-color);
 }
@@ -186,12 +186,38 @@ body .container-card {
 .container-card .status-code {
     max-width: 213px;
     max-height: 37px;
-    margin: 61px 0 157px;
+    margin: 63px 0 152px;
     font-size: 16px;
     font-weight: 600;
     padding-top: 5px;
 }
 
+body .footer-card {
+    width: 100%;
+    height: 100px;
+    padding: 0 12.89%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-card {
+    font-size: 14px;
+}
+
+.footer-card .links {
+    padding-left: 25px;
+}
+
+.footer-card .links a {
+    padding-left: 23px;
+}
+
+.footer-card .text {
+    max-width: 301px;
+    max-height: 54px;
+    line-height: 150%;
+    letter-spacing: -0.154px;
+}
 
 /* Breakpoints */
 @media screen and (max-width: 1080px) {
@@ -284,5 +310,26 @@ body .container-card {
 @media screen and (max-width: 360px) {
     .container-card .text {
         padding: 0;
+    }
+
+    body .footer-card {
+        flex-direction: column;
+    }
+
+    .footer-card .links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .footer-card .links a {
+        padding-left: 0;
+        padding-bottom: 16px;
+    }
+
+    .footer-card .text {
+        font-size: 12px;
+        margin-bottom: 17px;
     }
 }
