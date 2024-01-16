@@ -1,137 +1,398 @@
-/* Example CSS file */ 
-
-
-/* Import font-family */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display—swap');
-
-/* Reset Design */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+.menu-open-search {
+  position: relative;
+  width: 100%;
+  max-width: 1280px; /* Consider using max-width for responsiveness */
+  margin: 0 auto; /* Center the element horizontally */
+  height: 311px;
+  overflow: hidden;
 }
 
-:root {
-    --text-color: #000;
-    --heading-color: #E1A011;
-    --link-color: #21536C;
-    --bg-color: #fff;
+.menu-open-search .overlap {
+  position: relative;
+  width: 100%;
+  height: 310px;
+  background-color: #ffffff;
 }
 
-body {
-    background: var(--bg-color);
-    max-width: 1280px;
-    max-height: 800px;
+.menu-open-search .overlap-group {
+  position: absolute;
+  width: 1280px;
+  height: 220px;
+  top: 90px;
+  left: 0;
 }
 
-.header-card {
-    display: flex;
-    padding: 20px 10.94%;
-    width: 100%;
-    max-height: 90;
-    justify-content: space-between;
+.menu-open-search .accordion {
+  position: absolute;
+  width: 1280px;
+  height: 220px;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
 }
 
-.header-card .USC {
-    display: flex;
-    width: fit-content;
+.menu-open-search .services,
+.menu-open-search .information {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  width: 415px;
+  height: 130px;
+  top: 21px;
 }
 
-.USC .USC-logo {
-    height: 50px;
-    margin-left: 70px;
+.menu-open-search .services.visible,
+.menu-open-search .information.visible {
+  opacity: 1;
+  pointer-events: auto;
+  display: block;
 }
 
-.USC .text {
-    height: 90px;
-    padding: 7px 0 4px;
-    margin-left: 14px;
+.menu-open-search .services {
+  width: 415px;
+  height: 130px;
+  top: 21px;
+  left: 641px;
 }
 
-.text h4 {
-    font-size: 12px;
-    font-weight: 400;
+.menu-open-search .text-wrapper {
+  position: absolute;
+  width: 149px;
+  top: 0;
+  left: 0;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
 }
 
-.text h3 {
-    font-size: 16px;
-    font-weight: 600;
+.menu-open-search .div {
+  position: absolute;
+  width: 195px;
+  top: 55px;
+  left: 0;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #21526b;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
 }
 
-.Menu-Search-container {
-    display: flex;
-    width: 173px;
-    height: 50px;
+.menu-open-search .text-wrapper-2 {
+  position: absolute;
+  width: 174px;
+  top: 97px;
+  left: 0;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #21526b;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
 }
 
-.Menu-Search-container .menu-container {
-    padding: 13px 26px;
-    display: flex;
-    width: 100px;
-    align-items: center;
-    justify-content: center;
-    border-bottom: solid 1px var(--text-color);
-    margin-right: 23px;
+.menu-open-search .text-wrapper-3 {
+  position: absolute;
+  width: 180px;
+  top: 100px;
+  left: 215px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #21526b;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
 }
 
-a {
-    color: var(--text-color);
+.menu-open-search .text-wrapper-4 {
+  position: absolute;
+  width: 190px;
+  top: 55px;
+  left: 215px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #21526b;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
 }
 
-.menu-container a {
-    display: flex;
+
+
+.menu-open-search .information {
+  position: absolute;
+  display: none;
+  width: 340px;
+  height: 174px;
+  top: 19px;
+  left: 238px;
 }
 
-a p {
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    padding-right: 7px;
+.menu-open-search .text-wrapper-5 {
+  position: absolute;
+  width: 156px;
+  top: 0;
+  left: 0;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: normal;
+  white-space: nowrap;
 }
 
-a .bxs-chevron-down {
-    padding-top: 3px;
-    font-size: 18px;
-    height: 18px;
+.menu-open-search .text-wrapper-6 {
+  position: absolute;
+  width: 132px;
+  top: 99px;
+  left: 0;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #21526b;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+  white-space: nowrap;
 }
 
-.Menu-Search-container .search-container {
-    width: 50px;
-    border-bottom: 1px solid var(--text-color);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 15px;
+.menu-open-search .text-wrapper-7 {
+  position: absolute;
+  width: 60px;
+  top: 51px;
+  left: 202px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #21526b;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+  white-space: nowrap;
 }
 
-.search-container a {
-    height: 20px;
+.menu-open-search .text-wrapper-8 {
+  position: absolute;
+  width: 126px;
+  top: 99px;
+  left: 202px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #21526b;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+  white-space: nowrap; 
 }
 
-.search-container .bx-search {
-    font-size: 20px;
+.menu-open-search .text-wrapper-9 {
+  position: absolute;
+  width: 166px;
+  top: 149px;
+  left: 0;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #21526b;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+  white-space: nowrap;
 }
 
-@media screen and (max-width: 900px) {
-    .USC .USC-logo {
-        margin-left: 0;
-    }
+.menu-open-search .text-wrapper-10 {
+  position: absolute;
+  width: 148px;
+  top: 51px;
+  left: 0;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #21526b;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+  white-space: nowrap;
 }
 
-@media screen and (max-width: 680px) {
-
-    .header-card {
-        padding: 20px 24px 20px 32px;
-    }
+.menu-open-search .separator {
+  position: absolute;
+  width: 1px;
+  height: 150px;
+  top: 37px;
+  left: 600px;
+  object-fit: cover;
+  transition: opacity 0.3s ease; 
+  opacity: 0; 
 }
 
-@media screen and (max-width: 550px) {
-    .USC .text {
-        display: none;
-    }
+.menu-open-search .separator.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu-open-search .menu-link {
+  position: absolute;
+  width: 102px;
+  height: 50px;
+  top: 20px;
+  left: 936px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+
+.menu-open-search .overlap-group-2 {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-color: #ffffff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-color: #000000;
+}
+
+.menu-open-search .text-wrapper-11 {
+  position: absolute;
+  width: 48px;
+  top: 13px;
+  left: 15px;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.menu-open-search .bx.bxs-chevron-down {
+  position: absolute;
+  padding-top: 13px;
+  padding-left: 62px;
+  font-size: 18px;
+  height: 18px;
+}
+
+.menu-open-search .bx.bxs-chevron-up {
+  position: absolute;
+  padding-top: 13px;
+  padding-left: 62px;
+  font-size: 18px;
+  height: 18px;
+}
+
+.menu-open-search .search-link {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 20px;
+  left: 1059px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #000000;
+}
+.menu-open-search .search-link i {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  left: 15px;
+  font-size: 20px; 
+  color: #000000;
+  line-height: normal;
+}
+
+.menu-open-search .bx-search {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 14px;
+  left: 14px;
+}
+
+.menu-open-search .logo-and-heading {
+  position: absolute;
+  width: 338px;
+  height: 50px;
+  top: 20px;
+  left: 210px;
+}
+
+.menu-open-search .USC-logo {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.menu-open-search .overlap-2 {
+  position: absolute;
+  width: 270px;
+  height: 39px;
+  top: 7px;
+  left: 64px;
+}
+
+.menu-open-search .text-wrapper-12 {
+  position: absolute;
+  width: 270px;
+  top: 16px;
+  left: 0;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.menu-open-search .text-wrapper-13 {
+  position: absolute;
+  width: 177px;
+  top: 0;
+  left: 0;
+  font-family: "Poppins-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.menu-open-search .container-card {
+  position: absolute;
+  width: 1000px;
+  height: 91px;
+  top: 1636px;
+  left: 6297px;
+}
+
+.menu-open-search .menu-link a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.menu-open-search .search-link i {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 15px;
+  left: 15px;
+  font-size: 20px; 
+  color: #000000;
+  line-height: normal;
 }
