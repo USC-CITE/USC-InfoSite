@@ -1,6 +1,14 @@
 /* Import font-family */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display—swap');
 
+/**
+ *
+ * TODO: 
+ *   -  Transfer general styles to a file called global.css
+ *   -  Download fonts and self-host to a file called fonts.css
+ *   -  Create a CSS file for templating the 404 and 403 pages
+ */
+
 * {
     margin: 0;
     padding: 0;
