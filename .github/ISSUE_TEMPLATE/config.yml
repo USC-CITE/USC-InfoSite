@@ -1,4 +1,4 @@
-blank_issues_enabled: false
+blank_issues_enabled: true
 contact_links:
     - name: Bug Report
       url: https://github.com/USC-CITE/WVSU-USC.org/blob/main/.github/ISSUE_TEMPLATE/1-bug-report.md
