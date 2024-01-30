@@ -348,12 +348,17 @@ body .footer-card {
 
     body .footer-card {
         height: 200px;
-        margin-top: 27px;
     }
     
     .footer-card .links a {
         padding-bottom: 0;
+        margin-bottom: 16px;
     }
+
+    .footer-card .links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } 
 }
 
 @media screen and (max-width: 550px) {
@@ -385,15 +390,6 @@ body .footer-card {
 
     body .footer-card {
         margin-top: 0;
-    }
-
-    .footer-card .links {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    } 
-
-    .footer-card .links a {
-        margin-bottom: 16px;
     }
 }
 
