@@ -146,6 +146,7 @@ body .container-card {
     font-size: 64px;
     font-weight: 700;
     margin: 80px 0 28px;
+    line-height: 120%;
 }
 
 .container-card .text {
@@ -155,6 +156,10 @@ body .container-card {
     font-size: 20px;
     font-weight: 400;
     justify-content: center;
+}
+
+.container-card__403 .text{
+    margin-top: 56px;
 }
 
 .container-card .links {
@@ -198,10 +203,13 @@ body .container-card {
 body .footer-card {
     max-width: 1280px;
     height: 100px;
-    margin: 0 10.94%;
+    padding: 0 10.94%;
+    padding-top: 19px;
     display: flex;
     justify-content: space-between;
     font-size: 14px;
+    border-top: solid 3px #d9d4d7;
+    background: #f6f6f6;
 }
 
 .footer-card .links {
@@ -288,18 +296,13 @@ body .footer-card {
 }
 
 @media screen and (max-width: 810px) {
-    body .container-card {
-        max-height: 510px;
-    }
-
     body .footer-card {
         flex-direction: column;
-        height: 200px;
     }
     
     .footer-card .links {
         display: flex;
-        margin-top: 15%;
+        /* margin-top: 15%; */
         margin-right: 0;
         height: fit-content;
         width: 100%;
@@ -312,8 +315,12 @@ body .footer-card {
 }
  
 @media screen and (max-width: 680px) {
-    .header-card {
+    body .header-card {
         padding: 20px 24px 20px 32px;
+    }
+
+    body .container-card {
+        max-height: 510px;
     }
 
     .container-card h1 {
@@ -337,6 +344,11 @@ body .footer-card {
     .container-card .status-code {
         margin: 42px 0 81px 0;
         font-size: 14px;
+    }
+
+    body .footer-card {
+        height: 200px;
+        margin-top: 27px;
     }
     
     .footer-card .links a {
@@ -371,6 +383,9 @@ body .footer-card {
         padding: 0 4px 0;
     }
 
+    body .footer-card {
+        margin-top: 0;
+    }
 
     .footer-card .links {
         display: grid;
@@ -397,11 +412,5 @@ body .footer-card {
 
     .footer-card .text {
         max-width: inherit;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    .footer-card .links {
-        margin-top: 10%;
     }
 }
