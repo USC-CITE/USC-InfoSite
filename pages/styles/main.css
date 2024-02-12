@@ -1,10 +1,14 @@
-/* Example CSS file */ 
-
-
 /* Import font-family */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display—swap');
 
-/* Reset Design */
+/**
+ *
+ * TODO: 
+ *   -  Transfer general styles to a file called global.css
+ *   -  Download fonts and self-host to a file called fonts.css
+ *   -  Create a CSS file for templating the 404 and 403 pages
+ */
+
 * {
     margin: 0;
     padding: 0;
@@ -23,6 +27,10 @@
     --bg-color: #fff;
 }
 
+html {
+    background: #F6F6F6;
+}
+
 body {
     background: var(--bg-color);
     height: 800px;
@@ -33,6 +41,7 @@ body {
 
 body header {
     max-width: 1280px;
+    margin: 0 auto;
 }
 
 header .header-card {
@@ -126,7 +135,7 @@ a .bxs-chevron-down {
 body .container-card {
     max-width: 1000px;
     max-height: 610px;
-    margin: 0 10.94% 0;
+    margin: 0 auto;
     text-align: center;
     align-items: center;
     display: flex;
@@ -137,7 +146,7 @@ body .container-card {
     font-size: 20px;
 }
 
-.container-card a, .footer-card a {
+.container-card a, footer a {
     text-decoration: underline;
     color: var(--link-color);
 }
@@ -167,7 +176,7 @@ body .container-card {
 
 .container-card .links {
     width: 80%;
-    padding: 0 13% 0;
+    padding: 0 13%;
     display: flex;
     justify-content: space-between;
 }
@@ -202,10 +211,6 @@ body .container-card {
     padding-top: 5px;
 }
 
-.container-card__404 .status-code {
-    margin: 63px 0 15%;
-}
-
 .container-card .report {
     width: 289px;
     height: 35px;
@@ -219,65 +224,53 @@ body .container-card {
     justify-content: center;
     padding: 8.1px 0;
 }
-
 .report svg {
     margin-right: 6px;
 }
 
-body .footer-card {
-    max-width: 1280px;
-    height: 100px;
-    padding: 0 10.94%;
-    padding-top: 19px;
+footer {
+    width: 100%;
+    height: 140px;
+    padding: 20px 50px;
+    background: #F6F6F6;
+    font-size: 14px;
+    border-top: #D9D4D7 solid 3px;
+}
+.footer__container {
+    margin: 0 auto;
+    max-width: 1000px;
     display: flex;
     justify-content: space-between;
-    font-size: 14px;
-    border-top: solid 3px #d9d4d7;
-    background: #f6f6f6;
 }
-
-.footer-card .links {
+.footer__links {
     padding-left: 25px;
     margin-right: 20px;
-    justify-content: space-between;
-    display: flex;
     width: 50%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
 }
-
-
-.footer-card .text {
-    max-width: 301px;
+.footer__notice {
+    max-width: 300px;
     max-height: 54px;
     line-height: 150%;
     letter-spacing: -0.154px;
 }
+.footer__notice img {
+    width: 14px;
+    height: 14px;
+}
 
-/* Breakpoints */
 
 @media screen and (min-width: 1281px) {
-    body {
-        margin: 0 15%;
-    }
+    main, header {
+        margin: 0 10%;
+    }  
 
-    .header-card, .container-card, .footer-card {
+    .header-card, .container-card, footer {
         width: inherit;
     }
-
-
-    .container-card .links {
-        padding: 0 5%;
-    }
-
-    body .footer-card {
-        max-width: 1000px;
-        margin: 0 10.94%;
-        padding: 0;
-    }
-
-    .footer-card .links {
-        width: 60%;
-    }
-}
+} 
 
 @media screen and (max-width: 1150px) {
     .container-card .links {
@@ -292,70 +285,26 @@ body .footer-card {
 }
 
 @media screen and (max-width: 1080px) {
-    .container-card .status-code {
-        margin: 30px 0 30px;
-    }
-
     .container-card .report {
         margin-bottom: 20px;
     }
-
-    .footer-card .links {
+    .footer__links {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 0;
     }
-
-    .footer-card .links a {
+    .footer__links li {
         margin-left: 0;
         padding-bottom: 20px;
     }
-
-    .footer-card .text {
+    .footer__notice {
         font-size: 12px;
         margin-bottom: 17px;
     }
 }
 
 @media screen and (max-width: 900px) {
-    .USC .USC-logo {
-        margin-left: 0;
-    }
-
-    .container-card .text br {
-        display: none;
-    }
-
-    .container-card .status-code {
-        margin: 20px 0 25px;
-    }
-
-    .footer-card .links a {
-        padding-bottom: 10px;
-    }
-}
-
-@media screen and (max-width: 810px) {
-    body .footer-card {
-        flex-direction: column;
-    }
-    
-    .footer-card .links {
-        display: flex;
-        /* margin-top: 15%; */
-        margin-right: 0;
-        height: fit-content;
-        width: 100%;
-        align-items: center;
-    }
-
-    .footer-card .text {
-        max-width: 150%;
-    }
-}
- 
-@media screen and (max-width: 680px) {
-    body .header-card {
+    .header-card {
         padding: 20px 24px 20px 32px;
     }
 
@@ -365,6 +314,10 @@ body .footer-card {
 
     .container-card h1 {
         font-size: 50px;
+    }
+
+    .USC .USC-logo {
+        margin-left: 0;
     }
     
     .container-card .text {
@@ -386,13 +339,8 @@ body .footer-card {
         font-size: 14px;
     }
 
-    body .footer-card {
-        height: 200px;
-    }
-    
-    .footer-card .links a {
-        padding-bottom: 0;
-        margin-bottom: 16px;
+    .container-card .text br {
+        display: none;
     }
 
     .footer-card .links {
@@ -401,10 +349,37 @@ body .footer-card {
     } 
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 810px) {
+    body .container-card {
+        max-height: 510px;
+    }
+}
+ 
+@media screen and (max-width: 700px) {
     .USC .text {
         display: none;
     }
+
+    footer {
+        height: 180px;
+        padding: 20px 30px;
+    }
+    .footer__container {
+        flex-direction: column;
+    }
+    .footer__links {
+        display: flex;
+        margin-right: 0;
+        height: fit-content;
+        width: 100%;
+        align-items: center;
+    }
+    .footer__notice {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 550px) {
 
     body .container-card {  
         margin: 0 27px 0;
@@ -427,13 +402,15 @@ body .footer-card {
         margin: 0;
         padding: 0 4px 0;
     }
-
-    .container-card .status-code {
-        margin: 20px 0 15px;
+    footer {
+        height: 250px;
     }
-
-    body .footer-card {
-        margin-top: 0;
+    .footer__links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    .footer__links li {
+        margin-bottom: 12px;
     }
 }
 
@@ -441,20 +418,10 @@ body .footer-card {
     .container-card h1 {
         font-size: 36px;
     }
-
     .container-card .text {
         padding: 0;
     }
-
-    .container-card .status-code {
-        margin-bottom: 40px;
-    }
-
-    .footer-card .links {
+    .footer__links {
         margin-right: 0;
-    }
-
-    .footer-card .text {
-        max-width: inherit;
     }
 }
