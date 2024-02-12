@@ -22,7 +22,7 @@
 
 :root {
     --text-color: #000;
-    --heading-color: #E1A011;
+    --heading-color: #e1a011;
     --link-color: #21536C;
     --bg-color: #fff;
 }
@@ -33,7 +33,10 @@ html {
 
 body {
     background: var(--bg-color);
-    max-height: 800px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 body header {
@@ -202,10 +205,27 @@ body .container-card {
 .container-card .status-code {
     max-width: 213px;
     max-height: 37px;
-    margin: 63px 0 32.30%;
+    margin: 63px 0 5%;
     font-size: 16px;
     font-weight: 600;
     padding-top: 5px;
+}
+
+.container-card .report {
+    width: 289px;
+    height: 35px;
+    background: #d9d9d9;
+    border-radius: 50px;
+    margin-bottom: 5%;
+    font-size: 12px;
+    font-weight: 500;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 8.1px 0;
+}
+.report svg {
+    margin-right: 6px;
 }
 
 footer {
@@ -258,9 +278,16 @@ footer {
         align-items: center;
         padding: 0;
     }
+    
+    .container-card .status-code {
+        margin: 50px 0 30px;
+    }
 }
 
 @media screen and (max-width: 1080px) {
+    .container-card .report {
+        margin-bottom: 20px;
+    }
     .footer__links {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -308,7 +335,7 @@ footer {
     }
     
     .container-card .status-code {
-        margin: 42px 0 81px 0;
+        margin-bottom: 30px;
         font-size: 14px;
     }
 
@@ -375,7 +402,6 @@ footer {
         margin: 0;
         padding: 0 4px 0;
     }
-
     footer {
         height: 250px;
     }
@@ -392,11 +418,9 @@ footer {
     .container-card h1 {
         font-size: 36px;
     }
-
     .container-card .text {
         padding: 0;
     }
-
     .footer__links {
         margin-right: 0;
     }
