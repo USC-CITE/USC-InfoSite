@@ -27,11 +27,11 @@ document.addEventListener('DOMContentLoaded', function () {
         if (searchBar.style.display === 'block') {
             dropdownIcon.classList.replace('bxs-chevron-down', 'bxs-chevron-up');
             accordion.style.backgroundColor = '#f6f6f6';
-            searchLink.style.color = '#f6f6f6 !important';
+            searchLink.style.color = '#f6f6f6';
         } else {
             dropdownIcon.classList.replace('bxs-chevron-up', 'bxs-chevron-down');
             accordion.style.backgroundColor = '#ffffff'; 
-            searchLink.style.color = '';
+            searchLink.style.color = '#ffffff';
         }
         
     });
@@ -48,13 +48,13 @@ document.addEventListener('DOMContentLoaded', function () {
             dropdownIcon.classList.replace('bxs-chevron-down', 'bxs-chevron-up');
             accordion.style.backgroundColor = '#f6f6f6'; 
             menuButton.style.backgroundColor = '#f6f6f6';
-            searchLink.style.color = '';
+            searchLink.style.color = '#f6f6f6';
         } else {
             dropdownIcon.classList.replace('bxs-chevron-up', 'bxs-chevron-down');
             accordion.style.backgroundColor = '#ffffff'; 
             menuButton.style.backgroundColor = '#ffffff'; 
             // Revert color of the search link when menu is closed
-            searchLink.style.color = '';
+            searchLink.style.color = '#ffffff';
         }
     });
 });

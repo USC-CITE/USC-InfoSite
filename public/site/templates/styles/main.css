@@ -448,8 +448,8 @@ body {
   height: 91px;
   /* top: 1636px;
   left: 6297px; */
-  margin-top: 20px; /* Adjust margin as needed */
-  margin-bottom: 20px; /* Adjust margin as needed */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .menu-open-search .menu-link a {
@@ -600,7 +600,7 @@ position: absolute ;
 .search-bar .text-wrapper {
   position: absolute;
   width: 75px;
-  top: 6px;
+  top: 10px;
   left: 22px;
   font-family: "Poppins-Regular", Helvetica;
   font-weight: 400;
