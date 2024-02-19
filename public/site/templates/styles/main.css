@@ -368,8 +368,8 @@ body {
   height: 50px;
   top: 20px;
   left: 1059px;
-  background-color: #ffffff;
   border-bottom: 1px solid #000000;
+  cursor: pointer;
 }
 .menu-open-search .search-link i {
   position: absolute;
@@ -388,7 +388,6 @@ body {
   height: 20px;
   top: 12px;
   left: 12px;
-  cursor: pointer;
 }
 
 .menu-open-search .logo-and-heading {
@@ -469,6 +468,10 @@ body {
   color: #000000;
   line-height: normal;
 }
+.menu-open-search .search-link.active {
+  background-color: #f6f6f6;
+}
+
 
 body .container-card {
   max-width: 1000px;

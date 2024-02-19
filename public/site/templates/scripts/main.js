@@ -25,15 +25,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Toggle the icon and background color based on the visibility of the search bar
         if (searchBar.style.display === 'block') {
-            dropdownIcon.classList.replace('bxs-chevron-down', 'bxs-chevron-up');
             accordion.style.backgroundColor = '#f6f6f6';
             searchLink.style.color = '#f6f6f6';
+            // Set background color to #f6f6f6 when search link is clicked
+            searchLink.style.backgroundColor = '#f6f6f6';
+            // Revert background color of the menu button when search link is clicked
+            menuButton.style.backgroundColor = 'transparent';
         } else {
-            dropdownIcon.classList.replace('bxs-chevron-up', 'bxs-chevron-down');
-            accordion.style.backgroundColor = '#ffffff'; 
+            dropdownIcon.classList.toggle('bxs-chevron-up', false);
+            dropdownIcon.classList.toggle('bxs-chevron-down', true);
+            accordion.style.backgroundColor = '#ffffff';
+            // Revert color of the search link when search bar is closed
             searchLink.style.color = '#ffffff';
+            // Revert background color of the search link when search bar is closed
+            searchLink.style.backgroundColor = 'transparent';
         }
-        
     });
 
     // Event listener for clicking the menu button
@@ -46,13 +52,15 @@ document.addEventListener('DOMContentLoaded', function () {
         // Toggle the icon and background color based on the visibility of information
         if (information.classList.contains('visible')) {
             dropdownIcon.classList.replace('bxs-chevron-down', 'bxs-chevron-up');
-            accordion.style.backgroundColor = '#f6f6f6'; 
+            accordion.style.backgroundColor = '#f6f6f6';
             menuButton.style.backgroundColor = '#f6f6f6';
             searchLink.style.color = '#f6f6f6';
+            // Revert background color of the search link when menu button is clicked
+            searchLink.style.backgroundColor = 'transparent';
         } else {
             dropdownIcon.classList.replace('bxs-chevron-up', 'bxs-chevron-down');
-            accordion.style.backgroundColor = '#ffffff'; 
-            menuButton.style.backgroundColor = '#ffffff'; 
+            accordion.style.backgroundColor = '#ffffff';
+            menuButton.style.backgroundColor = '#ffffff';
             // Revert color of the search link when menu is closed
             searchLink.style.color = '#ffffff';
         }
