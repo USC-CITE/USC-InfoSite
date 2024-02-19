@@ -1,0 +1,155 @@
+/* Example CSS file */ 
+
+
+/* Import font-family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display—swap');
+
+/* Reset Design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --text-color: #000;
+    --heading-color: #E1A011;
+    --link-color: #21536C;
+    --bg-color: #fff;
+}
+
+/* Try nested CSS rulings */
+body {
+    display: flex;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    padding: 95px 0;
+
+    .container-card__503 {
+        max-width: 1000px;
+        height: 610px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .container-card__503-USC-logo {
+            margin: 27px 0 21px 0;
+            width: 100px;
+            height: 100px;
+        }
+
+        h1 {
+            max-width: 868px;
+            /* height: 167px; */
+            color: var(--heading-color);
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 120%;
+            text-align: center;
+        }
+
+        .container-card__503-text {
+            font-size: 20px;
+            max-width: 841px;
+            text-align: center;
+            margin: 46px 0 48px 0;
+
+            span {
+                font-weight: 600;
+            }
+        }
+
+        .container-card__503-status-code {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 36px;
+        }
+    }
+
+    a {
+        color: var(--link-color);
+    }
+}
+
+
+@media screen and (max-width: 1050px) {
+    body {
+        /* margin: 14.5% 0; */
+        .container-card__503 {
+            .container-card__503-USC-logo {
+                width: 75px;
+                height: 75px;
+            }
+
+            h1 {
+                font-size: 50px;
+            }
+
+            .container-card__503-text {
+                font-size: 17px;
+            }
+
+            .container-card__503-status-code {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 868px) {
+    body {
+        .container-card__503 {
+            padding: 0 5%;
+            .container-card__503-USC-logo {
+                width: 62.5px;
+                height: 62.5px;
+            }
+
+            h1 {
+                font-size: 43px;
+            }
+
+            .container-card__503-text {
+                font-size: 15.5px;
+            }
+
+            .container-card__503-status-code {
+                font-size: 14.5px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        padding: 0;
+
+        .container-card__503 {
+            .container-card__503-USC-logo {
+                width: 50px;
+                height: 50px;
+            }
+            
+            h1 {
+                max-width: 285px;
+                font-size: 36px;
+            }
+
+            .container-card__503-text {
+                max-width: 304px;
+                min-height: 140px;
+                font-size: 14px; 
+            }
+
+            .container-card__503-status-code {
+                font-size: 14px;
+            }
+        }
+    }
+}
