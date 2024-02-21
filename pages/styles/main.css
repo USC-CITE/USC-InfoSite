@@ -33,7 +33,7 @@ html {
 
 body {
     background: var(--bg-color);
-    height: 800px;
+    min-height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -41,6 +41,7 @@ body {
 
 body header {
     max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -263,9 +264,9 @@ footer {
 
 
 @media screen and (min-width: 1281px) {
-    main, header {
+    /* main, header {
         margin: 0 10%;
-    }  
+    }   */
 
     .header-card, .container-card, footer {
         width: inherit;
