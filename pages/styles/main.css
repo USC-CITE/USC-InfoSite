@@ -11,7 +11,6 @@
     box-sizing: border-box;
     text-decoration: none;
     border: none;
-    outline: none;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 }
@@ -134,6 +133,7 @@ body .container-card {
 }
 
 body .container-card__browse {
+    height: 660px;
     padding: 0 129px;
     align-items: normal;
     text-align: left;
@@ -153,8 +153,10 @@ body .container-card__browse {
     grid-template-columns: repeat(2, 1fr);
 }
 
-.links__items, .links__items {
+.links__items {
     padding-top: 21px;
+    padding-left: 19px;
+    font-size: 20px;
 }
 
 .container-card__browse .container-card__browse__text {
@@ -165,11 +167,6 @@ body .container-card__browse {
 .container-card__browse__container .services {
     margin-top: 60px;
 }
-
-.container-card__browse__container .report {
-    margin: 79px 25% 0;
-}
-
 
 .container-card p {
     font-size: 20px;
@@ -251,11 +248,15 @@ body .container-card__browse {
     border-radius: 50px;
     margin-bottom: 33px;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 400;
     align-items: center;
     display: flex;
     justify-content: center;
     padding: 8.1px 0;
+}
+
+.container-card__browse__container .report {
+    margin: 90px 25% 29px;
 }
 
 .report svg {
@@ -264,7 +265,7 @@ body .container-card__browse {
 
 body .footer-card {
     max-width: 1280px;
-    height: 100px;
+    min-height: 100px;
     padding: 0 10.94%;
     padding-top: 19px;
     display: flex;
@@ -352,6 +353,13 @@ body .footer-card {
     .footer-card .text {
         font-size: 12px;
         margin-bottom: 17px;
+    }
+}
+
+@media screen and (max-width: 1064px) {
+
+    body .container-card__browse {
+        padding: 0 80px;
     }
 }
 
@@ -553,5 +561,40 @@ body .footer-card {
 @media screen and (max-width: 449px) {
     .container-card__404 .status-code {
         margin-bottom: 48px;
+    }
+
+    body .container-card__browse {
+        padding: 0;
+    }
+
+    .container-card__browse .container-card__browse__text {
+        padding: 33px 0 16px;
+        font-size: 14px;
+    }
+
+    .container-card__browse h3 {
+        font-size: 16px;
+    }
+
+    .container-card__browse .container-card__browse__container {
+        padding-left: 30px;
+    }
+
+    .container-card__browse .links__items {
+        font-size: 14px;
+        padding-top: 10px;
+        padding-left: 29px;
+    }
+
+    .container-card__browse .services__links, .container-card__browse .information__links {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .container-card__browse .services {
+        margin-top: 42px;
+    }
+
+    .container-card__browse .report {
+        margin: 0;
     }
 }
