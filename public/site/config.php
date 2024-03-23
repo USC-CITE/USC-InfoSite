@@ -37,7 +37,7 @@ Dotenv::createImmutable(dirname(__DIR__, 2), '.processwire_env')->load();
 // Let core API vars also be functions? So you can use $page or page(), for example.
 $config->useFunctionsAPI = true;
 
-// Use custom Page classes in /site/classes/ ? (i.e. template 'home' => HomePage.php)
+// Use custom Page classes in /site/classes/ ? (i.e. template "home" => HomePage.php)
 $config->usePageClasses = true;
 
 // Use Markup Regions? (https://processwire.com/docs/front-end/output/markup-regions/)
@@ -63,11 +63,10 @@ $config->dbUser = $_ENV['DBUSER'];
 $config->dbPass = $_ENV['DBPASS'];
 $config->dbPort = $_ENV['DBPORT'];
 $config->dbEngine = $_ENV['DBENGINE'];
-
 /**
  * Installer: User Authentication Salt 
  * 
- * This value was randomly generated for your system on 2024/01/05.
+ * This value was randomly generated for your system on 2024/03/23.
  * This should be kept as private as a password and never stored in the database.
  * Must be retained if you migrate your site from one server to another.
  * Do not change this value, or user passwords will no longer work.
@@ -111,7 +110,7 @@ $config->defaultAdminTheme = 'AdminThemeUikit';
  * Please leave this value as-is.
  * 
  */
-$config->installed = 1704421486;
+$config->installed = 1711195416;
 
 
 /**

@@ -1,5 +1,4 @@
-<?php
-namespace ProcessWire;
+<?php namespace ProcessWire;
 
 // Template file for “home” template used by the homepage
 // ------------------------------------------------------
@@ -12,5 +11,5 @@ namespace ProcessWire;
 ?>
 
 <div id="content">
-	Homepage content
-</div>
+	Homepage content 
+</div>	
