@@ -27,7 +27,6 @@ body {
     height: 800px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
 }
 
 body header {
@@ -133,7 +132,7 @@ body .container-card {
 }
 
 body .container-card__browse {
-    height: 660px;
+    height: 610px;
     padding: 0 129px;
     align-items: normal;
     text-align: left;
@@ -161,11 +160,11 @@ body .container-card__browse {
 
 .container-card__browse .container-card__browse__text {
     font-size: 20px;
-    padding: 40px 0 45px;
+    padding: 40px 0 35px;
 }
 
 .container-card__browse__container .services {
-    margin-top: 60px;
+    margin-top: 35px;
 }
 
 .container-card p {
@@ -256,7 +255,7 @@ body .container-card__browse {
 }
 
 .container-card__browse__container .report {
-    margin: 90px 25% 29px;
+    margin: 79px 25% 29px;
 }
 
 .report svg {
@@ -359,7 +358,7 @@ body .footer-card {
 @media screen and (max-width: 1064px) {
 
     body .container-card__browse {
-        padding: 0 80px;
+        padding: ;
     }
 }
 
@@ -420,8 +419,25 @@ body .footer-card {
 }
 
 @media screen and (max-width: 776px) {
+    .container-card__browse__container .report {
+    margin: 79px 20% 29px;
+    }
     .container-card__404 .text {
         margin-top: 45px;
+    }
+}
+
+@media screen and (max-width: 734px) {
+    .container-card__browse .container-card__browse__text, .container-card__browse .links__items {
+        font-size: 17px;
+    }
+
+    .container-card__browse h3 {
+        font-size: 20px;
+    }
+
+    .container-card__browse .report {
+        margin: 120px 17% 29px;
     }
 }
  
@@ -432,6 +448,10 @@ body .footer-card {
 
     body .container-card {
         max-height: 510px;
+    }
+
+    .container-card__browse .report {
+        margin: 30px 17% 29px;
     }
 
     .container-card h1 {
