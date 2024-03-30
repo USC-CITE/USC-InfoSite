@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>403 Error</title>
+    <title>Browse</title>
 
     <!-- Box Icon Styles -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/403.css">
+    <link rel="stylesheet" href="styles/browse.css">
 </head>
 <body>
     <header>
@@ -38,16 +37,31 @@
     </header>
 
     <main>
-        <h1 class="main__heading">Access denied to resource</h1>
-        <p class="main__text">You do not have the authority nor credentials to access this resource.</p>
-        <div class="main__links">
-            <div><p><a href="#">Go to <strong>Home Page</strong></a> </p></div>
-            <div>or</div> 
-            <div><p><a href="search.html"><strong>Search </strong>for a different page</a></p></div>
+        <p class="main__text">Browse existing services and information.</p>
+        <div class="main__container">
+            <div class="main__information">
+                <h3 class="main__heading">Information: </h3>
+                <div class="main__links">
+                    <a href="#" class="main__items">Announcements</a>
+                    <a href="#" class="main__items">Events</a>
+                    <a href="#" class="main__items">Organizations</a>
+                    <a href="#" class="main__items">About the USC</a>
+                    <a href="#" class="main__items">Officers of the USC</a>
+                </div>
+            </div>
+            <div class="main__services">
+                <h3 class="main__heading">Services: </h3>
+                <div class="main__links">
+                    <a href="#" class="main__items">Volunteer Opportunities</a>
+                    <a href="#" class="main__items">Education and Training</a>
+                    <a href="" class="main__items">Contact the USC</a>
+                    <a href="" class="main__items">Contact the USC-CITE</a>
+                </div>
+            </div>
         </div>
-        <p class="main__status">Status Code: 403</p>
+
         <button class="main__report"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" 
-            style="fill: rgba(0, 0, 0, 1);">
+            style="fill: rgba(0, 0, 0, 1)">
             <path d="m14.303 6-3-2H6V2H4v20h2v-8h4.697l3 2H20V6z"></path></svg>
             Report a problem with this page
         </button>
