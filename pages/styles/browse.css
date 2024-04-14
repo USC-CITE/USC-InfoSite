@@ -1,3 +1,82 @@
+.header__USC {
+    display: flex;
+    width: fit-content;
+}
+
+.header__logo {
+    max-height: 50px;
+    margin-left: 70px;
+}
+
+.header__text {
+    width: 230px;
+    padding: 7px 0 4px;
+    margin-left: 14px;
+}
+
+.header__text h4 {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.header__text h3 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header__container {
+    display: flex;
+    width: 173px;
+    max-height: 50px;
+}
+
+.header__container a {
+    color: var(--text-color);
+}
+
+.header__menu {
+    padding: 13px 26px;
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px var(--text-color);
+    margin-right: 23px;
+}
+
+.header__menu a {
+    display: flex;
+}
+
+header a p {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding-right: 7px;
+}
+
+header a .bxs-chevron-down {
+    padding-top: 3px;
+    font-size: 18px;
+    max-height: 18px;
+}
+
+.header__search {
+    width: 50px;
+    border-bottom: 1px solid var(--text-color);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.header__search a {
+    height: 20px;
+}
+
+.header__search .bx-search {
+    font-size: 20px;
+}
 
 main {
     max-height: 610px;
@@ -45,14 +124,18 @@ main {
     align-self: center;
 }
 
-footer {
-    max-height: 200px;
-    padding: 22px 10% 22px;
+@media screen and (min-width: 1281px) {
+
+    header,
+    main {
+        width: inherit;
+    }
 }
 
 @media screen and (max-width: 1200px) {
+
     .main__text,
-    .main__items{
+    .main__items {
         font-size: 18px;
     }
 
@@ -67,12 +150,18 @@ footer {
     }
 
     .main__text,
-    .main__items{
+    .main__items {
         font-size: 16px;
     }
 
     .main__heading {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .header__logo {
+        margin-left: 0;
     }
 }
 
@@ -83,8 +172,9 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+
     .main__text,
-    .main__items{
+    .main__items {
         font-size: 14px;
     }
 
@@ -103,6 +193,12 @@ footer {
     }
 }
 
+@media screen and (max-width: 680px) {
+    header {
+        padding: 20px 24px 20px 32px;
+    }
+}
+
 @media screen and (max-width: 600px) {
     main {
         height: 560px;
@@ -116,22 +212,16 @@ footer {
     .main__services {
         margin: 35px 0 53px;
     }
+}
 
-    footer {
-        padding-top: 15px;
-    }
-
-    .footer__links a{
-        margin-bottom: 5px;
-    }
-
-    .footer__text {
-        margin-bottom: 0;
+@media screen and (max-width: 550px) {
+    .header__text {
+        display: none;
     }
 }
 
 @media screen and (max-width: 400px) {
     main {
-        padding: 0;  
+        padding: 0;
     }
 }
