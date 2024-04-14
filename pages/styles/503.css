@@ -1,3 +1,28 @@
+/* Example CSS file */ 
+
+
+/* Import font-family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display—swap');
+
+/* Reset Design */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --text-color: #000;
+    --heading-color: #E1A011;
+    --link-color: #21536C;
+    --bg-color: #fff;
+}
+
+/* Try nested CSS rulings */
 body {
     display: flex;
     height: 800px;
@@ -6,7 +31,7 @@ body {
     padding: 95px 0;
 }
 
-.container-card__503 {
+main {
     max-width: 1000px;
     height: 610px;
     display: flex;
@@ -14,13 +39,13 @@ body {
     flex-direction: column;
 }
 
-.container-card__503-USC-logo {
+.main__logo {
     margin: 27px 0 21px 0;
     width: 100px;
     height: 100px;
 }
 
-h1 {
+.main__heading {
     max-width: 868px;
     /* height: 167px; */
     color: var(--heading-color);
@@ -30,18 +55,18 @@ h1 {
     text-align: center;
 }
 
-.container-card__503-text {
+.main__text {
     font-size: 20px;
     max-width: 841px;
     text-align: center;
     margin: 46px 0 48px 0;
 }
 
-.container-card__503-text span {
+.main__text span {
     font-weight: 600;
 }
 
-.container-card__503-status-code {
+.main__status{
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 36px;
@@ -53,53 +78,45 @@ a {
 
 
 @media screen and (max-width: 1050px) {
-
-    /* margin: 14.5% 0; */
-
-    .container-card__503-USC-logo {
+    .main__logo {
         width: 75px;
         height: 75px;
     }
 
-    h1 {
+    .main__heading {
         font-size: 50px;
     }
 
-    .container-card__503-text {
+    .main__text {
         font-size: 17px;
     }
 
-    .container-card__503-status-code {
+    .main__status{
         font-size: 15px;
     }
-
-
 }
 
 @media screen and (max-width: 868px) {
-
-    .container-card__503 {
+    main {
         padding: 0 5%;
     }
-
-    .container-card__503-USC-logo {
+    
+    .main__logo {
         width: 62.5px;
         height: 62.5px;
     }
 
-    h1 {
+    .main__heading {
         font-size: 43px;
     }
 
-    .container-card__503-text {
+    .main__text {
         font-size: 15.5px;
     }
 
-    .container-card__503-status-code {
+    .main__status{
         font-size: 14.5px;
     }
-
-
 }
 
 @media screen and (max-width: 400px) {
@@ -107,23 +124,23 @@ a {
         padding: 0;
     }
 
-    .container-card__503-USC-logo {
+    .main__logo {
         width: 50px;
         height: 50px;
     }
-
-    h1 {
+            
+    .main__heading {
         max-width: 285px;
         font-size: 36px;
     }
 
-    .container-card__503-text {
+    .main__text {
         max-width: 304px;
         min-height: 140px;
-        font-size: 14px;
+        font-size: 14px; 
     }
 
-    .container-card__503-status-code {
+    .main__status {
         font-size: 14px;
     }
 }
