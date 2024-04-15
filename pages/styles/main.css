@@ -15,9 +15,8 @@
     box-sizing: border-box;
     text-decoration: none;
     border: none;
-    outline: none;
-    scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
+    /* overflow: hidden; */
 }
 
 :root {

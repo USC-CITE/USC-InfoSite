@@ -12,32 +12,41 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/status_code.css">
-    <link rel="stylesheet" href="styles/404.css">
 </head>
 <body>
     <header>
-        <nav class="header-card">
-            <div class="USC">
-                <img src="assets/logos/USC-logo.png" alt="USC-logo" class="USC-logo">  
-                <div class="text">
-                    <h4>West Visayas State University</h4>
-                    <h3>University Student Council</h3>
-                </div>
-          </div>
-        </nav>
+        <div class="header__USC">
+            <img src="assets/logos/USC-logo.png" alt="USC-logo" class="header__logo">  
+            <div class="header__text">
+                <h4>West Visayas State University</h4>
+                <h3>University Student Council</h3>
+            </div>
+        </div>
+        <div class="header__container">
+            <div class="header__menu">
+                <a href="browse.html">
+                    <p>Menu</p>
+                    <i class='bx bxs-chevron-down' ></i>
+                </a>
+            </div>
+            <div class="header__search">
+                <a href="search.html">
+                    <i class='bx bx-search' ></i>
+                </a>
+            </div>
+        </div>
     </header>
 
-    <main class="container-card container-card__404">
-        
-        <h1>Page not found</h1>
-        <p class="text">The page you are trying to access cannot be found.<br> It may have been deleted, hidden, or does not exist at all.</p>
-        <div class="links">
+    <main>
+        <h1 class="main__heading">Page not found</h1>
+        <p class="main__text">The page you are trying to access cannot be found.<br> It may have been deleted, hidden, or does not exist at all.</p>
+        <div class="main__links">
             <div><p><a href="#">Go to <strong>Home Page</strong></a> </p></div>
             <div>or</div> 
             <div><p><a href="search.html"><strong>Search </strong>for a different page</a></p></div>
         </div>
-        <p class="status-code">Status Code: 404</p>
-        <button class="report"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" 
+        <p class="main__status">Status Code: 404</p>
+        <button class="main__report"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" 
             style="fill: rgba(0, 0, 0, 1)">
             <path d="m14.303 6-3-2H6V2H4v20h2v-8h4.697l3 2H20V6z"></path></svg>
             Report a problem with this page
