@@ -1,9 +1,3 @@
-html {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
 /* Header Sections */
 .header__USC {
   display: flex;
