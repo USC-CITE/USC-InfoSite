@@ -1,845 +1,119 @@
-/* Import font-family */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display—swap');
-
-/**
- *
- * TODO: 
- *   -  Transfer general styles to a file called global.css
- *   -  Download fonts and self-host to a file called fonts.css
- *   -  Create a CSS file for templating the 404 and 403 pages
- */
+@import url("fonts.css");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    font-family: 'Poppins', sans-serif;
-    /* overflow: hidden; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /* overflow: hidden; */
 }
 
 :root {
-    --text-color: #000;
-    --heading-color: #e1a011;
-    --link-color: #21536C;
-    --bg-color: #fff;
+  --text-color: #212121;
+  --heading-color: #e1a011;
+  --link-color: #21536C;
+  --bg-color: #fff;
 }
 
 html {
-    background: #F6F6F6;
-}
-
-body {
-    background: var(--bg-color);
-    min-height: 500px;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-}
-
-body header {
-    max-width: 1280px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-header .header-card {
-    display: flex;
-    padding: 20px 10.94%;
-    max-width: 1280px;
-    max-height: 90px;
-    justify-content: space-between;
-}
-
-.header-card .USC {
-    display: flex;
-    width: fit-content;
-}
-
-.USC .USC-logo {
-    max-height: 50px;
-    margin-left: 70px;
-}
-
-.USC .text {
-    width: 230px;
-    padding: 7px 0 4px;
-    margin-left: 14px;
-}
-
-.text h4 {
-    font-size: 12px;
-    font-weight: 400;
-}
-
-.text h3 {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.Menu-Search-container {
-    display: flex;
-    width: 173px;
-    max-height: 50px;
-}
-
-.Menu-Search-container .menu-container {
-    padding: 13px 26px;
-    display: flex;
-    width: 100px;
-    align-items: center;
-    justify-content: center;
-    border-bottom: solid 1px var(--text-color);
-    margin-right: 23px;
-}
-
-a {
-    color: var(--text-color);
-}
-
-.menu-container a {
-    display: flex;
-}
-
-a p {
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    padding-right: 7px;
-}
-
-a .bxs-chevron-down {
-    padding-top: 3px;
-    font-size: 18px;
-    max-height: 18px;
-}
-
-.Menu-Search-container .search-container {
-    width: 50px;
-    border-bottom: 1px solid var(--text-color);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 15px;
-}
-
-.search-container a {
-    height: 20px;
-}
-
-.search-container .bx-search {
-    font-size: 20px;
-}
-
-.container-card p {
-    font-size: 20px;
-}
-
-.container-card a, footer a {
-    text-decoration: underline;
-    color: var(--link-color);
+  background: #F6F6F6;
 }
 
 footer {
-    width: 100%;
-    min-height: 140px;
-    padding: 20px 50px;
-    background: #F6F6F6;
-    font-size: 14px;
-    border-top: #D9D4D7 solid 3px;
+  width: 100%;
+  min-height: 140px;
+  padding: 20px 50px;
+  background: #F6F6F6;
+  font-size: 14px;
+  border-top: #D9D4D7 solid 3px;
 }
+
 .footer__container {
-    margin: 0 auto;
-    max-width: 1000px;
-    display: flex;
-    justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1000px;
+  display: flex;
+  justify-content: space-between;
 }
+
 .footer__links {
-    padding-left: 25px;
-    margin-right: 20px;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
+  padding-left: 25px;
+  margin-right: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }
+
 .footer__notice {
-    max-width: 300px;
-    max-height: 54px;
-    line-height: 150%;
-    letter-spacing: -0.154px;
+  max-width: 300px;
+  max-height: 54px;
+  line-height: 150%;
+  letter-spacing: -0.154px;
 }
+
 .footer__notice img {
-    width: 14px;
-    height: 14px;
+  width: 14px;
+  height: 14px;
 }
-
-
-@media screen and (min-width: 1281px) {
-    /* main, header {
-        margin: 0 10%;
-    }   */
-
-    .header-card, .container-card, footer {
-        width: inherit;
-    }
-} 
 
 @media screen and (max-width: 1080px) {
-    .footer__links {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        padding: 0;
-    }
-    .footer__links li {
-        margin-left: 0;
-        padding-bottom: 20px;
-    }
-    .footer__notice {
-        font-size: 12px;
-        margin-bottom: 17px;
-    }
-}
+  .footer__links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+  }
 
-@media screen and (max-width: 900px) {
-    .USC .USC-logo {
-        margin-left: 0;
-    }
+  .footer__links li {
+    margin-left: 0;
+    padding-bottom: 20px;
+  }
 
-    .footer-card .links a {
-        padding-bottom: 10px;
-    }
-}
-
-@media screen and (max-width: 810px) {
-
-    body .footer-card {
-        flex-direction: column;
-    }
-    
-    .footer-card .links {
-        display: flex;
-        /* margin-top: 15%; */
-        margin-right: 0;
-        height: fit-content;
-        width: 100%;
-        align-items: center;
-    }
-
-    .footer-card .text {
-        max-width: 150%;
-    }
-}
-
-
-@media screen and (max-width: 776px) {
-    .container-card__404 .text {
-        margin-top: 45px;
-    }
-}
- 
- 
-@media screen and (max-width: 776px) {
-    .container-card__404 .text {
-        margin-top: 45px;
-    }
-}
- 
-@media screen and (max-width: 680px) {
-    body .header-card {
-        padding: 20px 24px 20px 32px;
-    }
-
-    .USC .USC-logo {
-        margin-left: 0;
-    }
-    
-    .footer-card .links {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    } 
+  .footer__notice {
+    font-size: 12px;
+    margin-bottom: 17px;
+  }
 }
 
 @media screen and (max-width: 550px) {
-    .USC .text {
-        display: none;
-    }
+  footer {
+    height: 180px;
+    padding: 20px 30px;
+  }
 
-    footer {
-        height: 180px;
-        padding: 20px 30px;
-    }
-    .footer__container {
-        flex-direction: column;
-    }
-    .footer__links {
-        display: flex;
-        margin-right: 0;
-        height: fit-content;
-        width: 100%;
-        align-items: center;
-    }
-    .footer__notice {
-        margin-top: 10px;
-    }
+  .footer__container {
+    flex-direction: column;
+  }
+
+  .footer__links {
+    display: flex;
+    margin-right: 0;
+    height: fit-content;
+    width: 100%;
+    align-items: center;
+  }
+
+  .footer__notice {
+    margin-top: 10px;
+  }
 }
 
 @media screen and (max-width: 550px) {
-    footer {
-        height: 250px;
-    }
-    .footer__links {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    } 
-    .footer__links li {
-        margin-bottom: 12px;
-    }
-    .container-card__404 .status-code {
-        margin: 20px 0 52px;
-    }
+  footer {
+    height: 250px;
+  }
+
+  .footer__links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__links li {
+    margin-bottom: 12px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .footer__links {
-        margin-right: 0;
-    }
-}
-
-/* ==========================================================================
-   Header Styling
-   ========================================================================== */
-
-.menu-open-search {
-  position: relative;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  height: 311px;
-  overflow: hidden;
-}
-
-.menu-open-search .overlap {
-  position: absolute;
-  width: 100%;
-  height: 310px;
-  background-color: #ffffff;
-  transition: transform 0.3s ease-in-out;
-}
-
-.menu-open-search.menu-active .overlap {
-  transform: translateY(0);
-}
-
-.menu-open-search .overlap-group {
-  position: relative;
-  width: 1280px;
-  height: 220px;
-  top: 90px;
-  left: 0;
-}
-
-
-
-.menu-open-search .accordion {
-  position: relative;
-  width: 1280px;
-  height: 220px;
-  top: 0;
-  left: 0;
-  background-color: #ffffff;
-}
-
-
-.menu-open-search .services,
-.menu-open-search .information {
-  position: absolute;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-  width: 415px;
-  height: 130px;
-  top: 21px;
-}
-
-.menu-open-search .services.visible,
-.menu-open-search .information.visible {
-  opacity: 1;
-  pointer-events: auto;
-  display: block;
-}
-
-.menu-open-search .services {
-  width: 415px;
-  height: 130px;
-  top: 21px;
-  left: 641px;
-}
-
-
-.menu-open-search .text-wrapper {
-  position: absolute;
-  width: 149px;
-  top: 0;
-  left: 0;
-  font-family: "Poppins-SemiBold", Helvetica;
-  font-weight: 600;
-  color: #000000;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-align: center;
-}
-
-.menu-open-search .div { /* change to text-wrapper-1*/
-  position: absolute;
-  width: 195px;
-  top: 55px;
-  left: 0;
-  font-family: "Poppins-Regular", Helvetica;
-  font-weight: 400;
-  color: #21526b;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.menu-open-search .text-wrapper-2 {
-  position: absolute;
-  width: 174px;
-  top: 97px;
-  left: 0;
-  font-family: "Poppins-Regular", Helvetica;
-  font-weight: 400;
-  color: #21526b;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.menu-open-search .text-wrapper-3 {
-  position: absolute;
-  width: 180px;
-  top: 100px;
-  left: 215px;
-  font-family: "Poppins-Regular", Helvetica;
-  font-weight: 400;
-  color: #21526b;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.menu-open-search .text-wrapper-4 {
-  position: absolute;
-  width: 190px;
-  top: 55px;
-  left: 215px;
-  font-family: "Poppins-Regular", Helvetica;
-  font-weight: 400;
-  color: #21526b;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: underline;
-  cursor: pointer;
-}
-
-.menu-open-search .information {
-  /* Adjust positioning as needed */
-  width: 340px;
-  height: 174px;
-  top: 19px;
-  left: 238px;
-}
-
-.menu-open-search .text-wrapper-5 {
-  position: absolute;
-  width: 156px;
-  top: 0;
-  left: 0;
-  font-family: "Poppins-SemiBold", Helvetica;
-  font-weight: 600;
-  color: #000000;
-  font-size: 24px;
-  letter-spacing: 0;
-  line-height: normal;
-  white-space: nowrap;
-}
-
-.menu-open-search .text-wrapper-6 {
-  position: absolute;
-  width: 132px;
-  top: 99px;
-  left: 0;
-  font-family: "Poppins-Regular", Helvetica;
-  font-weight: 400;
-  color: #21526b;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: underline;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.menu-open-search .text-wrapper-7 {
-  position: absolute;
-  width: 60px;
-  top: 51px;
-  left: 202px;
-  font-family: "Poppins-Regular", Helvetica;
-  font-weight: 400;
-  color: #21526b;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: underline;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.menu-open-search .text-wrapper-8 {
-  position: absolute;
-  width: 126px;
-  top: 99px;
-  left: 202px;
-  font-family: "Poppins-Regular", Helvetica;
-  font-weight: 400;
-  color: #21526b;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: underline;
-  white-space: nowrap; 
-  cursor: pointer;
-}
-
-.menu-open-search .text-wrapper-9 {
-  position: absolute;
-  width: 166px;
-  top: 149px;
-  left: 0;
-  font-family: "Poppins-Regular", Helvetica;
-  font-weight: 400;
-  color: #21526b;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: underline;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.menu-open-search .text-wrapper-10 {
-  position: absolute;
-  width: 148px;
-  top: 51px;
-  left: 0;
-  font-family: "Poppins-Regular", Helvetica;
-  font-weight: 400;
-  color: #21526b;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-  text-decoration: underline;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.menu-open-search .separator {
-  position: absolute;
-  width: 1px;
-  height: 150px;
-  top: 37px;
-  left: 600px;
-  object-fit: cover;
-  transition: opacity 0.3s ease, display 0s ease 0.3s; /* Add transition for display property */
-  opacity: 0;
-  display: none; /* Set to none initially */
-}
-
-.menu-open-search .separator.visible {
-  opacity: 1;
-  pointer-events: auto;
-  margin-top: 20px;
-  display: block;
-}
-
-.menu-open-search .menu-link.active {
-  display: none; /* Hide menu link when menu is open */
-}
-.menu-open-search .search-link.active {
-  display: none; /* Hide search link when menu is open */
-}
-
-.menu-open-search .menu-link {
-  position: absolute;
-  width: 102px;
-  height: 50px;
-  top: 20px;
-  left: 936px;
-  z-index: 2;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease; 
-}
-
-.menu-open-search .menu-link:hover {
-  transform: scale(1.1); 
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-1px);
-  }
-  60% {
-    transform: translateY(-1px);
-  }
-}
-
-.menu-open-search .menu-link:hover {
-  animation: bounce 1s ease infinite;
-}
-
-.menu-open-search .overlap-group-2 {
-  position: relative;
-  width: 100px;
-  height: 50px;
-  background-color: #ffffff;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-color: #000000;
-}
-
-.menu-open-search .text-wrapper-11 {
-  position: absolute;
-  width: 48px;
-  top: 13px;
-  left: 15px;
-  font-family: "Poppins-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 16px;
-  text-align: center;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.menu-open-search .bx.bxs-chevron-down {
-  position: absolute;
-  padding-top: 13px;
-  padding-left: 62px;
-  font-size: 18px;
-  height: 18px;
-}
-
-.menu-open-search .bx.bxs-chevron-up {
-  position: absolute;
-  padding-top: 13px;
-  padding-left: 62px;
-  font-size: 18px;
-  height: 18px;
-}
-
-.menu-open-search .search-link {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 20px;
-  left: 1059px;
-  border-bottom: 1px solid #000000;
-  cursor: pointer;
-}
-.menu-open-search .search-link i {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 15px;
-  left: 15px;
-  font-size: 20px; 
-  color: #000000;
-  line-height: normal;
-}
-
-.menu-open-search .bx-search {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 12px;
-  left: 12px;
-}
-
-.menu-open-search .logo-and-heading {
-  position: absolute;
-  width: 338px;
-  height: 50px;
-  top: 20px;
-  left: 210px;
-}
-
-.menu-open-search .USC-logo {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  top: 0;
-  left: 0;
-  object-fit: cover;
-}
-
-.menu-open-search .overlap-2 {
-  position: absolute;
-  width: 270px;
-  height: 39px;
-  top: 7px;
-  left: 64px;
-}
-
-.menu-open-search .text-wrapper-12 {
-  position: absolute;
-  width: 270px;
-  top: 16px;
-  left: 0;
-  font-family: "Poppins-SemiBold", Helvetica;
-  font-weight: 600;
-  color: #000000;
-  font-size: 16px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.menu-open-search .text-wrapper-13 {
-  position: absolute;
-  width: 177px;
-  top: 0;
-  left: 0;
-  font-family: "Poppins-Regular", Helvetica;
-  font-weight: 400;
-  color: #000000;
-  font-size: 12px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-.menu-open-search .container-card {
-  position: relative;
-  width: 1000px;
-  height: 91px;
-  /* top: 1636px;
-  left: 6297px; */
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.menu-open-search .menu-link a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-}
-
-.menu-open-search .search-link i {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 15px;
-  left: 15px;
-  font-size: 20px; 
-  color: #000000;
-  line-height: normal;
-}
-.menu-open-search .search-link.active {
-  background-color: #f6f6f6;
-}
-
-
-.search-bar .input-section {
-  position: relative;
-  width: 602px;
-  height: 40px;
-  top: 87px;
-  left: 340px;
-}
-
-.menu-open-search .search-wvsu{
-position: absolute ;
- width: 291px;
- bottom:60px;
- left: 137px;
- font-family: "Poppins-SemiBold", Helvetica;
- font-weight: 600;
- color: #000000;
- font-size: 24px;
- text-align: center;
- letter-spacing: 0;
- line-height: normal;
-}
-
-.search-bar .overlap-group {
-  position: relative;
-  width: 600px;
-  height: 40px;
-  top: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  border: 1px solid;
-  border-color: #000000;
-}
-
-.search-bar .search-button {
-  position: absolute;
-  width: 38px;
-  height: 38px;
-  top: 0;
-  left: 560px;
-  background-color: #a6a4ba6e;
-}
-
-.search-bar .vector {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 9px;
-  left: 9px;
-}
-
-
-.search-bar .text-wrapper {
-  position: absolute;
-  width: 75px;
-  top: 10px;
-  left: 22px;
-  font-family: "Poppins-Regular", Helvetica;
-  font-weight: 400;
-  color: #8f8b8b;
-  font-size: 18px;
-  letter-spacing: 0;
-  line-height: normal;
-}
-
-@media screen and (max-width: 900px) {
-  .USC .USC-logo {
-      margin-left: 0;
-  }
-}
-
-@media screen and (max-width: 680px) {
-  .header-card {
-      padding: 20px 24px 20px 32px;
-  }
-}
-
-@media screen and (max-width: 550px) {
-  .USC .text {
-      display: none;
+  .footer__links {
+    margin-right: 0;
   }
 }
