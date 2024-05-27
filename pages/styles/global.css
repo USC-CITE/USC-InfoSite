@@ -15,6 +15,34 @@
   --bg-color: #fff;
 }
 
+.link_list {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  list-style: none;
+}
+
+.link_list li {
+  padding-bottom: 20px;
+}
+
+.link_list li:not(.link_list li:last-of-type) {
+  margin-right: 30px;
+}
+
+.link_list__hdng {
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 600;
+}
+
 .sr_only {
   position: absolute;
   left: -10000px;
@@ -47,6 +75,7 @@ header {
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .header__banner {
@@ -137,6 +166,44 @@ header a p {
   height: 15px;
 }
 
+.header_accord {
+  margin: 10px auto;
+  width: 100%;
+  max-width: 1000px;
+  height: fit-content;
+  display: none;
+  position: relative;
+  background-color: #F7F7F7;
+}
+
+.header_accord--menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.header_accord--menu::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 3px;
+  height: 90%;
+  background: #D9D4D7;
+  transform: translate(-50%, -50%);
+}
+
+.link_list--info,
+.link_list--srvcs {
+  padding: 20px 50px;
+  display: none;
+}
+
+.link_list--info {
+  transform: translateX(10%);
+}
+
+
 footer {
   width: 100%;
   min-height: 140px;
@@ -200,6 +267,25 @@ footer {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .header_accord--menu {
+    flex-flow: column wrap;
+  }
+
+  .header_accord--menu::before {
+    display: none;
+  }
+
+  .link_list--info,
+  .link_list--srvcs {
+    padding: 10px 50px;
+  }
+
+  .link_list--info {
+    transform: translateX(0%);
+  }
+}
+
 @media screen and (max-width: 680px) {
   header {
     padding: 20px 24px 20px 32px;
@@ -242,7 +328,23 @@ footer {
     margin-right: 0;
   }
 
+  .link_list__hdng {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .link_list--info,
+  .link_list--srvcs {
+    padding: 10px 30px;
+  }
+
   .footer__links {
     margin-right: 0;
   }
+}
+
+.link_list--info.visible,
+.link_list--srvcs.visible {
+  opacity: 1;
+  display: flex;
 }
