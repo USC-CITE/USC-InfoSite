@@ -15,6 +15,15 @@
   --bg-color: #fff;
 }
 
+.sr_only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 html {
   background: #F6F6F6;
 }
@@ -64,12 +73,12 @@ header {
   color: var(--text-color);
 }
 
-.header__text h4 {
+.header__text h1 {
   font-size: 12px;
   font-weight: 400;
 }
 
-.header__text h3 {
+.header__text h2 {
   font-size: 16px;
   font-weight: 600;
 }
@@ -169,6 +178,7 @@ footer {
   .header__logo {
     margin-left: 30px;
   }
+
   .header__btns {
     margin-right: 30px;
   }
@@ -227,9 +237,11 @@ footer {
   .header__logo {
     margin-left: 0;
   }
+
   .header__btns {
     margin-right: 0;
   }
+
   .footer__links {
     margin-right: 0;
   }
