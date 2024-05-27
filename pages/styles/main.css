@@ -19,6 +19,97 @@ html {
   background: #F6F6F6;
 }
 
+header {
+  margin: 0 auto;
+  padding: 20px 10.94%;
+  max-width: 1280px;
+  max-height: 90px;
+  display: flex;
+  justify-content: space-between;
+  background: var(--bg-color);
+}
+
+.header__USC {
+  display: flex;
+  width: fit-content;
+}
+
+.header__logo {
+  max-height: 50px;
+  margin-left: 70px;
+}
+
+.header__text {
+  width: 230px;
+  padding: 7px 0 4px;
+  margin-left: 14px;
+}
+
+.header__text h4 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.header__text h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.header__container {
+  display: flex;
+  width: 173px;
+  max-height: 50px;
+}
+
+.header__container a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.header__menu {
+  padding: 13px 26px;
+  display: flex;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 1px var(--text-color);
+  margin-right: 23px;
+}
+
+.header__menu a {
+  display: flex;
+}
+
+header a p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  padding-right: 7px;
+}
+
+header a .bxs-chevron-down {
+  padding-top: 3px;
+  font-size: 18px;
+  max-height: 18px;
+}
+
+.header__search {
+  width: 50px;
+  border-bottom: 1px solid var(--text-color);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.header__search a {
+  height: 20px;
+}
+
+.header__search .bx-search {
+  font-size: 20px;
+}
+
 footer {
   width: 100%;
   min-height: 140px;
@@ -57,6 +148,10 @@ footer {
 }
 
 @media screen and (max-width: 1080px) {
+  .header__logo {
+    margin-left: 0;
+  }
+
   .footer__links {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -74,7 +169,11 @@ footer {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 680px) {
+  header {
+    padding: 20px 24px 20px 32px;
+  }
+
   footer {
     height: 180px;
     padding: 20px 30px;
@@ -98,18 +197,10 @@ footer {
 }
 
 @media screen and (max-width: 550px) {
-  footer {
-    height: 250px;
+  .header__text {
+    display: none;
   }
 
-  .footer__links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .footer__links li {
-    margin-bottom: 12px;
-  }
 }
 
 @media screen and (max-width: 480px) {
