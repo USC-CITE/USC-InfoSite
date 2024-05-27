@@ -42,7 +42,14 @@ header {
 
 .header__banner {
   width: fit-content;
+}
+
+.header__banner a {
+  width: 100%;
   display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  text-decoration: none;
 }
 
 .header__logo {
@@ -54,6 +61,7 @@ header {
   width: 230px;
   padding: 7px 0 4px;
   margin-left: 14px;
+  color: var(--text-color);
 }
 
 .header__text h4 {
@@ -159,7 +167,10 @@ footer {
 
 @media screen and (max-width: 1080px) {
   .header__logo {
-    margin-left: 0;
+    margin-left: 30px;
+  }
+  .header__btns {
+    margin-right: 30px;
   }
 
   .footer__links {
@@ -206,14 +217,19 @@ footer {
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .header__text {
     display: none;
   }
-
 }
 
 @media screen and (max-width: 480px) {
+  .header__logo {
+    margin-left: 0;
+  }
+  .header__btns {
+    margin-right: 0;
+  }
   .footer__links {
     margin-right: 0;
   }
