@@ -1,176 +1,175 @@
-
 /* Main Section */
 main {
-  height: 610px;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+	height: 610px;
+	text-align: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
 main p {
-  font-size: 20px;
+	font-size: 20px;
 }
 
 main a {
-  text-decoration: underline;
-  color: var(--link-color);
+	text-decoration: underline;
+	color: var(--link-color);
 }
 
 .main__heading {
-  max-width: 608px;
-  max-height: 117px;
-  color: var(--heading-color);
-  font-size: 64px;
-  font-weight: 700;
-  margin: 80px 0 28px;
-  line-height: 120%;
+	max-width: 608px;
+	max-height: 117px;
+	color: var(--heading-color);
+	font-size: 64px;
+	font-weight: 700;
+	margin: 80px 0 28px;
+	line-height: 120%;
 }
 
 .main__text {
-  max-width: 942px;
-  max-height: 74px;
-  margin: 56px 0 30px;
-  font-size: 20px;
-  font-weight: 400;
-  justify-content: center;
+	max-width: 942px;
+	max-height: 74px;
+	margin: 56px 0 30px;
+	font-size: 20px;
+	font-weight: 400;
+	justify-content: center;
 }
 
 .main__links {
-  width: 80%;
-  padding: 0 13% 0;
-  display: flex;
-  justify-content: space-between;
+	width: 80%;
+	padding: 0 13% 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 .main__links div {
-  padding-top: 10px;
+	padding-top: 10px;
 }
 
 .main__status {
-  max-width: 213px;
-  max-height: 37px;
-  font-size: 16px;
-  margin: 63px 0 73px;
-  font-weight: 600;
-  padding-top: 5px;
+	max-width: 213px;
+	max-height: 37px;
+	font-size: 16px;
+	margin: 63px 0 73px;
+	font-weight: 600;
+	padding-top: 5px;
 }
 
 .main__report {
-  width: 289px;
-  height: 35px;
-  background: #d9d9d9;
-  border-radius: 50px;
-  margin-bottom: 28px;
-  font-size: 12px;
-  font-weight: 400;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  padding: 8.1px 0;
+	width: 289px;
+	height: 35px;
+	background: #d9d9d9;
+	border-radius: 50px;
+	margin-bottom: 28px;
+	font-size: 12px;
+	font-weight: 400;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	padding: 8.1px 0;
 }
 
 .main__report svg {
-  margin-right: 6px;
+	margin-right: 6px;
 }
 
 @media screen and (min-width: 1281px) {
-  main {
-    width: inherit;
-  }
+	main {
+		width: inherit;
+	}
 }
 
 @media screen and (max-width: 1150px) {
-  .main__links {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
+	.main__links {
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+	}
 
-  .main__status {
-    margin: 35px 0 30px;
-  }
+	.main__status {
+		margin: 35px 0 30px;
+	}
 }
 
 @media screen and (max-width: 900px) {
-  .main__status {
-    margin: 40px 0 25px;
-  }
+	.main__status {
+		margin: 40px 0 25px;
+	}
 }
 
 @media screen and (max-width: 680px) {
-  main {
-    max-height: 510px;
-  }
+	main {
+		max-height: 510px;
+	}
 
-  .main__heading {
-    font-size: 50px;
-    margin-top: 60px;
-  }
+	.main__heading {
+		font-size: 50px;
+		margin-top: 60px;
+	}
 
-  .main__text {
-    margin: 0 5px 19px;
-    padding: 0 10%;
-    font-size: 14px;
-  }
+	.main__text {
+		margin: 0 5px 19px;
+		padding: 0 10%;
+		font-size: 14px;
+	}
 
-  .main__links {
-    margin-top: 10px;
-  }
+	.main__links {
+		margin-top: 10px;
+	}
 
-  .main__links div {
-    padding-top: 0;
-  }
+	.main__links div {
+		padding-top: 0;
+	}
 
-  .main__links p {
-    font-size: 14px;
-  }
+	.main__links p {
+		font-size: 14px;
+	}
 
-  .main__status {
-    margin-bottom: 45px;
-    font-size: 14px;
-  }
+	.main__status {
+		margin-bottom: 45px;
+		font-size: 14px;
+	}
 }
 
 @media screen and (max-width: 550px) {
-  main {
-    margin: 0 27px 0;
-  }
+	main {
+		margin: 0 27px 0;
+	}
 
-  .main__heading {
-    margin: 80px 1px 30px 13px;
-  }
+	.main__heading {
+		margin: 80px 1px 30px 13px;
+	}
 
-  .main__links div:nth-child(1),
-  .main__links div:nth-child(3) {
-    padding: 7px 0;
-  }
+	.main__links div:nth-child(1),
+	.main__links div:nth-child(3) {
+		padding: 7px 0;
+	}
 
-  .main__links div:nth-child(2) {
-    font-size: 10px;
-  }
+	.main__links div:nth-child(2) {
+		font-size: 10px;
+	}
 
-  .main__status {
-    margin: 20px 0 25px;
-  }
+	.main__status {
+		margin: 20px 0 25px;
+	}
 }
 
 @media screen and (max-width: 480px) {
-  .main__heading {
-    font-size: 36px;
-  }
+	.main__heading {
+		font-size: 36px;
+	}
 
-  .main__text {
-    padding: 0;
-    margin-bottom: 0;
-  }
+	.main__text {
+		padding: 0;
+		margin-bottom: 0;
+	}
 
-  .main__status {
-    margin: 40px 0 55px;
-  }
+	.main__status {
+		margin: 40px 0 55px;
+	}
 
-  .main__report {
-    margin-bottom: 32px;
-  }
+	.main__report {
+		margin-bottom: 32px;
+	}
 }
