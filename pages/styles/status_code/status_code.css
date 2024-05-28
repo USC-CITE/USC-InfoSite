@@ -1,89 +1,7 @@
-/* Header Sections */
-.header__USC {
-  display: flex;
-  width: fit-content;
-}
-
-.header__logo {
-  max-height: 50px;
-  margin-left: 70px;
-}
-
-.header__text {
-  width: 230px;
-  padding: 7px 0 4px;
-  margin-left: 14px;
-}
-
-.header__text h4 {
-  font-size: 12px;
-  font-weight: 400;
-}
-
-.header__text h3 {
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.header__container {
-  display: flex;
-  width: 173px;
-  max-height: 50px;
-}
-
-.header__container a {
-  color: var(--text-color);
-}
-
-.header__menu {
-  padding: 13px 26px;
-  display: flex;
-  width: 100px;
-  align-items: center;
-  justify-content: center;
-  border-bottom: solid 1px var(--text-color);
-  margin-right: 23px;
-}
-
-.header__menu a {
-  display: flex;
-}
-
-header a p {
-  font-size: 16px;
-  font-weight: 400;
-  text-align: center;
-  padding-right: 7px;
-}
-
-header a .bxs-chevron-down {
-  padding-top: 3px;
-  font-size: 18px;
-  max-height: 18px;
-}
-
-.header__search {
-  width: 50px;
-  border-bottom: 1px solid var(--text-color);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-top: 15px;
-}
-
-.header__search a {
-  height: 20px;
-}
-
-.header__search .bx-search {
-  font-size: 20px;
-}
 
 /* Main Section */
 main {
-  max-width: 1000px;
   height: 610px;
-  margin: 0 10.94% 0;
   text-align: center;
   align-items: center;
   display: flex;
@@ -158,8 +76,6 @@ main a {
 }
 
 @media screen and (min-width: 1281px) {
-
-  header,
   main {
     width: inherit;
   }
@@ -177,12 +93,6 @@ main a {
   }
 }
 
-@media screen and (max-width: 1080px) {
-  .header__logo {
-    margin-left: 0;
-  }
-}
-
 @media screen and (max-width: 900px) {
   .main__status {
     margin: 40px 0 25px;
@@ -190,10 +100,6 @@ main a {
 }
 
 @media screen and (max-width: 680px) {
-  header {
-    padding: 20px 24px 20px 32px;
-  }
-
   main {
     max-height: 510px;
   }
@@ -228,10 +134,6 @@ main a {
 }
 
 @media screen and (max-width: 550px) {
-  .header__text {
-    display: none;
-  }
-
   main {
     margin: 0 27px 0;
   }

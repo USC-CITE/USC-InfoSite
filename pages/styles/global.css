@@ -23,6 +23,11 @@ body {
 	background: #fff;
 }
 
+main {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
 .container {
 	width: 100%;
 }
@@ -179,7 +184,7 @@ header a p {
 }
 
 .header_accord {
-	margin: 10px auto;
+	margin: 0px auto;
 	width: 100%;
 	max-width: 1000px;
 	height: fit-content;
