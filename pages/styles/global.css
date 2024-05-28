@@ -15,6 +15,22 @@
 	--bg-color: #fff;
 }
 
+html {
+	background: #F6F6F6;
+}
+
+body {
+	background: #fff;
+}
+
+.container {
+	width: 100%;
+}
+
+.container--header_accord {
+	background: #f6f6f6;
+}
+
 .link_list {
 	margin: 0;
 	padding: 0;
@@ -50,10 +66,6 @@
 	width: 1px;
 	height: 1px;
 	overflow: hidden;
-}
-
-html {
-	background: #F6F6F6;
 }
 
 header {
@@ -208,7 +220,7 @@ header a p {
 	top: 50%;
 	left: 50%;
 	width: 3px;
-	height: 90%;
+	height: 70%;
 	background: #D9D4D7;
 	transform: translate(-50%, -50%);
 }
@@ -350,7 +362,7 @@ footer {
 
 	.link_list--info,
 	.link_list--srvcs {
-		padding: 10px 50px;
+		padding: 20px 50px;
 	}
 
 	.link_list--info {
@@ -407,7 +419,7 @@ footer {
 
 	.link_list--info,
 	.link_list--srvcs {
-		padding: 10px 30px;
+		padding: 20px 30px;
 	}
 
 	.search_form__label {
