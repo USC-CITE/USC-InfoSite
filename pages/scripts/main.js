@@ -1,68 +1,69 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const dropdownIcon = document.getElementById('dropdown-icon');
-    const accordion = document.querySelector('.accordion');
-    const menuButton = document.querySelector('.overlap-group-2');
-    const searchLink = document.querySelector('.search-link');
-    const searchBar = document.querySelector('.search-bar');
-    const information = document.querySelector('.information');
-    const services = document.querySelector('.services');
-    const separator = document.querySelector('.separator');
+    const headerAccord = document.querySelector('[data-js=header_accord]');
 
-    // Set initial styles for the arrow icon and menu button
-    dropdownIcon.style.paddingTop = '13px';
-    dropdownIcon.style.paddingLeft = '62px';
+    const menuIcon = document.querySelector('[data-js=menu_btn_icon]');
+    const menuBtn = document.querySelector('[data-js=menu_btn]');
 
-    // Initially hide the search bar
-    searchBar.style.display = 'none';
+    const infoMenu = document.querySelector('[data-js=info_menu]');
+    const srvcsMenu = document.querySelector('[data-js=srvcs_menu]');
+
+    const searchBtn = document.querySelector('[data-js=search_btn]');
+    const searchForm = document.querySelector('[data-js=search_form]');
+
+    menuBtn.setAttribute('role', 'button');
+    searchBtn.setAttribute('role', 'button');
 
     // Event listener for clicking the search link
-    searchLink.addEventListener('click', function () {
+    searchBtn.addEventListener('click', function (e) {
+        e.preventDefault();
         // Toggle the visibility of the search bar and hide menu contents
-        searchBar.style.display = searchBar.style.display === 'none' ? 'block' : 'none';
-        information.classList.remove('visible');
-        services.classList.remove('visible');
-        separator.classList.remove('visible');
+        infoMenu.classList.remove('visible');
+        srvcsMenu.classList.remove('visible');
+
+        headerAccord.classList.remove('header_accord--menu');
+        headerAccord.classList.add('header_accord--search');
 
         // Toggle the icon and background color based on the visibility of the search bar
-        if (searchBar.style.display === 'block') {
-            accordion.style.backgroundColor = '#f6f6f6';
-            searchLink.style.color = '#f6f6f6';
+        if (!searchForm.classList.contains('visible')) {
+            searchForm.classList.add('visible');
+
             // Set background color to #f6f6f6 when search link is clicked
-            searchLink.style.backgroundColor = '#f6f6f6';
+            searchBtn.style.backgroundColor = '#f6f6f6';
             // Revert background color of the menu button when search link is clicked
-            menuButton.style.backgroundColor = 'transparent';
+            menuIcon.style.transform = 'none';
+            menuBtn.style.backgroundColor = '#ffffff';
         } else {
-            dropdownIcon.classList.toggle('bxs-chevron-up', false);
-            dropdownIcon.classList.toggle('bxs-chevron-down', true);
-            accordion.style.backgroundColor = '#ffffff';
-            // Revert color of the search link when search bar is closed
-            searchLink.style.color = '#ffffff';
+            headerAccord.classList.remove('header_accord--search');
+            searchForm.classList.remove('visible');
+
             // Revert background color of the search link when search bar is closed
-            searchLink.style.backgroundColor = 'transparent';
+            searchBtn.style.backgroundColor = '#ffffff';
         }
     });
 
     // Event listener for clicking the menu button
-    menuButton.addEventListener('click', function () {
-        information.classList.toggle('visible');
-        services.classList.toggle('visible');
-        separator.classList.toggle('visible');
-        searchBar.style.display = 'none';
+    menuBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        headerAccord.classList.add('header_accord--menu');
+        headerAccord.classList.remove('header_accord--search');
+        searchForm.classList.remove('visible');
 
-        // Toggle the icon and background color based on the visibility of information
-        if (information.classList.contains('visible')) {
-            dropdownIcon.classList.replace('bxs-chevron-down', 'bxs-chevron-up');
-            accordion.style.backgroundColor = '#f6f6f6';
-            menuButton.style.backgroundColor = '#f6f6f6';
-            searchLink.style.color = '#f6f6f6';
+        // Toggle the icon and background color based on the visibility of infoMenu
+        if (!infoMenu.classList.contains('visible')) {
+            infoMenu.classList.add('visible');
+            srvcsMenu.classList.add('visible');
+
+            menuIcon.style.transform = 'rotate(-180deg)';
+            menuBtn.style.backgroundColor = '#f6f6f6';
             // Revert background color of the search link when menu button is clicked
-            searchLink.style.backgroundColor = 'transparent';
+            searchBtn.style.backgroundColor = '#ffffff';
         } else {
-            dropdownIcon.classList.replace('bxs-chevron-up', 'bxs-chevron-down');
-            accordion.style.backgroundColor = '#ffffff';
-            menuButton.style.backgroundColor = '#ffffff';
-            // Revert color of the search link when menu is closed
-            searchLink.style.color = '#ffffff';
+            headerAccord.classList.remove('header_accord--menu');
+            infoMenu.classList.remove('visible');
+            srvcsMenu.classList.remove('visible');
+
+            menuIcon.style.transform = 'none';
+            menuBtn.style.backgroundColor = '#ffffff';
         }
     });
 });
