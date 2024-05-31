@@ -9,24 +9,26 @@ namespace ProcessWire;
 // replace or delete any element defined here that has an "id" attribute. 
 // https://processwire.com/docs/front-end/output/markup-regions/
 
-/** @var Page $page */
-/** @var Pages $pages */
-/** @var Config $config */
+/** @var Page $page
+ *  @var Pages $pages
+ *  @var Config $config
+ */
+
 
 $home = $pages->get('/'); /** @var HomePage $home */
 
 ?><!DOCTYPE html>
 <html lang="en">
 
-<head id="html-head">
+<head id="head">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title><?php echo $page->title; ?></title>
 	<link rel="stylesheet" type="text/css" href="<?= $config->urls->templates; ?>styles/global.css" />
 	<script src="<?= $config->urls->templates; ?>scripts/main.js"></script>
 </head>
 
-<body>
-	<header>
+<body id="body">
+	<header id="header">
 		<div class="header__container">
 			<div class="header__banner">
 				<a href="/"><img src="<?= $config->urls->templates; ?>assets/logos/USC-logo.png" alt="USC-logo"
@@ -54,7 +56,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 			</div>
 		</div>
 	</header>
-	<div class="container container--header_accord">
+	<div class="container container--header_accord" id="header_accord">
 		<div class="header_accord" data-js="header_accord">
 			<menu class="link_list link_list--info" data-js="info_menu">
 				<h1 class="link_list__hdng">Information:</h1>
@@ -82,14 +84,14 @@ $home = $pages->get('/'); /** @var HomePage $home */
 		</div>
 	</div>
 
-	<div id="content">
+	<main id="content">
 		Default content
-	</div>
+	</main>
 
 	<?php if ($page->editable()): ?>
 		<p><a href='<?php echo $page->editUrl(); ?>'>Edit this page</a></p>
 	<?php endif; ?>
-	<footer>
+	<footer id="footer">
 		<div class="footer__container">
 			<menu class="footer__links">
 				<li><a href="/browse">Browse Menu</a></li>
