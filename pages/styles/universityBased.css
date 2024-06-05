@@ -1,0 +1,103 @@
+.title{
+    margin: 4vh;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+}
+.title-about{
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 2vh;
+}
+
+.universities-container{
+    display: flex;
+    flex-direction: column;
+    border-top:  2px solid #D9D4D7;
+    padding: 10px 5px 3px 3px;
+    margin-top: 5vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 12svh;
+}
+.Forum-dimentions{
+    display: flex;
+    flex-direction: row;
+}
+
+.Organization{
+    margin-top: 2vh;
+    padding: 10px 5px 3px 3px;
+    border-top:2px solid #D9D4D7;
+    display: flex;
+    flex-direction: row;
+}
+
+.fd-logo {
+    margin-left: 3vh;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: url(/USC-Infosite/pages/assets/logos/FD-logo.jpg) lightgray 50% / cover no-repeat;
+}
+
+.link-logo{
+    margin-left: 3vh;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: url(/USC-Infosite/pages/assets/logos/link-logo.jpg) lightgray 50% / cover no-repeat;
+}.cyb-logo{
+    margin-left: 3vh;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: url(/USC-Infosite/pages/assets/logos/Cyb-logo.jpg) lightgray 50% / cover no-repeat;
+}.samasa-logo{
+    margin-left: 3vh;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: url(/USC-Infosite/pages/assets/logos/Samasa-logo.jpg) lightgray 50% / cover no-repeat;
+}.usa-logo{
+    margin-left: 3vh;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background: url(/USC-Infosite/pages/assets/logos/Usa-logo.jpg) lightgray 50% / cover no-repeat;
+}
+
+.org-name{
+    position: relative;
+    margin-top: 6vh;
+    display: flex;
+    width: 680px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3vh;
+    color: #21536C;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.report-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+@media screen and (max-width:360px) {
+    .title-about br{
+        display: none;
+    }
+}
