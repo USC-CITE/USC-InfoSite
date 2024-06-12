@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>Header</title>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/pages/styles/global.css" />
+
+        <!-- Custom JavaScript-->
+        <script src="/pages/scripts/main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="header__container">
+                <div class="header__banner">
+                    <a href="/"><img src="/pages/assets/logos/USC-logo.png" alt="USC-logo" class="header__logo" />
+                        <div class="header__text">
+                            <h1>West Visayas State University</h1>
+                            <h2>University Student Council</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="header__btns">
+                    <div class="header__menu">
+                        <a href="/browse" data-js="menu_btn">
+                            <p>Menu</p>
+                            <img alt="" src="/pages/assets/icons/chevron_down.svg" data-js="menu_btn_icon" />
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <a href="/search" data-js="search_btn">
+                            <p class="sr_only">Search</p>
+                            <img alt="Search" src="/pages/assets/icons/magnifier.svg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container container--header_accord">
+            <div class="header_accord" data-js="header_accord">
+                <menu class="link_list link_list--info" data-js="info_menu">
+                    <h1 class="link_list__hdng">Information:</h1>
+                    <li><a href="/announcements">Announcements</a></li>
+                    <li><a href="/events">Events</a></li>
+                    <li><a href="/organizations">Organizations</a></li>
+                    <li><a href="/usc">About the USC</a></li>
+                    <li><a href="/usc/officers">Officers of the USC</a></li>
+                </menu>
+                <menu class="link_list link_list--srvcs" data-js="srvcs_menu">
+                    <h1 class="link_list__hdng">Services:</h1>
+                    <li><a href="/services/volunteer">Volunteer Opportunities</a></li>
+                    <li><a href="/services/education">Education and Training</a></li>
+                    <li><a href="/usc/contact">Contact the USC</a></li>
+                    <li><a href="/usc-cite/contact">Contact the USC-CITE</a></li>
+                </menu>
+                <form class="search_form" action="/search" method="post" data-js="search_form">
+                    <label for="search" class="search_form__label">Search the USC Infosite</label>
+                    <input id="search" class="search_form__input" type="text" />
+                    <button class="search_form__btn" type="submit">
+                        <img alt="" src="/pages/assets/icons/magnifier.svg" /><span class="sr_only">Search the USC Infosite</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

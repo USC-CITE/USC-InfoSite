@@ -1,0 +1,6 @@
+apache2/
+mysql/
+vendor/
+.processwire_env
+php.ini
+processwire.sql

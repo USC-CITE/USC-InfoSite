@@ -1,0 +1,6 @@
+Dockerfile_database
+Dockerfile_server
+docker-compose.yml
+composer.json
+composer.lock
+.git
