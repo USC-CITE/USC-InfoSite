@@ -1,0 +1,107 @@
+body {
+    height: auto;
+
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+main {
+    justify-content: normal;
+    height: auto;
+}
+
+.main__heading1 {
+    margin-top: 90px;
+    margin-bottom: 15px;
+    color: #000;
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.main__text1 {
+    width: 800px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%; /* 30px */
+}
+
+.main__box {
+    margin-top: 45px;
+    border-top: #D9D4D7 1px solid;
+    width: 1000px;
+    height: auto;
+}
+
+.main__sub-heading {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 45px 0 50px;
+}
+
+.main__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.organization {
+    width: 200px;
+    flex-basis: 30%; /* Adjust as needed */
+    text-align: center; /* To center logo and text vertically *//*Optional: for spacing between items*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.bottom-left {
+    margin-top: 20px;
+    padding-left: 16.5%;
+}
+
+.bottom-right {
+    margin-top: 20px;
+    padding-right: 16.5%;
+}
+
+.organization .org-logo {
+    width: 100px;
+}
+
+.organization .org-link {
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    width: inherit;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.main__box .link {
+    line-height: 34px; /* 212.5% */
+}
+
+main .last {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 115px;
+}
+
+.last .main__sub-heading{
+    margin-bottom: 8px;
+}
+
+.last .text {
+    margin-bottom: 30px;
+}
+
+.last .link {
+    align-self: self-start;
+}
