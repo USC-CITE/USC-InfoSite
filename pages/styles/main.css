@@ -31,7 +31,7 @@ html {
 body {
     background: var(--bg-color);
     width: 1280px;
-    height: 800px;
+    min-height: 800px;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
@@ -240,9 +240,9 @@ footer {
     }
 
     footer {
-        max-width: 1000px;
-        margin: 0 10.94%;
-        padding: 0;
+        max-width: 1280px;
+        padding: 20px 10.94% 0;
+
     }
 }
 
