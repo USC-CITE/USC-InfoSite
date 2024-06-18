@@ -1,6 +1,14 @@
 apache2/
 mysql/
+
 vendor/
+
 .processwire_env
-php.ini
 processwire.sql
+
+php.ini
+
+public/site/assets/cache
+public/site/assets/files
+public/site/assets/logs
+public/site/assets/sessions
