@@ -90,22 +90,22 @@ main {
     line-height: 34px; /* 212.5% */
 }
 
-main .last {
+main .last-box {
     width: 800px;
     display: flex;
     flex-direction: column;
     margin-bottom: 115px;
 }
 
-.last .main__sub-heading{
+.last-box .main__sub-heading{
     margin-bottom: 8px;
 }
 
-.last .text {
+.last-box .text {
     margin-bottom: 30px;
 }
 
-.last .link {
+.last-box .link {
     align-self: self-start;
 }
 
@@ -116,7 +116,7 @@ main .last {
         margin-top: 75px;
     }
 
-    .main__text1, .last .text {
+    .main__text1, .last-box .text {
         font-size: 18.5px;
     }
 
@@ -140,7 +140,7 @@ main .last {
         font-size: 15.5px;
     }
 
-    .last .text {
+    .last-box .text {
         width: 600px;
         align-self: center;
     }
@@ -162,7 +162,7 @@ main .last {
         margin-top: 50px;
     }
 
-    .main__text1, .last .text {
+    .main__text1, .last-box .text {
         font-size: 17px;
     }
 
@@ -186,7 +186,7 @@ main .last {
         font-size: 15px;
     }
 
-    .last .text {
+    .last-box .text {
         width: 500px;
     }
 }
@@ -196,7 +196,7 @@ main .last {
         max-height: none;
     }
 
-    main .last {
+    main .last-box {
         margin-bottom: 80px;
     }
 
@@ -209,7 +209,7 @@ main .last {
         margin-top: 25px;
     }
 
-    .main__text1, .last .text {
+    .main__text1, .last-box .text {
         font-size: 15.5px;
     }
 
@@ -237,11 +237,11 @@ main .last {
         line-height: normal;
     }
 
-    .last .text {
+    .last-box .text {
         width: 400px;
     }
 
-    .last .link {
+    .last-box .link {
         text-align: left;
         margin-top: 20px;
     }
@@ -266,7 +266,7 @@ main .last {
         margin-top: 25px;
     }
 
-    .main__text1, .last .text {
+    .main__text1, .last-box .text {
         font-size: 14px;
     }
 
@@ -291,7 +291,7 @@ main .last {
         font-size: 14px;
     }
 
-    .last .text {
+    .last-box .text {
         width: 350px;
     }
 
@@ -315,11 +315,11 @@ main .last {
         font-size: 14px;
     }
 
-    .last .text {
+    .last-box .text {
         max-width: 250px;
     }
 
-    .last .link {
+    .last-box .link {
         max-width: 250px;
     }
 
