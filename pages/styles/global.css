@@ -293,6 +293,30 @@ header a p {
 	transform: translateY(-50%)
 }
 
+main a, 
+footer a {
+    text-decoration: underline;
+    color: var(--link-color);
+}
+
+.main__report {
+	width: 289px;
+	height: 35px;
+	background: #d9d9d9;
+	border-radius: 50px;
+	margin-bottom: 28px;
+	font-size: 12px;
+	font-weight: 400;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	padding: 8.1px 0;
+}
+
+.main__report svg {
+	margin-right: 6px;
+}
+
 footer {
 	width: 100%;
 	min-height: 140px;
