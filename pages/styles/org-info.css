@@ -8,7 +8,10 @@ a:hover {
 }
 
 main {
-    height: auto !important;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main__container {
