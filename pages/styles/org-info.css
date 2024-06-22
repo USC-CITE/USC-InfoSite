@@ -3,10 +3,6 @@ body {
 
 }
 
-a:hover {
-    text-decoration: none;
-}
-
 main {
     height: auto;
     display: flex;
