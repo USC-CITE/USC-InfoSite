@@ -1,0 +1,155 @@
+.title{
+    margin: 4vh;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 30px;
+    font-weight: 600;
+}
+.title-about{
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 2vh;
+}
+
+.universities-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px 3px 3px;
+    margin-top: 5vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 12svh;
+}
+
+.Organization{
+    margin-top: 2vh;
+    padding: 10px 5px 3px 3px;
+    border-top:2px solid #D9D4D7;
+    display: flex;
+    flex-direction: row;
+}
+
+.org-logo {
+    margin-left: 3vh;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.org-name{
+    position: relative;
+    margin-top: 6vh;
+    display: flex;
+    width: 680px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3vh;
+    color: #21536C;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.arrow{
+    margin-top: 6vh;
+    width: 3vw;
+    height: 3vh;
+}
+
+.report-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+@media screen and (max-width:768px){
+    .title{
+        font-size: 24px;
+    }
+    .title-about{
+        font-size: 16px;
+    }
+    .org-logo{
+        width: 75px;
+        height: 75px;
+    }
+    .org-name{
+        font-size:18px;
+        margin-top: 3vh;
+    }
+    .universities-container{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .arrow{
+        margin-top: 5vh;
+        width: 2vw;
+         height: 2vh;
+    }
+}
+
+@media screen and (max-width:500px){
+    .title-about br{
+        display: none;
+    }
+    .title-about{
+        font-size: 14px;
+    }
+    .org-logo{
+        width: 50px;
+        height: 50px;
+    }
+    .org-name{
+        font-size: 17px;
+        margin-top: 2vh;
+    }
+    .Organization-1{
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+    } .arrow{
+        margin-top: 3vh;
+        width: 2vw;
+        height: 2vh;
+    }
+    .Organization{
+        padding: 7.5px 3.75px 2.25px 2.25px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .title{
+        font-size: 22px;
+    }
+    .org-logo {
+        margin-left: 3vh;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+    }
+    .universities-container{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .org-name{
+        font-size:16px ;
+        margin-top: 2vh;
+    }
+    #usa-name{
+        font-size: 14px;
+    }
+    .arrow{
+        margin-top: 3vh;
+        height: 10px;
+        width: 10px;
+    }
+    .Organization{
+        padding: 5px 2.5px 1.5px 1.5px;
+    }
+}
