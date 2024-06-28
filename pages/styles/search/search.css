@@ -1,10 +1,10 @@
 main {
-	height: 80vh;
-	min-height: 400px;
+	min-height: 600px;
 	position: relative;
 	display: flex;
 	justify-content: center;
-	align-items:end;
+	align-items: end;
+	padding-top: 30vh;
 }
 
 .search_form--page {
