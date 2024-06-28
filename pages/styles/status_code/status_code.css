@@ -1,11 +1,11 @@
 /* Main Section */
 main {
-	height: 610px;
+	min-height: 610px;
 	text-align: center;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	/* justify-content: flex-end; */
 }
 
 main p {
@@ -81,10 +81,6 @@ main a {
 }
 
 @media screen and (max-width: 680px) {
-	main {
-		max-height: 510px;
-	}
-
 	.main__heading {
 		font-size: 50px;
 		margin-top: 60px;
