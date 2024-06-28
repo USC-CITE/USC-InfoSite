@@ -316,10 +316,26 @@ footer a {
 	display: flex;
 	justify-content: center;
 	padding: 8.1px 0;
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+.main__report:hover {
+	cursor: pointer;
 }
 
 .main__report svg {
 	margin-right: 6px;
+}
+
+.report_form {
+	display: none;
+
+	align-self: center;
+	max-width: 600px;
+	/* margin: 30px 0; */
+	margin-bottom: 5vh;
+	padding: 15px;
 }
 
 footer {
