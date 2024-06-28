@@ -47,7 +47,7 @@ header{
     height: 225px;
     flex-shrink: 0;
     border-radius: 10px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/USC-Infosite/pages/assets/images/volunteer-img.jpg');
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/pages/assets/images/volunteer-img.jpg');
     background-color: lightgray;
     background-position: center;
     background-size: cover;
@@ -65,7 +65,7 @@ header{
     height: 225px;
     flex-shrink: 0;
     border-radius: 10px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/USC-Infosite/pages/assets/images/education-img.jpg');
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/pages/assets/images/education-img.jpg');
     background-color: lightgray;
     background-position: center;
     justify-content: center;
