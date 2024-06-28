@@ -56,24 +56,6 @@ main a {
 	padding-top: 5px;
 }
 
-.main__report {
-	width: 289px;
-	height: 35px;
-	background: #d9d9d9;
-	border-radius: 50px;
-	margin-bottom: 28px;
-	font-size: 12px;
-	font-weight: 400;
-	align-items: center;
-	display: flex;
-	justify-content: center;
-	padding: 8.1px 0;
-}
-
-.main__report svg {
-	margin-right: 6px;
-}
-
 @media screen and (min-width: 1281px) {
 	main {
 		width: inherit;
