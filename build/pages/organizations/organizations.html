@@ -1,123 +1,135 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Organizations Overview</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>USC-CITE | Organization Information</title>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/pages/styles/global.css" />
-        <link rel="stylesheet" href="/pages/styles/organizations/organizations.css" />
+    <!-- Box Icon Styles -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-        <!-- Custom JS -->
-        <script src="/pages/scripts/main.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <div class="header__container">
-                <div class="header__banner">
-                    <a href="/"><img src="/pages/assets/logos/USC-logo.png" alt="USC-logo" class="header__logo" />
-                        <div class="header__text">
-                            <h1>West Visayas State University</h1>
-                            <h2>University Student Council</h2>
-                        </div>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/build/styles/global.css">
+    <link rel="stylesheet" href="/build/styles/organizations/org-info.css">
+</head>
+<body>
+    <header>
+        <div class="header__container">
+            <div class="header__banner">
+                <a href="/"><img src="/build/assets/logos/USC-logo.png" alt="USC-logo" class="header__logo" />
+                    <div class="header__text">
+                        <h1>West Visayas State University</h1>
+                        <h2>University Student Council</h2>
+                    </div>
+                </a>
+            </div>
+            <div class="header__btns">
+                <div class="header__menu">
+                    <a href="/browse" data-js="menu_btn">
+                        <p>Menu</p>
+                        <img alt="" src="/build/assets/icons/chevron-down.svg" data-js="menu_btn_icon" />
                     </a>
                 </div>
-                <div class="header__btns">
-                    <div class="header__menu">
-                        <a href="/browse" data-js="menu_btn">
-                            <p>Menu</p>
-                            <img alt="" src="/pages/assets/icons/chevron_down.svg" data-js="menu_btn_icon" />
-                        </a>
-                    </div>
-                    <div class="header__search">
-                        <a href="/search" data-js="search_btn">
-                            <p class="sr_only">Search</p>
-                            <img alt="Search" src="/pages/assets/icons/magnifier.svg" />
-                        </a>
-                    </div>
+                <div class="header__search">
+                    <a href="/search" data-js="search_btn">
+                        <p class="sr_only">Search</p>
+                        <img alt="Search" src="/build/assets/icons/magnifier.svg" />
+                    </a>
                 </div>
             </div>
-        </header>
-        <div class="container container--header_accord">
-            <div class="header_accord" data-js="header_accord">
-                <menu class="link_list link_list--info" data-js="info_menu">
-                    <h1 class="link_list__hdng">Information:</h1>
-                    <li><a href="/announcements">Announcements</a></li>
-                    <li><a href="/events">Events</a></li>
-                    <li><a href="/organizations">Organizations</a></li>
-                    <li><a href="/usc">About the USC</a></li>
-                    <li><a href="/usc/officers">Officers of the USC</a></li>
-                </menu>
-                <menu class="link_list link_list--srvcs" data-js="srvcs_menu">
-                    <h1 class="link_list__hdng">Services:</h1>
-                    <li><a href="/services/volunteer">Volunteer Opportunities</a></li>
-                    <li><a href="/services/education">Education and Training</a></li>
-                    <li><a href="/usc/contact">Contact the USC</a></li>
-                    <li><a href="/usc-cite/contact">Contact the USC-CITE</a></li>
-                </menu>
-                <form class="search_form" action="/search" method="post" data-js="search_form">
-                    <label for="search" class="search_form__label">Search the USC Infosite</label>
-                    <input id="search" class="search_form__input" type="text" />
-                    <button class="search_form__btn" type="submit">
-                        <img alt="" src="/pages/assets/icons/magnifier.svg" /><span class="sr_only">Search the USC Infosite</span>
-                    </button>
-                </form>
-            </div>
         </div>
-        <main>
-            <h1>Organizations</h1>
-            <p>
-                Various student organizations exist within the university and
-                its external campuses. As a student, you have the opportunity to
-                join any of these groups and participate in their activities.
-            </p>
-            <section>
-                <h2>College-Based Organizations</h2>
-                <a href="#"
-                    >See the existing university colleges and organizations that
-                    operate under it.</a
-                >
-            </section>
-            <section>
-                <h2>University-Based Organizations</h2>
-                <a href="#"
-                    >See more organizations that operate on the university
-                    level.</a
-                >
-            </section>
-            <section>
-                <h2>Manage your organization</h2>
-                <p>
-                    Disclaimer: These are provided by the university’s Office of
-                    Student Affairs.
-                </p>
-                <menu>
-                    <a href="#">Organization Policies and Guidelines</a>
-                    <a href="#">Organization Application and Renewal Form</a>
-                    <a href="#">Add organization to WVSU-USC.org</a>
-                </menu>
-            </section>
-        </main>
-        <footer>
-            <div class="footer__container">
-                <menu class="footer__links">
-                    <li><a href="/browse">Browse Menu</a></li>
-                    <li><a href="/usc/contact">Contact the USC</a></li>
-                    <li>
-                        <a href="/usc-cite/contact">Contact the USC-CITE</a>
-                    </li>
-                </menu>
-                <small class="footer__notice"
-                    >All content within the USC Infosite is licensed under the
-                    <a href="https://creativecommons.org/licenses/by-sa/4.0/"
-                        >Creative Commons Attribution-ShareAlike 4.0
-                        International.</a
-                    >
-                    <img alt="" src="/pages/assets/icons/cc.svg" />
-                    <img alt="" src="/pages/assets/icons/by.svg" />
-                </small>
+    </header>
+    <main>
+        <div class="main__container">
+            <h1 class="main__heading1">Organizations</h1>
+            <p class="main__text1">Various student organizations exist within the university and its external campuses. As a student, you have the opportunity to join any of these groups and participate in their activities.</p>
+        </div>
+        <div class="main__box">
+            <h3 class="main__sub-heading">College-Based Organizations</h3>
+            <div class="main__wrapper">
+                <a class="organization" href="">
+                    <img src="/build/assets/logos/USC-logo.png" alt="" class="org-logo">
+                    <p class="org-link">College of ICT Student Council</p>
+                </a>
+                <a class="organization" href="">
+                    <img src="/build/assets/logos/USC-logo.png" alt="" class="org-logo">
+                    <p class="org-link">College of Education Student Council</p>
+                </a>
+                <a class="organization" href="">
+                    <img src="/build/assets/logos/USC-logo.png" alt="" class="org-logo">
+                    <p class="org-link">SILAK Media</p>
+                </a>
+                <a class="organization bottom-left" href="">
+                    <img src="/build/assets/logos/USC-logo.png" alt="" class="org-logo">
+                    <p class="org-link">ICON Publication</p>
+                </a>
+                <a class="organization bottom-right" href="">
+                    <img src="/build/assets/logos/USC-logo.png" alt="" class="org-logo">
+                    <p class="org-link">College of Nursing Student Council</p>
+                </a>
             </div>
-        </footer>
-    </body>
+            <a class="link link--center" href="">See the existing university colleges and organizations that operate under it.</a>
+        </div>
+
+        <div class="main__box">
+            <h3 class="main__sub-heading">University-Based Organizations</h3>
+            <div class="main__wrapper">
+                <a class="organization" href="">
+                    <img src="/build/assets/logos/USC-logo.png" alt="" class="org-logo">
+                    <p class="org-link">Forum Dimensions</p>
+                </a>
+                <a class="organization" href="">
+                    <img src="/build/assets/logos/USC-logo.png" alt="" class="org-logo">
+                    <p class="org-link">LINK.exe</p>
+                </a>
+                <a class="organization" href="">
+                    <img src="/build/assets/logos/USC-logo.png" alt="" class="org-logo">
+                    <p class="org-link">CYB:ORG</p>
+                </a>
+                <a class="organization bottom-left" href="">
+                    <img src="/build/assets/logos/USC-logo.png" alt="" class="org-logo">
+                    <p class="org-link">WVSU-University Student Alliance</p>
+                </a>
+                <a class="organization bottom-right" href="">
+                    <img src="/build/assets/logos/USC-logo.png" alt="" class="org-logo">
+                    <p class="org-link">SAMASA-WVSU</p>
+                </a>
+            </div>
+            <a class="link link--center" href="">See more organizations that operate on the university level.</a>
+        </div>
+
+        <div class="main__box last-box">
+            <h3 class="main__sub-heading">Manage your organization</h3>
+            <p class="text">Disclaimer: These are provided by the university’s Office of Student Affairs.</p>    
+
+            <a class="link" href="">Organization Policies and Guidelines</a>
+            <a class="link" href="">Organization Application and Renewal Form</a>
+            <a class="link" href="">Add organization to WVSU-USC.org</a>
+        </div>
+        <iframe id="report_form" class="report_form" data-tally-src="https://tally.so/embed/n9QXe5?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="Report a problem with this page"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+        
+        <a href="#report_form" class="main__report"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" 
+            style="fill: rgba(0, 0, 0, 1);">
+            <path d="m14.303 6-3-2H6V2H4v20h2v-8h4.697l3 2H20V6z"></path></svg>
+            Report a problem with this page
+        </a>
+    </main>
+
+    <footer>
+        <div class="footer__container">
+            <menu class="footer__links">
+                <li><a href="/browse">Browse Menu</a></li>
+                <li><a href="/usc/contact">Contact the USC</a></li>
+                <li><a href="/usc-cite/contact">Contact the USC-CITE</a></li>
+            </menu>
+            <small class="footer__notice">All content within the USC Infosite is licensed under the <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International.</a>
+                <img alt="" src="assets/icons/cc.svg">
+                <img alt="" src="assets/icons/by.svg">
+            </small>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
 </html>
