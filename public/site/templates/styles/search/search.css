@@ -1,7 +1,10 @@
 main {
-	height: 80vh;
-	min-height: 400px;
+	min-height: 600px;
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	padding-top: 30vh;
 }
 
 .search_form--page {
@@ -10,4 +13,8 @@ main {
 	top: 100px;
 	left: 50%;
 	transform: translateX(-50%);
+}
+
+.main__report {
+	margin-top: auto;
 }

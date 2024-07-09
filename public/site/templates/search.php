@@ -13,7 +13,7 @@ namespace ProcessWire;
 	<link rel="stylesheet" href="<?= $config->urls->templates ?>/styles/search/search.css">
 </head>
 
-<main id="content" pw-replace>
+<main id="content" pw-prepend>
 	<form class="search_form search_form--page" action="/search" method="post">
 		<label for="search" class="search_form__label">Search the USC Infosite</label>
 		<input id="search" class="search_form__input" type="text" />

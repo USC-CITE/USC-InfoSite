@@ -1,6 +1,6 @@
 /* Main Section */
 main {
-	height: 610px;
+	min-height: 610px;
 	text-align: center;
 	align-items: center;
 	display: flex;

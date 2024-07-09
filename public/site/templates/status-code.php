@@ -17,7 +17,7 @@ namespace ProcessWire;
 		<link rel="stylesheet" type="text/css" href="<?= $config->urls->templates ?>styles/status_code/503.css">
 	<?php else: ?>
 		<link rel="stylesheet" type="text/css" href="<?= $config->urls->templates ?>styles/status_code/status_code.css">
-		<script src="<?= $config->urls->templates; ?>scripts/main.js"></script>
+		<script src="<?= $config->urls->templates; ?>scripts/main.js" defer></script>
 	<?php endif; ?>
 </head>
 
@@ -40,7 +40,7 @@ namespace ProcessWire;
 		</main>
 	</body>
 <?php else: ?>
-	<main id="content" pw-replace>
+	<main id="content" pw-prepend>
 		<h1 class="main__heading"><?= $page->status_code_heading ?></h1>
 		<p class="main__text"><?= $page->status_code_text ?></p>
 		<div class="main__links">
@@ -53,11 +53,5 @@ namespace ProcessWire;
 			</div>
 		</div>
 		<p class="main__status">Status Code: <?= $page->status_code ?></p>
-		<button class="main__report"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
-				style="fill: rgba(0, 0, 0, 1)">
-				<path d="m14.303 6-3-2H6V2H4v20h2v-8h4.697l3 2H20V6z"></path>
-			</svg>
-			Report a problem with this page
-		</button>
 	</main>
 <?php endif; ?>
