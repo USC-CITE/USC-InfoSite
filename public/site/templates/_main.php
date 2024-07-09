@@ -24,7 +24,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<title><?php echo $page->title; ?></title>
 	<link rel="stylesheet" type="text/css" href="<?= $config->urls->templates; ?>styles/global.css" />
-	<script src="<?= $config->urls->templates; ?>scripts/main.js"></script>
+	<script src="<?= $config->urls->templates; ?>scripts/main.js" defer></script>
 </head>
 
 <body id="body">
@@ -85,7 +85,6 @@ $home = $pages->get('/'); /** @var HomePage $home */
 	</div>
 
 	<main id="content">
-		Default content
 	</main>
 
 	<?php if ($page->editable()): ?>
