@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchBtn = document.querySelector('[data-js=search_btn]');
     const searchForm = document.querySelector('[data-js=search_form]');
 
+
     menuBtn.setAttribute('role', 'button');
     searchBtn.setAttribute('role', 'button');
 
@@ -67,3 +68,13 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+
+const reportBtn = document.querySelector('.main__report');
+const reportFrm = document.querySelector('.report_form');
+
+reportBtn.addEventListener('click', function () {
+    reportFrm.style.display = "flex";
+    this.style.display = "none";
+});
+

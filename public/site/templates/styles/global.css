@@ -23,6 +23,10 @@ body {
 	background: #fff;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 main {
 	margin: 0 auto;
 	max-width: 1000px;
@@ -291,6 +295,47 @@ header a p {
 	top: 32%;
 	left: 0;
 	transform: translateY(-50%)
+}
+
+main a, 
+footer a {
+    text-decoration: underline;
+    color: var(--link-color);
+}
+
+.main__report {
+	width: 289px;
+	height: 35px;
+	background: #d9d9d9;
+	border-radius: 50px;
+	margin-bottom: 28px;
+	font-size: 12px;
+	font-weight: 400;
+	align-items: center;
+	align-self: center;
+	display: flex;
+	justify-content: center;
+	padding: 8.1px 0;
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+.main__report:hover {
+	cursor: pointer;
+}
+
+.main__report svg {
+	margin-right: 6px;
+}
+
+.report_form {
+	display: none;
+
+	align-self: center;
+	max-width: 600px;
+	/* margin: 30px 0; */
+	margin-bottom: 5vh;
+	padding: 15px;
 }
 
 footer {
