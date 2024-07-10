@@ -27,7 +27,7 @@ namespace ProcessWire;
         <p class="org-type">University-Based Organization</p>
       <?php else: ?>
         <p class="org-type">College-Based Organization</p>
-        <p class="org-type"><?= $page->org_college ?></p>
+        <p class="org-type"><?= $page->org_college->title ?></p>
       <?php endif; ?>
     </div>
   </div>
