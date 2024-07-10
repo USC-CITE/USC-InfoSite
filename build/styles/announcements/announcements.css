@@ -26,8 +26,6 @@ html {
 }
 
 .main {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -54,7 +52,7 @@ html {
     font-weight: 400;
     color: #44425A;
     display: flex;
-    gap: 1vw;
+    gap: 8px;
     line-height: 180%;
 }
 

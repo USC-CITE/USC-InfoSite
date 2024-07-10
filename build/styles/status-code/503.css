@@ -8,9 +8,7 @@ body {
 
 main {
     height: 610px;
-    display: flex;
     align-items: center;
-    flex-direction: column;
 }
 
 .main__logo {
