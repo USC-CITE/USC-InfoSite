@@ -1,3 +1,6 @@
-<svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path id="Vector" d="M1.76875 15L0 13.2377L5.83687 7.5221L0 1.81151L1.76875 0.0491791L9.375 7.5221L1.76875 15Z" fill="#21536B"/>
+<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="arrow-right">
+<rect width="15" height="15" transform="matrix(-1 0 0 -1 15 15)" fill="white"/>
+<path id="Vector" d="M4.58125 15L2.8125 13.3424L8.64937 7.96641L2.8125 2.59512L4.58125 0.9375L12.1875 7.96641L4.58125 15Z" fill="#44425A"/>
+</g>
 </svg>
