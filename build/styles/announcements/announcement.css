@@ -8,7 +8,7 @@
 .main {
     justify-content: center;
     align-items: center;
-    padding: 0 1.875rem;
+    padding: 0 30px;
 }
 
 .main__container {
@@ -17,11 +17,11 @@
     border-bottom: 1px solid var(--border-color);
 }
 
-.heading-container {
+.main__container--heading {
     margin-top: 5rem;
 }
 
-.heading-container .date {
+.main__container--heading .date {
     display: inline-flex;
     color: var(--light-violet); 
     font-size: 1.125rem;
@@ -29,14 +29,14 @@
     margin-bottom: 1.25rem;
 }
 
-.heading-container .main__heading {
+.main__container--heading .main__heading {
     color: var(--text-body);
     font-size: 2rem;
     font-weight: 600;
     line-height: 125%; /* 42.5px */
 }
 
-.heading-container .office-details {
+.main__container--heading .office-details {
     margin-top: 0.625rem;
     display: inline-flex;
     justify-content: center;
@@ -47,16 +47,16 @@
     font-weight: 600;
 }
 
-.heading-container .office-details img {
+.main__container--heading .office-details img {
     width: 20px;
     height: 20px;
 }
 
-.info-container {
+.main__container--info {
     padding: 2.75rem 3.75rem;
 }
 
-.info-container .announcement-details {
+.main__container--info .announcement-details {
     color: var(--text-body);
     font-size: 1.125rem;
     font-weight: 400;
@@ -64,7 +64,7 @@
     margin-bottom: 2.75rem;
 }
 
-.info-container .rectangle-container {
+.main__container--info .rectangle-container {
     max-width: 680px;
     height: 200px;
     background-color: var(--background-color);
@@ -90,23 +90,18 @@
         font-size: 14px;
     }
 }
-@media screen and (max-width: 800px) {
-    html {
-        font-size: 13px;
-    }
-}
 @media screen and (max-width: 700px) {
-    .info-container {
+    .main__container--info {
         padding: 2.75rem 2rem;
     }
 
-    .heading-container .date,
-    .heading-container .office-details, 
-    .info-container .announcement-details {
+    .main__container--heading .date,
+    .main__container--heading .office-details, 
+    .main__container--info .announcement-details {
         font-size: 1rem;
     }
 
-    .heading-container .main__heading {
+    .main__container--heading .main__heading {
         font-size: 1.5rem;
     }
 
