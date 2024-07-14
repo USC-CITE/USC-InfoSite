@@ -83,6 +83,7 @@ main {
 
 .organization .org-logo {
     width: 100px;
+    border-radius: 100%;
 }
 
 .organization .org-link {
