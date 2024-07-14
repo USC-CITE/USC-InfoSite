@@ -22,56 +22,37 @@ namespace ProcessWire;
     <div class="main__box">
       <h3 class="main__sub-heading">College-Based Organizations</h3>
       <div class="main__wrapper">
-        <a class="organization" href="">
-          <img src="<?= $config->urls->templates; ?>assets/logos/USC-logo.png" alt="" class="org-logo">
-          <p class="org-link">College of ICT Student Council</p>
-        </a>
-        <a class="organization" href="">
-          <img src="<?= $config->urls->templates; ?>assets/logos/USC-logo.png" alt="" class="org-logo">
-          <p class="org-link">College of Education Student Council</p>
-        </a>
-        <a class="organization" href="">
-          <img src="<?= $config->urls->templates; ?>assets/logos/USC-logo.png" alt="" class="org-logo">
-          <p class="org-link">SILAK Media</p>
-        </a>
-        <a class="organization bottom-left" href="">
-          <img src="<?= $config->urls->templates; ?>assets/logos/USC-logo.png" alt="" class="org-logo">
-          <p class="org-link">ICON Publication</p>
-        </a>
-        <a class="organization bottom-right" href="">
-          <img src="<?= $config->urls->templates; ?>assets/logos/USC-logo.png" alt="" class="org-logo">
-          <p class="org-link">College of Nursing Student Council</p>
-        </a>
+        <?php 
+        $college_orgs = $pages->find("template=org-info, org_type='College-Based', limit=5, sort=random");
+        foreach ($college_orgs as $college_org): ?>
+          <a class="organization" href="<?= $college_org->url ?>">
+            <?php $image = $college_org->org_logo ?>
+            <img class="org-logo" src=<?= $image->url ?> alt=<?= $image->description ?>>
+            <div class="org-link">
+              <p><?=$college_org->org_name?></p>
+            </div>
+          </a>
+        <?php endforeach; ?>
       </div>
-      <a class="link link--center" href="">See the existing university colleges and organizations that operate under
+      <a class="link link--center" href="/organizations/college-based">See the existing university colleges and organizations that operate under
         it.</a>
     </div>
-
     <div class="main__box">
       <h3 class="main__sub-heading">University-Based Organizations</h3>
       <div class="main__wrapper">
-        <a class="organization" href="">
-          <img src="<?= $config->urls->templates; ?>assets/logos/USC-logo.png" alt="" class="org-logo">
-          <p class="org-link">Forum Dimensions</p>
-        </a>
-        <a class="organization" href="">
-          <img src="<?= $config->urls->templates; ?>assets/logos/USC-logo.png" alt="" class="org-logo">
-          <p class="org-link">LINK.exe</p>
-        </a>
-        <a class="organization" href="">
-          <img src="<?= $config->urls->templates; ?>assets/logos/USC-logo.png" alt="" class="org-logo">
-          <p class="org-link">CYB:ORG</p>
-        </a>
-        <a class="organization bottom-left" href="">
-          <img src="<?= $config->urls->templates; ?>assets/logos/USC-logo.png" alt="" class="org-logo">
-          <p class="org-link">WVSU-University Student Alliance</p>
-        </a>
-        <a class="organization bottom-right" href="">
-          <img src="<?= $config->urls->templates; ?>assets/logos/USC-logo.png" alt="" class="org-logo">
-          <p class="org-link">SAMASA-WVSU</p>
-        </a>
+          <?php 
+        $univ_orgs = $pages->find("template=org-info, org_type='University-Based', limit=5, sort=random");
+        foreach ($univ_orgs as $univ_org): ?>
+          <a class="organization" href="<?= $univ_org->url ?>">
+            <?php $image = $univ_org->org_logo ?>
+            <img class="org-logo" src=<?= $image->url ?> alt=<?= $image->description ?>>
+            <div class="org-link">
+              <p><?=$univ_org->org_name?></p>
+            </div>
+          </a>
+        <?php endforeach; ?>
       </div>
-      <a class="link link--center" href="">See more organizations that operate on the university level.</a>
+      <a class="link link--center" href="/organizations/university-based">See more organizations that operate on the university level.</a>
     </div>
 
     <div class="main__box last-box">
