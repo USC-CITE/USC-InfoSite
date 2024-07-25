@@ -1,0 +1,106 @@
+:root {
+    --light-violet: #44425A;
+    --text-body: #212121;
+    --border-color: #D9D4D7;
+    --background-color: #D9D9D9;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.main__container {
+    width: 100%;
+    max-width: 800px;
+    padding: 0 2rem 2.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.main__container--heading {
+    margin-top: 5rem;
+}
+
+.main__container--heading .date {
+    display: inline-flex;
+    color: var(--light-violet); 
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+}
+
+.main__container--heading .main__heading {
+    color: var(--text-body);
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 125%; /* 42.5px */
+}
+
+.main__container--heading .office-details {
+    margin-top: 0.625rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: var(--light-violet);
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.main__container--heading .office-details img {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+
+.main__container--info {
+    padding: 2.75rem 3.75rem;
+}
+
+.main__container--info img {
+    width: 100%;
+}
+
+
+main .announcements-link {
+    max-width: 440px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 2.625rem 0 3.75rem;
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 900px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .main__container--info {
+        padding: 2.75rem 2rem;
+    }
+
+    .main__container--heading .date,
+    .main__container--heading .office-details, 
+    .main__container--info .announcement-details {
+        font-size: 1rem;
+    }
+
+    .main__container--heading .main__heading {
+        font-size: 1.5rem;
+    }
+
+
+}
+@media screen and (max-width: 500px) {
+    main .announcements-link {
+        max-width: 240px;
+        padding: 2.625rem 0 5rem;
+    }
+}
