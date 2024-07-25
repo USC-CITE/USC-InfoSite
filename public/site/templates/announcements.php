@@ -23,7 +23,7 @@ namespace ProcessWire;
 <main id="content" pw-prepend>
   <div class="main__container">
     <?php
-        $ancmts = $pages->find("template=announcement, limit=10");
+        $ancmts = $pages->find("template=announcement, limit=10, sort=-ancmt_date");
         foreach($ancmts as $ancmt):
     ?>
         <div class="main__box">
