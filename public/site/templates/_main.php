@@ -74,9 +74,9 @@ $home = $pages->get('/'); /** @var HomePage $home */
 				<li><a href="/usc/contact">Contact the USC</a></li>
 				<li><a href="/usc-cite/contact">Contact the USC-CITE</a></li>
 			</menu>
-			<form class="search_form" action="/search" method="post" data-js="search_form">
+			<form class="search_form" action="/search/" method="post" data-js="search_form">
 				<label for="search" class="search_form__label">Search the USC Infosite</label>
-				<input id="search" class="search_form__input" type="text" />
+				<input id="search" class="search_form__input" type="text" name="search_query" />
 				<button class="search_form__btn" type="submit">
 					<img alt="" src="<?= $config->urls->templates; ?>assets/icons/magnifier.svg" /><span
 						class="sr_only">Search the USC Infosite</span>
