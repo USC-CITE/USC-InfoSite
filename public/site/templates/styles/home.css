@@ -1,0 +1,266 @@
+.banner {
+    padding: 30px 0;
+    background: #E1A011;
+    color: #ffffff;
+}
+
+.container--banner {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.banner__hdng {
+    padding: 0 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.banner__subhdng {
+    padding: 0 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.banner__desc {
+    margin: 10px 0 20px 0;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.search_form--home {
+    display: inline-block;
+}
+
+.search_form__input {
+    width: 100%;
+}
+
+.acad_clndr {
+    padding: 20px 20px;
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    background: #0057AA;
+}
+
+.acad_clndr__logo {
+    width: 50px;
+    height: 50px;
+}
+
+.acad_clndr__link {
+    margin-left: 20px;
+    max-width: 400px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.services {
+    margin: 40px auto 0 auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.services__hdng {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.service {
+    padding: 20px 10px 10px 10px;
+    border-top: 1px solid #D9D4D7;
+}
+
+.service:not(:first-of-type) {
+    margin-top: 10px;
+}
+
+.service__name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.service__desc {
+    margin: 10px 0;
+    color: #8F8B8B;
+}
+
+.services__link,
+.ancmts__link {
+    margin: 10px auto 0 auto;
+    width: fit-content;
+    display: block;
+    text-align: center;
+}
+
+.ancmts__hdng {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.ancmts {
+    margin: 40px auto 40px auto;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.ancmt {
+    border-top: 1px solid #D9D4D7;
+    padding: 25px 15px;
+}
+
+.ancmt__link {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.ancmt__details,
+.ancmt__author {
+    font-size: 14px;
+    font-weight: 400;
+    color: #44425A;
+    display: flex;
+    gap: 8px;
+    line-height: 180%;
+}
+
+.ancmt__author {
+    margin-top: 16px;
+    font-weight: 600;
+}
+
+.ancmt__details .office__logo {
+    width: 20px;
+    display: inline-flex;
+    align-self: center;
+    justify-self: center;
+}
+
+@media only screen and (min-width: 480px) {
+    .banner {
+        padding: 40px 20px;
+    }
+
+    .banner__hdng {
+        font-size: 18px;
+    }
+    .banner__subhdng {
+        font-size: 40px;
+    }
+    .banner__desc {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .banner__hdng {
+        font-size: 22px;
+    }
+    .banner__subhdng {
+        font-size: 48px;
+    }
+    .banner__desc {
+        font-size: 18px;
+    }
+
+    .services__hdng, .ancmts__hdng {
+        font-size: 26px;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .banner {
+        padding: 50px 20px;
+    }
+
+    .services, .ancmnts {
+        margin-top: 60px;
+    }
+
+    .services__hdng, .ancmts__hdng {
+        margin-bottom: 30px;
+        font-size: 30px;
+    }
+
+    .acad_clndr__link{
+        font-size: 16px;
+    }
+
+    .service {
+        padding: 20px;
+    }
+
+    .service__name, .service__desc, .services__link, .ancmts__link {
+        font-size: 18px;
+    }
+
+    .ancmt {
+        padding: 25px 20px;
+    }
+
+    .ancmt__link {
+        font-size: 18px;
+    }
+    
+    .ancmt__details,
+    .ancmt__author {
+        font-size: 16px;
+    }
+    
+    .ancmt__author {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .banner__hdng {
+        font-size: 26px;
+    }
+    .banner__subhdng {
+        font-size: 54px;
+    }
+    .banner__desc {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .banner {
+        padding: 60px 20px;
+    }
+
+    .banner__hdng {
+        font-size: 30px;
+    }
+    .banner__subhdng {
+        font-size: 60px;
+    }
+
+    .services__hdng, .ancmts__hdng {
+        font-size: 34px;
+    }
+
+    .service__name, .service__desc {
+        font-size: 20px;
+    }
+
+    .ancmt__link {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .banner__subhdng {
+        font-size: 64px;
+    }
+
+    .services__hdng, .ancmts__hdng {
+        font-size: 40px;
+    }
+}
