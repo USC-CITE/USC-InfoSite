@@ -20,7 +20,7 @@ if ((filter_has_var(INPUT_POST, "search_query"))) {
 
 if (!empty($_SESSION["search_query"])) {
 	$sq = $_SESSION["search_query"];
-	$results = $pages->find('title%=' . "{$sq}" . ', org_name%=' . "{$sq}" . ', limit=25' . 'sort=title');
+	$results = $pages->find('title|page_desc|page_keywords|search_index%=' . "{$sq}" . ', limit=25' . 'sort=title');
 }
 
 ?>
@@ -78,7 +78,7 @@ if (!empty($_SESSION["search_query"])) {
 			<a class="search-result" href="<?=$result->url?>">
 				<span class="search-result__title"><?=$result->title?></span>
 				<span class="search-result__desc"
-						><?=$result->summary?>
+						><?=$result->page_desc?>
 				</span>
 				<img
 						class="search-result__chevron"
