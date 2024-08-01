@@ -20,7 +20,7 @@ namespace ProcessWire;
 			<h1 class="main__heading">Contact the University Student Council</h1>
 			<p class="main__text">If you are looking to question, create partnerships, or propose advocacies with us,
 				don’t hesitate to email at
-				<a href="mailto:<?= $page->email ?>"><?= $page->email ?></a>
+				<a href="mailto:<?= $page->org_email ?>"><?= $page->org_email ?></a>
 			</p>
 
 			<div class="main__container main__container--contact-details main__container--contact-details--mobile">
