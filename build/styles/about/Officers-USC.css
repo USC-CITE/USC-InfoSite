@@ -1,0 +1,70 @@
+:root {
+    --text-color: #212121;
+}
+
+.main {
+    padding: 50px 50px 0 50px;
+}
+
+.main__heading {
+    color: var(--text-color);
+    font-size: 1.875rem;
+    font-weight: 600;
+    align-self: flex-start;
+    text-align: left;
+    margin-bottom: 2.375rem;
+}
+
+.main__container {
+    max-width: none;
+    padding: 0 0 3rem;
+    border: none;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 800px) {
+    .main{
+        padding: 0 50px;
+    }
+
+    .main__heading {
+        padding: 0;
+    }
+
+    .main__container {
+        margin-top: 2rem;
+        padding-bottom:2rem;
+    }
+
+    .main__emphasis {
+        margin-top: 12px;
+    }
+
+    .main__USC-officers {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .main__container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main{
+        padding: 0 30px;
+    }
+    
+    .main__container {
+        width: calc(100% + 1.75rem);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .main__heading {
+        font-size: 24px;
+    }
+}
