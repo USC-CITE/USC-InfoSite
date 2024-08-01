@@ -52,6 +52,7 @@ html {
 }
 
 .main__sub-heading {
+    text-align: center;
     font-size: 2.25rem;
     font-weight: 600;
     color: var(--secondary-text-color);
