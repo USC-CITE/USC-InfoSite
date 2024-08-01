@@ -70,62 +70,6 @@ main {
     justify-self: center;
 }
 
-.pagination {
-    display: flex;
-    width: fit-content;
-    justify-content: space-between;
-    align-self: center;
-    margin: 2.5rem 0;
-}
-
-.pagination .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.125rem 0.625rem;
-    gap: 5px;
-    border-radius: 10px;
-    border: 1px solid #D9D4D7;
-    color: #44425A;
-}
-
-.pagination .button img {
-    width: 100%;
-    max-width: 15px;
-    border-radius: 100%;
-}
-
-.pagination .button .link-text {
-    font-size: 1rem;
-    font-weight: 400;
-}
-
-
-.pagination .page-list {
-    display: flex;
-    justify-content: space-around;
-    gap: 1.25rem;
-    padding: 0 1.25rem;
-}
-
-.pagination .page-list .list-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    list-style: none;
-}
-
-.pagination .page-list .list-item--active {
-    background-color: #21536C;
-    width: 30px;
-    border-radius: 50%;
-}
-
-.pagination .page-list .list-item--active span {
-    color: #FFF;
-}
-
 @media screen and (max-width: 1000px) {
     html {
         font-size: 15px;
