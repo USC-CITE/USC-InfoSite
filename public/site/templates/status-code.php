@@ -45,11 +45,11 @@ namespace ProcessWire;
 		<p class="main__text"><?= $page->status_code_text ?></p>
 		<div class="main__links">
 			<div>
-				<p><a href="#">Go to <strong>Home Page</strong></a> </p>
+				<p><a href="/">Go to <strong>Home Page</strong></a> </p>
 			</div>
 			<div>or</div>
 			<div>
-				<p><a href="search.html"><strong>Search </strong>for a different page</a></p>
+				<p><a href="/search"><strong>Search </strong>for a different page</a></p>
 			</div>
 		</div>
 		<p class="main__status">Status Code: <?= $page->status_code ?></p>
