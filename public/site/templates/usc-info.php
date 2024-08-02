@@ -19,9 +19,8 @@ namespace ProcessWire;
 	<div class="main__container main__container--about-USC">
 		<img src="<?=$config->urls->templates?>assets/logos/USC-logo.png" alt="" class="USC-logo">
 		<div class="main__container--text-content">
-			<h2 class="main__sub-heading">What is the University Student Council (USC)?</h2>
-			<p class="main__text">The University Student Council is the supreme student organization of the West Visayas
-				State University herein referred to as the USC. The USC shall have the jurisdiction over the entire
+			<p class="main__text">The University Student Council is the <b>supreme student organization of the West Visayas
+			State University</b> herein referred to as the USC. <br><br> The USC shall have the jurisdiction over the entire
 				student body of the West Visayas State University. The functions of the student councils should be such
 				that through them students shall be able to exercise academic freedom and to apply academic means,
 				participate in maintaining and improving the environment in which the freedom of each is not tempered by
