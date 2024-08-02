@@ -19,7 +19,8 @@ html {
 
 .main__heading {
     margin-top: 2.75rem;
-    max-width: 635px;
+    width: 100%;
+    max-width: 800px;
     color: var(--text-color);
     text-align: center;
     font-size: 4rem;
