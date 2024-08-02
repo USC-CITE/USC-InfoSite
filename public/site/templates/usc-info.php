@@ -86,6 +86,5 @@ namespace ProcessWire;
 		<p class="main__committees">Associated Committees</p>
 		<a href="/usc/cite" class="main__link">USC-Commission on Innovation and Tech Empowerment</a>
 		<a href="/usc/ssg" class="main__link">USC-Student Support Group</a>
-		<a href="/usc/cite" class="main__link">USC-Commission on Innovation and Tech Empowerment</a>
 	</div>
 </main>
