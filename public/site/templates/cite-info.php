@@ -25,10 +25,10 @@ namespace ProcessWire;
 			<br>
 			<h2 class="main__sub-heading">How can we fulfill our mission?</h2>
 			<p class="main__text">
-				1. Increase accessibility by digitizing existing student government services.<br>
-				2. Improve efficiency by streamlining existing student government workflows and processes.<br>
-				3. Enhance transparency by providing real-time updates and giving public data access to students thereby promoting accountability.<br>
-				4. Promote innovation through student government digitalization.
+				1. <b>Increase accessibility</b> by digitizing existing student government services.<br>
+				2. <b>Improve efficiency</b> by streamlining existing student government workflows and processes.<br>
+				3. <b>Enhance transparency</b> by providing real-time updates and giving public data access to students thereby promoting accountability.<br>
+				4. <b>Promote innovation</b> through student government digitalization.
 			</p>
 		</div>
 	</div>
