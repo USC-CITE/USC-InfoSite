@@ -19,6 +19,10 @@ html {
     width: 100%;
 }
 
+.main-archive {
+    margin: 50px 0;
+}
+
 .title-date {
     padding-top: 75px;
     font-size: 24px;
@@ -284,16 +288,16 @@ a {
 
 .archive-card {
     margin: auto;
-    width: 719px;
-    height: 141px;
+    max-width: 700px;
+    /*! height: 141px; */
     border: solid #D9D9D9 1px;
     border-radius: 10px 10px 10px 10px;
     margin-bottom: 30px;
 }
 
 .archive-card--bg {
-    width: 719px;
-    height: 129px;
+    /*! width: 719px; */
+    /*! height: 129px; */
     border-radius: 10px 10px 0px 0px;
     background-color: #D9D9D9;
     z-index: 100;
@@ -308,7 +312,8 @@ a {
 .archived-button {
     position: absolute;
     right: 10px;
-    bottom: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .archive_icon {
@@ -323,10 +328,51 @@ a {
 }
 
 .event-archived {
-    padding-top: 22px;
-    padding-left: 30px;
+    /*! padding-top: 22px; */
+    /*! padding-left: 30px; */
+    padding: 30px 100px 30px 30px;
 }
 
+
+@media screen and (max-width:800px) {
+    .archive-card {
+        /*! height: 151px; */
+        width: 90%;
+    }
+    
+    .archive_icon {
+        margin-top: 3px;
+        width: 40px;
+        height: 30px;
+    }
+
+    .events-about-container {
+        width: 90vw;
+    }
+
+    .line-border {
+        width: 80vw;
+    }
+
+    .events-details-container {
+        width: 80vw;
+    }
+
+    .schedule-img {
+        width: 80vw;
+        height: 18vh;
+    }
+
+    .activities-container {
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    .activity-1 {
+        width: 40vw;
+    }
+}
 
 @media screen and (max-width:360px) {
     .title-event {
@@ -479,6 +525,10 @@ a {
     .events-main--container {
         height: 250px;
     }
+    
+    .archived-button {
+        /*! bottom:-10px; */
+    }
 
     .title {
         font-size: 45px;
@@ -503,12 +553,21 @@ a {
 
 
 @media screen and (max-width: 500px) {
+    .event-archived {
+        /*! padding-left: 12px; */
+        padding: 20px;
+    }
+    
     .archived-button {
         display: flex;
         flex-direction: row;
         position: relative;
-        left: 10px;
+        /*! left: 10px; */
         gap: 25px;
+        /*! bottom: -10px; */
+        /*! transform: none; */
+        margin-left: 30px;
+        margin-bottom: 10px;
     }
 
     .archive_icon {
@@ -555,11 +614,7 @@ a {
 
     .flexed-event-card {
         flex-direction: column;
-        left: 25px;
-    }
-
-    .event-archived {
-        padding-left: 12px;
+        /*! left: 25px; */
     }
 
     .title-event {
@@ -577,16 +632,6 @@ a {
 }
 
 @media screen and (min-width: 500px) and (max-width:600px) {
-    .event-title {
-        /*! font-size: 24px; */
-    }
-
-    .archive_icon {
-        margin-left: 6px;
-        width: 35px;
-        height: 35px;
-    }
-
     .title-event {
         font-size: 40px;
     }
@@ -614,44 +659,5 @@ a {
 
     .event-card--date {
         margin-top: 50px;
-    }
-}
-
-@media screen and (max-width:800px) {
-    .archive-card {
-        height: 151px;
-        width: 80vw;
-    }
-
-    .archive-card--bg {
-        width: 80vw;
-        height: 134px;
-    }
-
-    .events-about-container {
-        width: 90vw;
-    }
-
-    .line-border {
-        width: 80vw;
-    }
-
-    .events-details-container {
-        width: 80vw;
-    }
-
-    .schedule-img {
-        width: 80vw;
-        height: 18vh;
-    }
-
-    .activities-container {
-        gap: 20px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: minmax(100px, auto);
-    }
-
-    .activity-1 {
-        width: 40vw;
     }
 }
