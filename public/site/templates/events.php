@@ -68,13 +68,13 @@ $page->of(true);
               if ($date_now > $event_date) {
                 echo "Event has <span>already ended<span></span>";
               }
-              else if ($difference->d > 1) {
-                echo "<span>$difference->d days </span> till event starts";
+              else if ($difference->days > 1) {
+                echo "<span>$difference->days days </span> till event starts";
               }
-              else if ($difference->d === 1) {
+              else if ($difference->days === 1) {
                 echo "Event starts <span>tomorrow</span>";
               }
-              else if ($difference->d === 0) {
+              else if ($difference->days === 0) {
                 echo "Event starts <span>today</span>";
               }
               ?>
