@@ -38,7 +38,70 @@
 </main>
 
 <main id="content">
-	<section class="events"></section>
+	<section class="present_events">
+	<?php 
+		$events = $pages->find("template=event, archive_event=0, sort=event_start_date, limit=3");
+		$event_num = 1;
+    foreach ($events as $event): ?>
+			<?php if ($event_num < 2): ?>
+        <div class="event-card">
+          <div class="event-card--borderless">
+            <div class="event-card-status">
+              <?php  
+              $event_date = new \DateTime($event->event_start_date);
+              $date_now = new \DateTime(date("Y-m-d"));
+              $difference = $event_date->diff($date_now);
+          
+              if ($date_now > $event_date) {
+                echo "Event has <span>already ended<span></span>";
+              }
+              else if ($difference->d > 1) {
+                echo "<span>$difference->d days </span> till event starts";
+              }
+              else if ($difference->d === 1) {
+                echo "Event starts <span>tomorrow</span>";
+              }
+              else if ($difference->d === 0) {
+                echo "Event starts <span>today</span>";
+              }
+              ?>
+            </div>
+            <div class="event-title-card">
+              <a class="event-title" href="<?= $event->url ?>"><?= $event->event_name; ?></a>
+							<div class="event-date"><?= $event->event_start_date ?></div>
+            </div>
+            <div class="event-where-when">
+              <div class="event-location">
+                <img class="location-vector" src="<?= $config->urls->templates ?>assets/icons/location-vector.svg" />
+                <strong>Venue:</strong> <?= $event->event_venues_and_st[0]->event_venue; ?>
+              </div>
+              <div class="event-start-time">
+                <img class="clock-vector" src="<?= $config->urls->templates ?>assets/icons/clock-vector.svg" />
+                <strong>Start Time:</strong> <?= $event->event_venues_and_st[0]->event_venue_st; ?>
+              </div>
+            </div>
+          </div>
+        </div>
+		</div>
+		<h2 class="events__hdng">Upcoming Events</h2>
+		<?php $event_num += 1; ?>
+		<?php else: ?>
+		<div class="event-card">
+				<div class="event-card--borderless">
+						<div class="event-title-card event-title-card--home">
+								<a class="event-title event-title--home" href="<?= $event->url ?>"><?= $event->event_name; ?></a>
+								<div class="event-date"><?= $event->event_start_date ?></div>
+						</div>
+						<div class="event-where-when event-where-when--home">
+						</div>
+				</div>
+				</div>
+		</div>
+		<?php endif; ?>
+		<?php $event_num += 1; ?>
+		<?php endforeach; ?>
+		<a class="events__link" href="/events">Find more events held by the University Student Council and other organizations</a>
+	</section>
 	<section class="services">
 		<h2 class="services__hdng">Services and other information</h2>
 		<div class="service">
