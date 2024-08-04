@@ -7,6 +7,25 @@ namespace ProcessWire;
  * @var Config $config
  * 
  */
+
+$page->of(false);
+
+$events = $pages->find("template=event, sort=-event_start_date"); 
+
+foreach($events as $event) {
+  if ($event->archive_event) {
+    $event_archive = $pages->get("template=event-archive");
+    $event->setParent($event_archive);
+  } else {
+    $event->setParent($page);
+  }
+}
+
+$page->save();
+
+$events = $pages->find("template=event, archive_event=0, sort=-event_start_date");
+
+$page->of(true);
 ?>
 
 <head id="head" pw-append>
@@ -24,7 +43,6 @@ namespace ProcessWire;
 </main>
 
 <main id="content" pw-prepend>
-  <?php $events = $pages->find("template=event, sort=-event_start_date"); ?>
   <?php if (count($events) < 1): ?>
     <!-- Missing events -->
     <div class="missing-events">

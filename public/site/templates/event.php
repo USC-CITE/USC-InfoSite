@@ -9,6 +9,19 @@ namespace ProcessWire;
  * @var Pageimage $image
  * 
  */
+
+$page->of(false);
+
+if ($page->archive_event) {
+  $event_archive = $pages->get("template=event-archive");
+  $page->setParent($event_archive);
+} else {
+  $events = $pages->get("template=events");
+  $page->setParent($events);
+}
+
+$page->save();
+$page->of(true);
 ?>
 
 
@@ -17,7 +30,7 @@ namespace ProcessWire;
 </head>
 
 <main id="content" pw-before>
-  <div class="events--container <?php if ($page->archive_event)
+  <div class="events--container <?php if ($page->archive_event) 
     echo "events--archived"; ?>">
     <div class="title-date"><?= $page->event_start_date ?></div>
     <div class="title-event">
