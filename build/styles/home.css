@@ -57,6 +57,196 @@
     color: #ffffff;
 }
 
+.present_events {
+    width: 90%;
+    margin: 40px auto 0 auto;
+}
+
+.events__hdng {
+    margin-top: 60px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.events__link {
+    margin: 40px auto 0 auto;
+    max-width: 500px;
+    display: block;
+    text-align: center;
+}
+
+.event-card {
+    text-align: center;
+    font-weight: 600;
+    font-size: 34px;
+    color: #8F8B8B;
+    margin: 0 auto 20px auto;
+}
+
+.event-card--borderless {
+    margin: auto;
+    position: relative;
+    margin-top: 3vh;
+    width: 100%;
+    height: 100%;
+    max-width: 700px;
+}
+
+.event-card-status {
+    text-align: start;
+    width: 100%;
+    font-weight: 400;
+    color: #44425A;
+    font-size: 18px;
+    background-color: #E5E5E5;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 30px;
+}
+
+.event-card-status span {
+    color: #A93415;
+    font-weight: 600;
+}
+
+.event-title-card {
+    width: 100%;
+    text-align: start;
+    border: solid 1px #E5E5E5;
+    color: #21536C;
+    padding: 30px;
+}
+
+.event-title-card--home {
+    border-radius: 10px;
+}
+
+.event-title {
+    text-decoration-thickness: 2px;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.event-title--home {
+    font-size: 25px;
+}
+
+.event-date {
+    font-weight: 400;
+    font-size: 18px;
+    color: #44425A;
+}
+
+.event-where-when {
+    text-align: start;
+    width: 100%;
+    height: fit-content;
+    background-color: #F7F7F7;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 18px;
+    color: #1E1E1E;
+    padding: 20px 20px;
+}
+
+.event-where-when--home {
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.location-vector {
+    width: 25px;
+    max-height: 25px;
+    padding-top: 11px;
+}
+
+.clock-vector {
+    width: 25px;
+    height: 25px;
+    padding-top: 11px;
+}
+
+.event-location {
+    font-weight: 400;
+}
+
+.event-start-time {
+    font-weight: 400;
+}
+
+@media screen and (max-width:360px) {
+    .event-card {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .event-card--date {
+        margin-top: 50px;
+    }
+
+    .event-card-status {
+        font-size: 16px;
+    }
+
+    .event-title {
+        font-size: 20px;
+    }
+
+    .event-date {
+        font-size: 16px;
+    }
+
+    .event-location {
+        font-size: 14px;
+    }
+
+    .event-start-time {
+        font-size: 14px;
+    }
+
+    .event-card-status {
+        padding: 10px 20px;
+    }
+
+    .event-title-card {
+        padding: 20px;
+    }
+
+    .event-where-when {
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width:1000px) {
+    .event-card {
+        font-size: 25px;
+    }
+
+    .event-title-card {
+        padding: 30px;
+    }
+
+    .event-title {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 500px) {
+    .event-card {
+        font-size: 20px;
+    }
+
+    .event-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width:1000px) {
+    .event-title-card {
+        width: 100%;
+    }
+}
+
 .services {
     margin: 40px auto 0 auto;
     padding: 20px;
@@ -92,7 +282,7 @@
 .services__link,
 .ancmts__link {
     margin: 10px auto 0 auto;
-    width: fit-content;
+    max-width: 500px;
     display: block;
     text-align: center;
 }
@@ -150,9 +340,11 @@
     .banner__hdng {
         font-size: 18px;
     }
+
     .banner__subhdng {
         font-size: 40px;
     }
+
     .banner__desc {
         font-size: 16px;
     }
@@ -162,14 +354,17 @@
     .banner__hdng {
         font-size: 22px;
     }
+
     .banner__subhdng {
         font-size: 48px;
     }
+
     .banner__desc {
         font-size: 18px;
     }
 
-    .services__hdng, .ancmts__hdng {
+    .events__hdng, .services__hdng,
+    .ancmts__hdng {
         font-size: 26px;
     }
 }
@@ -179,16 +374,18 @@
         padding: 50px 20px;
     }
 
-    .services, .ancmnts {
+    .services,
+    .ancmnts {
         margin-top: 60px;
     }
 
-    .services__hdng, .ancmts__hdng {
+    .events__hdng, .services__hdng,
+    .ancmts__hdng {
         margin-bottom: 30px;
         font-size: 30px;
     }
 
-    .acad_clndr__link{
+    .acad_clndr__link {
         font-size: 16px;
     }
 
@@ -196,7 +393,11 @@
         padding: 20px;
     }
 
-    .service__name, .service__desc, .services__link, .ancmts__link {
+    .service__name,
+    .service__desc,
+    .events__link,
+    .services__link,
+    .ancmts__link {
         font-size: 18px;
     }
 
@@ -207,12 +408,12 @@
     .ancmt__link {
         font-size: 18px;
     }
-    
+
     .ancmt__details,
     .ancmt__author {
         font-size: 16px;
     }
-    
+
     .ancmt__author {
         font-size: 16px;
     }
@@ -222,9 +423,11 @@
     .banner__hdng {
         font-size: 26px;
     }
+
     .banner__subhdng {
         font-size: 54px;
     }
+
     .banner__desc {
         font-size: 20px;
     }
@@ -238,15 +441,18 @@
     .banner__hdng {
         font-size: 30px;
     }
+
     .banner__subhdng {
         font-size: 60px;
     }
 
-    .services__hdng, .ancmts__hdng {
+    .events__hdng, .services__hdng,
+    .ancmts__hdng {
         font-size: 34px;
     }
 
-    .service__name, .service__desc {
+    .service__name,
+    .service__desc {
         font-size: 20px;
     }
 
@@ -260,7 +466,8 @@
         font-size: 64px;
     }
 
-    .services__hdng, .ancmts__hdng {
+    .events__hdng, .services__hdng,
+    .ancmts__hdng {
         font-size: 40px;
     }
 }
