@@ -10,7 +10,7 @@ namespace ProcessWire;
 
 $page->of(false);
 
-$events = $pages->find("template=event, sort=-event_start_date"); 
+$events = $pages->find("template=event, sort=event_start_date"); 
 
 foreach($events as $event) {
   if ($event->archive_event) {
@@ -23,7 +23,7 @@ foreach($events as $event) {
 
 $page->save();
 
-$events = $pages->find("template=event, archive_event=0, sort=-event_start_date");
+$events = $pages->find("template=event, archive_event=0, sort=event_start_date");
 
 $page->of(true);
 ?>
