@@ -73,7 +73,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 				<h1 class="link_list__hdng">Services:</h1>
 				<li><a href="/services/volunteer">Volunteer Opportunities</a></li>
 				<li><a href="/services/education">Education and Training</a></li>
-				<li><a href="/usc/cite">Contact the USC</a></li>
+				<li><a href="/usc/contact">Contact the USC</a></li>
 				<li><a href="/usc/cite">Contact the USC-CITE</a></li>
 			</menu>
 			<form class="search_form" action="/search/" method="post" data-js="search_form">
@@ -106,7 +106,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 				<li><a href="/browse">Browse Menu</a></li>
 				<li><a href="/usc/contact">Contact the USC</a></li>
 				<li>
-					<a href="/usc/cite/contact">Contact the USC-CITE</a>
+					<a href="/usc/cite">Contact the USC-CITE</a>
 				</li>
 			</menu>
 			<small class="footer__notice">All content within the USC Infosite is licensed under the
