@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Welcome to the WVSU USC InfoSite!</title>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/build/styles/global.css" />
+        <link rel="stylesheet" href="/build/styles/home.css" />
+
+        <!-- Custom JavaScript-->
+        <script src="/build/scripts/main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="header__container">
+                <div class="header__banner">
+                    <a href="/"
+                        ><img src="/build/assets/logos/USC-logo.png" alt="USC-logo" class="header__logo" />
+                        <div class="header__text">
+                            <h1>West Visayas State University</h1>
+                            <h2>University Student Council</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="header__btns">
+                    <div class="header__menu">
+                        <a href="/browse" data-js="menu_btn">
+                            <p>Menu</p>
+                            <img alt="" src="/build/assets/icons/chevron-down.svg" data-js="menu_btn_icon" />
+                        </a>
+                    </div>
+                    <div class="header__search">
+                        <a href="/search" data-js="search_btn">
+                            <p class="sr_only">Search</p>
+                            <img alt="Search" src="/build/assets/icons/magnifier.svg" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container container--header_accord">
+            <div class="header_accord" data-js="header_accord">
+                <menu class="link_list link_list--info" data-js="info_menu">
+                    <h1 class="link_list__hdng">Information:</h1>
+                    <li><a href="/announcements">Announcements</a></li>
+                    <li><a href="/events">Events</a></li>
+                    <li><a href="/organizations">Organizations</a></li>
+                    <li><a href="/usc">About the USC</a></li>
+                    <li><a href="/usc/officers">Officers of the USC</a></li>
+                </menu>
+                <menu class="link_list link_list--srvcs" data-js="srvcs_menu">
+                    <h1 class="link_list__hdng">Services:</h1>
+                    <li><a href="/services/volunteer">Volunteer Opportunities</a></li>
+                    <li><a href="/services/education">Education and Training</a></li>
+                    <li><a href="/usc/contact">Contact the USC</a></li>
+                    <li><a href="/usc-cite/contact">Contact the USC-CITE</a></li>
+                </menu>
+                <form class="search_form" action="/search" method="post" data-js="search_form">
+                    <label for="search" class="search_form__label">Search the USC Infosite</label>
+                    <input id="search" class="search_form__input" type="text" />
+                    <button class="search_form__btn" type="submit">
+                        <img alt="" src="/build/assets/icons/magnifier.svg" /><span class="sr_only">Search</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <section class="banner">
+          <div class="container container--banner">
+            <h1 class="banner__hdng">This is the <i>West Visayas State University</i></h1>
+            <h2 class="banner__subhdng">University Student Council</h2>
+            <p class="banner__desc">serving you with utmost transparency and equality</p>
+            <form class="search_form search_form--home" action="/search" method="post" data-js="search_form">
+                <label for="search" class="sr_only">Search the USC Infosite</label>
+                <input id="search" class="search_form__input" type="text" />
+                <button class="search_form__btn" type="submit">
+                    <img alt="" src="/build/assets/icons/magnifier.svg" /><span class="sr_only">Search</span>
+                </button>
+            </form>
+          </div>
+        </section>
+        <section class="acad_clndr">
+            <img class="acad_clndr__logo" src="/build/assets/logos/WVSU-Main-Logo.png" />
+            <a class="acad_clndr__link" href=""
+                >View the West Visayas State University Academic Calendar for 2024-2025!</a
+            >
+        </section>
+        <main>
+            <section class="present_events">
+                <div class="event-card">
+                    <div class="event-card--borderless">
+                        <div class="event-card-status">Event starts<span> today</span></div>
+                        <div class="event-title-card">
+                            <a class="event-title" href="">Event Title</a>
+                            <div class="event-date">Date</div>
+                        </div>
+                        <div class="event-where-when">
+                            <div class="event-location">
+                                <img class="location-vector" src="/build/assets/icons/location-vector.svg" />
+                                <strong>Venue:</strong> Location
+                            </div>
+                            <div class="event-start-time">
+                                <img class="clock-vector" src="/build/assets/icons/clock-vector.svg" />
+                                <strong>Start Time:</strong> Time
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="events__hdng">Upcoming Events</h2>
+                <div class="event-card">
+                    <div class="event-card--borderless">
+                        <div class="event-title-card event-title-card--home">
+                            <a class="event-title event-title--home" href="">Event Title test setset sets stes s sets etest  sets tses tset s et asdas sad asd </a>
+                            <div class="event-date">Date</div>
+                        </div>
+                        <div class="event-where-when event-where-when--home">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-card--borderless">
+                        <div class="event-title-card event-title-card--home" >
+                            <a class="event-title event-title--home" href="">Event Title</a>
+                            <div class="event-date">Date</div>
+                        </div>
+                        <div class="event-where-when event-where-when--home">
+                        </div>
+                    </div>
+                </div>
+                <a class="events__link" href="/events">Find more events held by the University Student Council and other organizations</a>
+            </section>
+            <section class="services">
+                <h2 class="services__hdng">Services and other information</h2>
+                <div class="service">
+                    <a class="service__name" href="/organizations">Student Organizations</a>
+                    <p class="service__desc">
+                        What are student organizations? How are they classified within the university?
+                    </p>
+                </div>
+                <div class="service">
+                    <a class="service__name" href="/usc">About the University Student Council</a>
+                    <p class="service__desc">What is the University Student Council? Who are the people elected behind it?</p>
+                </div>
+                <div class="service">
+                    <a class="service__name" href="/services/volunteer">Volunteer Opportunities</a>
+                    <p class="service__desc">Donation drives, community service, and other philantrophic work</p>
+                </div>
+                <div class="service">
+                    <a class="service__name" href="/services/education">Education Programs</a>
+                    <p class="service__desc">Seminars and workshops that are open for participation</p>
+                </div>
+                <a class="services__link" href="/services">Find more services of the University Student Council</a>
+            </section>
+            <section class="ancmts">
+              <h2 class="ancmts__hdng">Latest Announcements</h2>
+              <div class="ancmt">
+                <a class="ancmt__link" href="#">Free accommodation for students affected on the recent fire incident at Brgy. San Nicolas, La Paz</a>
+                <p class="ancmt__author">University Student Council</p>
+                <time datetime="2024-02-20" class="ancmt__details">February 20, 2024 <img src="/build/assets/logos/USC-logo.png" alt="" class="office__logo"></time>
+              </div>
+              <div class="ancmt">
+                <a class="ancmt__link" href="#">Free accommodation for students affected on the recent fire incident at Brgy. San Nicolas, La Paz</a>
+                <p class="ancmt__author">University Student Council</p>
+                <time datetime="2024-02-20" class="ancmt__details">February 20, 2024 <img src="/build/assets/logos/USC-logo.png" alt="" class="office__logo"></time>
+              </div>
+              <div class="ancmt">
+                <a class="ancmt__link" href="#">Free accommodation for students affected on the recent fire incident at Brgy. San Nicolas, La Paz</a>
+                <p class="ancmt__author">University Student Council</p>
+                <time datetime="2024-02-20" class="ancmt__details">February 20, 2024 <img src="/build/assets/logos/USC-logo.png" alt="" class="office__logo"></time>
+              </div>
+              <a class="ancmts__link" href="/announcements">See more announcements made by the University Student Council</a>
+            </section>
+            <iframe
+                id="report_form"
+                class="report_form"
+                data-tally-src="https://tally.so/embed/n9QXe5?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                loading="lazy"
+                width="100%"
+                height="500"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                title="Report a problem with this page"></iframe>
+            <script>
+                var d = document,
+                    w = 'https://tally.so/widgets/embed.js',
+                    v = function () {
+                        'undefined' != typeof Tally
+                            ? Tally.loadEmbeds()
+                            : d.querySelectorAll('iframe[data-tally-src]:not([src])').forEach(function (e) {
+                                  e.src = e.dataset.tallySrc;
+                              });
+                    };
+                if ('undefined' != typeof Tally) v();
+                else if (d.querySelector('script[src="' + w + '"]') == null) {
+                    var s = d.createElement('script');
+                    (s.src = w), (s.onload = v), (s.onerror = v), d.body.appendChild(s);
+                }
+            </script>
+
+            <a href="#report_form" class="main__report"
+                ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)">
+                    <path d="m14.303 6-3-2H6V2H4v20h2v-8h4.697l3 2H20V6z"></path>
+                </svg>
+                Report a problem with this page
+            </a>
+        </main>
+
+        <footer>
+            <div class="footer__container">
+                <menu class="footer__links">
+                    <li><a href="/browse">Browse Menu</a></li>
+                    <li><a href="/usc/contact">Contact the USC</a></li>
+                    <li><a href="/usc-cite/contact">Contact the USC-CITE</a></li>
+                </menu>
+                <small class="footer__notice"
+                    >All content within the USC Infosite is licensed under the
+                    <a href="https://creativecommons.org/licenses/by-sa/4.0/"
+                        >Creative Commons Attribution-ShareAlike 4.0 International.</a
+                    >
+                    <img alt="" src="/build/assets/icons/cc.svg" />
+                    <img alt="" src="/build/assets/icons/by.svg" />
+                </small>
+            </div>
+        </footer>
+    </body>
+</html>

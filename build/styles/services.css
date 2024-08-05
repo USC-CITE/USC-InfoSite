@@ -6,11 +6,11 @@ header{
     flex-flow: column;
     width: 100%;
     max-width: 1000px;
-    height: 65vh;
-    margin: 0 auto;
+    margin: 25px auto 75px auto;
 }
 
 .title-container{
+  width: 90%;
   display: flex;
   flex-direction: column;
 }
@@ -25,7 +25,6 @@ header{
 .services-about{
     font-weight: 400;
     font-size: 20px;
-    line-height: 30px;
     margin-left: 20px;
 }
 
@@ -43,11 +42,11 @@ header{
     flex-shrink: 0;
     margin-top: 3vh;
     max-width: 450px;
-    width: 100%;
+    width: 90%;
     height: 225px;
     flex-shrink: 0;
     border-radius: 10px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/pages/assets/images/volunteer-img.jpg');
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/build/assets/images/volunteer-img.jpg');
     background-color: lightgray;
     background-position: center;
     background-size: cover;
@@ -61,11 +60,11 @@ header{
     flex-shrink: 0;
     margin-top: 3vh;
     max-width: 450px;
-    width: 100%;
+    width: 90%;
     height: 225px;
     flex-shrink: 0;
     border-radius: 10px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/pages/assets/images/education-img.jpg');
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/build/assets/images/education-img.jpg');
     background-color: lightgray;
     background-position: center;
     justify-content: center;
@@ -98,21 +97,6 @@ header{
     justify-content: center;
     align-items: center;
   }
-  
-  .main__report {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1f1f1;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .main__report svg {
-    margin-right: 8px;
-  }
 
   .volunteer-oppurtunities{
     display: flex;
@@ -143,21 +127,16 @@ header{
     .title{
     font-size: 20px;
     line-height: 30px;
-    margin-left: 12px;
     }
     .title-container{
-        margin-left: 20px;
-    }
-    .services-container{
-    height: 84vh ;
-    margin-top: 2vh;
+        width: 100%;
+        margin-left: 0px;
     }
     .volunteer_education-container{
         gap:3vh ;
     }
     .services-about{
         font-size: 14px;
-        margin-left: 12px
     }
     .volunteer-content{
         font-size: 14px;
@@ -166,11 +145,9 @@ header{
         font-size: 14px;
     }
     .volunteer-container{
-        width: 300px;
         height: 150px;
     }
     .education-container{
-        width: 300px;
         height: 150px;
     }
     .opportunities-contents{

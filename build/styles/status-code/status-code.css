@@ -3,6 +3,9 @@ main {
 	min-height: 610px;
 	text-align: center;
 	align-items: center;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: flex-end; */
 }
 
 main p {

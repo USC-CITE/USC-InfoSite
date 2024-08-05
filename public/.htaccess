@@ -70,7 +70,9 @@ AddDefaultCharset UTF-8
 # https://processwire.com/blog/posts/optimizing-404s-in-processwire/
 # -----------------------------------------------------------------------------------------------
 
-ErrorDocument 404 /index.php
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403
+ErrorDocument 503 /503
 
 
 # -----------------------------------------------------------------------------------------------
@@ -458,8 +460,9 @@ DirectoryIndex index.php index.html index.htm
   # section #2 above that makes ProcessWire the 404 handler. 
   # ----------------------------------------------------------------------------------------------- 
 
-  # RewriteCond %{REQUEST_URI} !\.(jpg|jpeg|gif|png|ico|webp|svg|js|css)$ [NC]
-  # RewriteCond %{REQUEST_FILENAME} !(^|/)site/assets/
+  RewriteCond %{REQUEST_URI} !\.(jpg|jpeg|gif|png|ico|webp|svg|js|css)$ [NC]
+  RewriteCond %{REQUEST_FILENAME} !(^|/)site/assets/
+  RewriteCond %{REQUEST_URI} !wp-.*\.php$ [NC]
 
   # ----------------------------------------------------------------------------------------------- 
   # 19. Pass control to ProcessWire if all the above directives allow us to this point.
