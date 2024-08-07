@@ -11,6 +11,7 @@ namespace ProcessWire;
 
 <head id="head" pw-append>
   <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/events/events-main.css">
+  <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/no-content-placeholder.css">
 </head>
 
 <main id="content" pw-before>
@@ -25,9 +26,8 @@ namespace ProcessWire;
   <?php $events = $pages->find("template=event, archive_event=1, sort=-event_start_date"); 
   if (count($events) < 1):
   ?>
-    <div class="missing-events">
-      <h2>No archived events at the moment!</h2>
-      <h2>Come back when an event has already ended</h2>
+    <div class="no-content-placeholder">
+        <h2 class="no-content-placeholder__text">No archived events at the moment! Come back at another time.</h2>
     </div>
   <?php else: ?>
     <?php foreach($events as $event): ?>

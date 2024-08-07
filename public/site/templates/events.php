@@ -30,6 +30,7 @@ $page->of(true);
 
 <head id="head" pw-append>
   <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/events/events-main.css">
+  <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/no-content-placeholder.css">
 </head>
 
 <main id="content" pw-before>
@@ -45,9 +46,8 @@ $page->of(true);
 <main id="content" pw-prepend>
   <?php if (count($events) < 1): ?>
     <!-- Missing events -->
-    <div class="missing-events">
-      <h2>No upcoming events at the moment!</h2>
-      <h2>Come back at another time</h2>
+    <div class="no-content-placeholder">
+        <h2 class="no-content-placeholder__text">No upcoming events at the moment! Come back at another time.</h2>
     </div>
   <?php else: ?>
     <div class="present-events">
