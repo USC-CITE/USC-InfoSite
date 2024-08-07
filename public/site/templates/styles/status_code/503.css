@@ -1,13 +1,13 @@
 body {
     display: flex;
-    height: 800px;
+    min-height: 800px;
     align-items: center;
     justify-content: center;
     padding: 95px 0;
 }
 
 main {
-    height: 610px;
+    min-height: 610px;
     display: flex;
     align-items: center;
     flex-direction: column;
