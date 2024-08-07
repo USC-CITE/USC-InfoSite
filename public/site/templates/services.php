@@ -25,10 +25,10 @@ namespace ProcessWire;
         </div>
         <div class="volunteer_education-container">
             <div class="volunteer-container">
-                <a class="volunteer-content" href="services_volunteer.html">Volunteer Opportunities</a> 
+                <a class="volunteer-content" href="/services/volunteer">Volunteer Opportunities</a> 
             </div>
             <div class="education-container">
-                <a class="education-content" href="services_education.html">Education Programs</a> 
+                <a class="education-content" href="/services/education">Education Programs</a> 
             </div>
         </div>
     </div>
