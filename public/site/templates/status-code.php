@@ -9,15 +9,11 @@ namespace ProcessWire;
  */
 ?>
 
-<head id="head" pw-replace>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title><?php echo $page->title; ?></title>
-	<link rel="stylesheet" type="text/css" href="<?= $config->urls->templates; ?>styles/global.css" />
+<head id="head" pw-append>
 	<?php if ($page->title === '503 Service Unavailable'): ?>
 		<link rel="stylesheet" type="text/css" href="<?= $config->urls->templates ?>styles/status_code/503.css">
 	<?php else: ?>
 		<link rel="stylesheet" type="text/css" href="<?= $config->urls->templates ?>styles/status_code/status_code.css">
-		<script src="<?= $config->urls->templates; ?>scripts/main.js" defer></script>
 	<?php endif; ?>
 </head>
 
