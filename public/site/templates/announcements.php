@@ -11,6 +11,7 @@ namespace ProcessWire;
 
 <head id="head" pw-append>
 	<link rel="stylesheet" href="<?= $config->urls->templates ?>/styles/announcements/announcements.css">
+    <link rel="stylesheet" href="<?= $config->urls->templates ?>/styles/no-content-placeholder.css">
     <link rel="stylesheet" href="<?= $config->urls->templates ?>/styles/pagination.css">
 </head>
 
@@ -25,22 +26,26 @@ namespace ProcessWire;
   <div class="main__container">
     <?php
         $ancmts = $pages->find("template=announcement, limit=10, sort=-ancmt_date");
-        foreach($ancmts as $ancmt):
-    ?>
-        <div class="main__box">
-            <a class="link" href="<?= $ancmt->url ?>"><?= $ancmt->ancmt_title ?></a>
-            <p class="author"><?= $ancmt->ancmt_from ?></p>
-            <time datetime="<?= datetime("Y-m-d", $page->ancmt_date) ?>" class="details"><?= $ancmt->ancmt_date ?> 
-            <?php
-                $image = $ancmt->ancmt_from_logo;
-                if ($image) {
-                    echo "<img src=\"$image->url\" alt=\"$image->description\" class=\"office__logo\"";
-                }
-            ?>
-            </time>
-        </div>
-    <?php endforeach; ?>
-
+        if (count($ancmts) < 1): ?>
+            <div class="no-content-placeholder">
+                <h2 class="no-content-placeholder__text">No announcements have been posted by the council yet. Come back at another time.</h2>
+            </div>
+        <?php else:?>
+            <?php foreach($ancmts as $ancmt): ?>
+            <div class="main__box">
+                <a class="link" href="<?= $ancmt->url ?>"><?= $ancmt->ancmt_title ?></a>
+                <p class="author"><?= $ancmt->ancmt_from ?></p>
+                <time datetime="<?= datetime("Y-m-d", $page->ancmt_date) ?>" class="details"><?= $ancmt->ancmt_date ?> 
+                <?php
+                    $image = $ancmt->ancmt_from_logo;
+                    if ($image) {
+                        echo "<img src=\"$image->url\" alt=\"$image->description\" class=\"office__logo\"";
+                    }
+                ?>
+                </time>
+            </div>
+            <?php endforeach; ?>
+        <?php endif; ?>
     <div class="pagination">
         <?php
             echo $ancmts->renderPager(array(
