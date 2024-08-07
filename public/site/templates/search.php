@@ -28,6 +28,7 @@ if (!empty($_SESSION["search_query"])) {
 <head id="head" pw-append>
 	<?php if (!empty($sq)): ?>
 		<link rel="stylesheet" href="<?= $config->urls->templates ?>styles/search/search-results.css">
+		<link rel="stylesheet" href="<?= $config->urls->templates ?>styles/no-content-placeholder.css">
 	<?php else: ?>
 		<link rel="stylesheet" href="<?= $config->urls->templates ?>styles/search/search.css">
 	<?php endif; ?>
@@ -74,18 +75,24 @@ if (!empty($_SESSION["search_query"])) {
 	
 	<?php if (!empty($sq) && (!empty($results))): ?>
 		<section class="search-results">
-		<?php foreach($results as $result): ?>
-			<a class="search-result" href="<?=$result->url?>">
-				<span class="search-result__title"><?=$result->title?></span>
-				<span class="search-result__desc"
-						><?=$result->page_desc?>
-				</span>
-				<img
-						class="search-result__chevron"
-						alt=""
-						src="<?=$config->urls->templates?>assets/icons/chevron_link.svg" />
-			</a>
-		<?php endforeach; ?>
+		<?php if (count($results) < 1):?>
+			<div class="no-content-placeholder">
+					<h2 class="no-content-placeholder__text">There are no results that match your search. Check your spelling or try different keywords.</h2>
+			</div>
+		<?php else: ?>
+			<?php foreach($results as $result): ?>
+				<a class="search-result" href="<?=$result->url?>">
+					<span class="search-result__title"><?=$result->title?></span>
+					<span class="search-result__desc"
+							><?=$result->page_desc?>
+					</span>
+					<img
+							class="search-result__chevron"
+							alt=""
+							src="<?=$config->urls->templates?>assets/icons/chevron_link.svg" />
+				</a>
+			<?php endforeach; ?>
+		<?php endif; ?>
 		</section>
 	<?php endif; ?>
 </main>
