@@ -40,7 +40,7 @@ if (!empty($_SESSION["search_query"])) {
 			<section class="search">
 					<form class="search-form" action="/search/" method="post">
 							<label class="search-form__label" for="search-input"
-									>Search the USC Infosite</label
+									>Search the USC InfoSite</label
 							>
 							<input
 									class="search-form__input"
@@ -49,7 +49,7 @@ if (!empty($_SESSION["search_query"])) {
 									type="search" value="<?=$sq?>"/>
 							<button class="search-form__btn" type="submit">
 									<img alt="" src="<?=$config->urls->templates ?>assets/icons/magnifier.svg" /><span
-											>Search the USC Infosite</span
+											>Search the USC InfoSite</span
 									>
 							</button>
 							<Yo class="search-form__matches">
@@ -65,7 +65,7 @@ if (!empty($_SESSION["search_query"])) {
 			</section>
 	<?php else: ?>
 		<form class="search_form search_form--page" action="/search/" method="post">
-			<label for="search" class="search_form__label">Search the USC Infosite</label>
+			<label for="search" class="search_form__label">Search the USC InfoSite</label>
 			<input id="search" class="search_form__input" name="search_query" type="text" />
 			<button class="search_form__btn" type="submit">
 				<img alt="" src="<?= $config->urls->templates ?>/assets/icons/magnifier.svg" /><span class="sr_only">Search the USC Infosite</span>

@@ -78,11 +78,11 @@ $home = $pages->get('/'); /** @var HomePage $home */
 				<li><a href="/usc/cite">Contact the USC-CITE</a></li>
 			</menu>
 			<form class="search_form" action="/search/" method="post" data-js="search_form">
-				<label for="search" class="search_form__label">Search the USC Infosite</label>
+				<label for="search" class="search_form__label">Search the USC InfoSite</label>
 				<input id="search" class="search_form__input" type="text" name="search_query" />
 				<button class="search_form__btn" type="submit">
 					<img alt="" src="<?= $config->urls->templates; ?>assets/icons/magnifier.svg" /><span
-						class="sr_only">Search the USC Infosite</span>
+						class="sr_only">Search the USC InfoSite</span>
 				</button>
 			</form>
 		</div>
@@ -110,7 +110,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 					<a href="/usc/cite">Contact the USC-CITE</a>
 				</li>
 			</menu>
-			<small class="footer__notice">All content within the USC Infosite is licensed under the
+			<small class="footer__notice">All content within the USC InfoSite is licensed under the
 				<a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0
 					International.</a>
 				<img alt="" src="<?= $config->urls->templates; ?>assets/icons/cc.svg" />
