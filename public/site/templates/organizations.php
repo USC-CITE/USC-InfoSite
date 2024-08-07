@@ -61,6 +61,5 @@ namespace ProcessWire;
 
       <a class="link" target="_blank" rel="noreferrer" href="https://wvsu.edu.ph/files/pdf/downloads/osa/wvsu-so-policy-guideline.pdf">Organization Policies and Guidelines</a>
       <a class="link" target="_blank" rel="noreferrer" href="https://wvsu.edu.ph/files/pdf/downloads/osa/WVSU-OSA-SOI-03-F01.pdf">Organization Application and Renewal Form</a>
-      <a class="link" target="_blank" rel="noreferrer" href="">Add organization to WVSU-USC.org</a>
     </div>
 </main>
