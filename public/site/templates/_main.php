@@ -25,6 +25,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 	<meta name="description" content="<?=$page->page_desc?>" />
 	<meta name="keywords" content="<?=$page->page_keywords?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/png" href="<?= $config->urls->templates?>assets/logos/USC-logo.png">
 	<title><?php echo $page->title; ?></title>
 	<link rel="stylesheet" type="text/css" href="<?= $config->urls->templates; ?>styles/global.css" />
 	<script src="<?= $config->urls->templates; ?>scripts/main.js" defer></script>
