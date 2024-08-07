@@ -48,7 +48,7 @@
   border-radius: 50%;
 }
 
-.pagination .page-list .list-item--active .page-link {
+.pagination .page-list .list-item--active a {
   color: #FFF;
 }
 
