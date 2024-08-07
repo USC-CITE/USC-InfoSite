@@ -19,7 +19,7 @@ namespace ProcessWire;
             Volunteer Opportunities
         </div>
         <div class="services-about">
-            Donation drives, community service,and other philantrophic work.
+            Donation drives, community service, and other philantrophic work.
         </div>
 
         <div class="volunteer-oppurtunities">
