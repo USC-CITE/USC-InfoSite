@@ -78,15 +78,6 @@ html {
     display: none;
 }
 
-.missing-events {
-    padding-top: 50px;
-    margin: auto;
-    width: 75%;
-    height: 146px;
-    border-top: solid 1px #D9D4D7;
-    border-bottom: solid 1px #D9D4D7;
-}
-
 main h2 {
     text-align: center;
     font-family: Poppins;
@@ -481,15 +472,6 @@ a {
         font-size: 14px;
     }
 
-    .missing-events {
-        padding-top: 20px;
-        height: 100px;
-    }
-
-    .missing-events h2 {
-        font-size: 15px;
-    }
-
     .event-archive {
         font-size: 14px;
     }
@@ -635,15 +617,6 @@ a {
 
     .events-main--container {
         height: 190px;
-    }
-
-    .missing-events h2 {
-        font-size: 17px;
-    }
-
-    .missing-events {
-        padding-top: 30px;
-        height: 120px;
     }
 
     .event-archive {
