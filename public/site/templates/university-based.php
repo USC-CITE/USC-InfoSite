@@ -11,6 +11,7 @@ namespace ProcessWire;
 
 <head id="head" pw-append>
   <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/organizations/org-list.css">
+  <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/pagination.css">
 </head>
 
 <main id="content" pw-prepend>
@@ -18,7 +19,7 @@ namespace ProcessWire;
   <div class="title-about">Listed below are the different organizations that operate on the <br> university level.</div>
   <div class="universities-container">
     <?php 
-      $univ_orgs = $pages->find("template=org-info, org_type='University-Based', sort=org_name");
+      $univ_orgs = $pages->find("template=org-info, org_type='University-Based', limit=10, sort=org_name");
       foreach ($univ_orgs as $univ_org): ?>
         <a class="Organization" href="<?= $univ_org->url ?>">
           <?php $image = $univ_org->org_logo ?>
@@ -29,5 +30,20 @@ namespace ProcessWire;
           <img class="arrow" src="<?= $config->urls->templates ?>/assets/icons/arrow-right.svg">
         </a>
     <?php endforeach; ?>
+  </div>
+  <div class="pagination">
+        <?php
+            echo $univ_orgs->renderPager(array(
+                'numPageLinks' => 5,
+                'nextItemLabel' => "Next",
+                'previousItemLabel' => "Prev",
+                'nextItemClass' => "button next-button",
+                'previousItemClass' => "button back-button",
+                'currentItemClass' => "list-item--active",
+                'listMarkup' => "<ul class='page-list'>{out}</ul>",
+                'itemMarkup' => "<li class='list-item {class}'>{out}</li>",
+                'linkMarkup' => "<a class='page-link' href='{url}'>{out}</a>",
+            ));
+        ?>
   </div>
 </main>
