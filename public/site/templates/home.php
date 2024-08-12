@@ -37,7 +37,7 @@
 	</section>
 </main>
 
-<main id="content">
+<main id="content" pw-prepend>
 	<section class="present_events">
 	<?php 
 		$events = $pages->find("template=event, archive_event=0, sort=event_start_date, limit=3");
