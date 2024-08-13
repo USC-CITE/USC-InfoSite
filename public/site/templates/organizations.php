@@ -57,9 +57,11 @@ namespace ProcessWire;
 
     <div class="main__box last-box">
       <h3 class="main__sub-heading">Manage your organization</h3>
-      <p class="text">Disclaimer: These are provided by the university’s Office of Student Affairs.</p>
+      <p class="text">Disclaimer: Some documents are provided by the university’s Office of Student Affairs (OSA).</p>
 
-      <a class="link" target="_blank" rel="noreferrer" href="https://wvsu.edu.ph/files/pdf/downloads/osa/wvsu-so-policy-guideline.pdf">Organization Policies and Guidelines</a>
-      <a class="link" target="_blank" rel="noreferrer" href="https://wvsu.edu.ph/files/pdf/downloads/osa/WVSU-OSA-SOI-03-F01.pdf">Organization Application and Renewal Form</a>
+      <a class="link" target="_blank" rel="noreferrer" href="https://wvsu.edu.ph/files/pdf/downloads/osa/wvsu-so-policy-guideline.pdf">OSA: Organization Policies and Guidelines</a>
+      <a class="link" target="_blank" rel="noreferrer" href="https://wvsu.edu.ph/files/pdf/downloads/osa/WVSU-OSA-SOI-03-F01.pdf">OSA: Organization Application and Renewal Form</a>
+      <a class="link" target="_blank" rel="noreferrer" href="https://wvsu.edu.ph/files/pdf/downloads/osa/Add_Org_Template-20240811.pdf">CITE: Add your student organization to the USC InfoSite</a>
+      <a class="link" target="_blank" rel="noreferrer" href="https://wvsu.edu.ph/files/pdf/downloads/osa/Update_Org_Template-20240811.pdf">CITE: Update your student organization within the USC InfoSite</a>
     </div>
 </main>
