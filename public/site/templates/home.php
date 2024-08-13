@@ -32,7 +32,7 @@
 	<section class="acad_clndr">
 			<img class="acad_clndr__logo" src="<?= $config->urls->templates ?>assets/logos/WVSU-Main-Logo.png" />
 			<a class="acad_clndr__link" href="<?= $config->urls->templates ?>assets/docs/WVSU-Calendar-for-AY-2024-2025.pdf"
-					>View the West Visayas State University Academic Calendar for 2024-2025!</a
+					>View the West Visayas State University Academic Calendar for 2024-2025</a
 			>
 	</section>
 </main>
