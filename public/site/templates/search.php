@@ -68,7 +68,7 @@ if (!empty($_SESSION["search_query"])) {
 			<label for="search" class="search_form__label">Search the USC InfoSite</label>
 			<input id="search" class="search_form__input" name="search_query" type="text" />
 			<button class="search_form__btn" type="submit">
-				<img alt="" src="<?= $config->urls->templates ?>/assets/icons/magnifier.svg" /><span class="sr_only">Search the USC Infosite</span>
+				<img alt="" src="<?= $config->urls->templates ?>assets/icons/magnifier.svg" /><span class="sr_only">Search the USC Infosite</span>
 			</button>
 		</form>
 	<?php endif; ?>

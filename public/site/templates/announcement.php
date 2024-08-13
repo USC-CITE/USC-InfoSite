@@ -11,7 +11,7 @@ namespace ProcessWire;
 ?>
 
 <head id="head" pw-append>
-	<link rel="stylesheet" href="<?= $config->urls->templates ?>/styles/announcements/announcement.css">
+	<link rel="stylesheet" href="<?= $config->urls->templates ?>styles/announcements/announcement.css">
 </head>
 
 <main id="content" pw-prepend>

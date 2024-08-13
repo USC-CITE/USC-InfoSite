@@ -10,9 +10,9 @@ namespace ProcessWire;
 ?>
 
 <head id="head" pw-append>
-	<link rel="stylesheet" href="<?= $config->urls->templates ?>/styles/announcements/announcements.css">
-    <link rel="stylesheet" href="<?= $config->urls->templates ?>/styles/no-content-placeholder.css">
-    <link rel="stylesheet" href="<?= $config->urls->templates ?>/styles/pagination.css">
+	<link rel="stylesheet" href="<?= $config->urls->templates ?>styles/announcements/announcements.css">
+    <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/no-content-placeholder.css">
+    <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/pagination.css">
 </head>
 
 <main id="content" pw-before>

@@ -10,7 +10,7 @@ namespace ProcessWire;
 ?>
 
 <head id="head" pw-append>
-	<link rel="stylesheet" href="<?= $config->urls->templates ?>/styles/browse.css">
+	<link rel="stylesheet" href="<?= $config->urls->templates ?>styles/browse.css">
 </head>
 
 <main id="content" pw-prepend>

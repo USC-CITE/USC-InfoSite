@@ -27,7 +27,7 @@ namespace ProcessWire;
           <div class="org-name">
             <p><?=$univ_org->org_name?></p>
           </div>
-          <img class="arrow" src="<?= $config->urls->templates ?>/assets/icons/arrow-right.svg">
+          <img class="arrow" src="<?= $config->urls->templates ?>assets/icons/arrow-right.svg">
         </a>
     <?php endforeach; ?>
   </div>
