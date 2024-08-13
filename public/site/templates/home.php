@@ -35,6 +35,11 @@
 					>View the West Visayas State University Academic Calendar for 2024-2025</a
 			>
 	</section>
+	<section class="acad_clndr" style="background: #F6F6F6">
+			<img class="acad_clndr__logo" src="<?= $config->urls->templates ?>assets/logos/cite-logo-transparent.png" />
+			<a class="acad_clndr__link" style="color: #212121" href="<?= $config->urls->templates ?>assets/docs/Update_Org_Template-20240811.pdf"
+					>Update your student organization within the USC InfoSite</a>
+	</section>
 </main>
 
 <main id="content" pw-prepend>
