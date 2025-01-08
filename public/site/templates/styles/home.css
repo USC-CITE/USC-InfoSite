@@ -29,6 +29,14 @@
     display: inline-block;
 }
 
+#search-input:focus-visible {
+    outline: 5px solid #21536C;
+}
+
+#search-btn:focus-visible {
+    outline: 5px solid #21536C;
+}
+
 .acad_clndr {
     padding: 20px 20px;
     height: 100px;

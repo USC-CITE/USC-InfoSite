@@ -32,6 +32,14 @@ a:hover {
   text-decoration: none;
 }
 
+a:focus-visible, 
+button:focus-visible, 
+input:focus-visible {
+	outline-width: 5px;
+	outline-color: #e1a011;
+	outline-style: solid;
+}
+
 main {
 	margin: 0 auto;
 	max-width: 1000px;
