@@ -14,10 +14,10 @@ namespace ProcessWire;
 </head>
 
 <main id="content" pw-prepend>
-	<p class="main__text">Browse existing services and information.</p>
+	<p class="main__text">Browse existing services and information within the USC InfoSite.</p>
 	<div class="main__container">
 		<div class="main__information">
-			<h3 class="main__heading">Information: </h3>
+			<h3 class="main__heading">Information </h3>
 			<div class="main__links">
 				<a href="#" class="main__items">Announcements</a>
 				<a href="#" class="main__items">Events</a>
@@ -27,7 +27,7 @@ namespace ProcessWire;
 			</div>
 		</div>
 		<div class="main__services">
-			<h3 class="main__heading">Services: </h3>
+			<h3 class="main__heading">Services </h3>
 			<div class="main__links">
 				<a href="#" class="main__items">Volunteer Opportunities</a>
 				<a href="#" class="main__items">Education and Training</a>

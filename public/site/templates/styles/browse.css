@@ -16,7 +16,7 @@ main {
 
 .main__heading {
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     margin: 0;
 }
@@ -29,12 +29,13 @@ main {
 
 .main__items {
     padding-top: 21px;
-    padding-left: 19px;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: 600;
 }
 
 .main__text {
-    margin: 55px 0 45px;
+    margin: 55px 0 30px;
+    text-align: center;
 }
 
 .main__services {
