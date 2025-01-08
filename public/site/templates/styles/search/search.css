@@ -7,14 +7,6 @@ main {
 	padding-top: 30vh;
 }
 
-.search_form--page {
-	display: block;
-	position: absolute;
-	top: 100px;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
 .main__report {
 	margin-top: auto;
 }

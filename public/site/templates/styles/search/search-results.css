@@ -6,22 +6,16 @@ main {
 }
 
 .search {
+	padding: 0 20px;
 	width: 100%;
 	height: 150px;
 	position: relative;
 	background-color: #F6F6F6;
 }
-
-.search-form__matches {
-	position: absolute;
-	top: 0;
-	left: 20px;
-}
-
 .search-form {
 	width: 100%;
-	max-width: 350px;
-	position: absolute;
+	max-width: 320px;
+	position: relative;
 	top: 100px;
 	left: 50%;
 	transform: translateX(-50%);
@@ -30,47 +24,28 @@ main {
 .search-form__label {
 	width: 100%;
 	position: absolute;
-	top: -30px;
-	left: 20px;
+	top: -80px;
 	text-align: left;
 	font-size: 18px;
 	font-weight: 600;
 }
 
-.search-form__input {
-	padding: 0 40px 0 10px;
-	width: 88%;
-	max-width: 350px;
-	height: 32px;
+.search-form__matches {
 	position: absolute;
-	top: -80px;
-	left: 20px;
-	border: 1px solid #000000;
-	border-radius: 10px;
-	font-size: 14px;
+	top: -50px;
 }
 
-.search-form__btn {
-	width: 30px;
-	height: 31px;
+
+#search-input {
 	position: absolute;
-	top: -79.5px;
-	left: 84%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 0 10px 10px 0;
-	background-color: #d9d4d7;
+	top: -10px;
+	left: 0;
 }
 
-.search-form__btn>img {
-	width: 15px;
-	height: 15px;
-}
-
-.search-form__btn>span {
+#search-btn {
 	position: absolute;
-	opacity: 0;
+	top: -10px;
+	right: 0;
 }
 
 .search-results {
@@ -120,12 +95,6 @@ main {
 	transform: rotate(-90deg);
 }
 
-@media screen and (min-width: 300px) {
-	.search-form__btn {
-		left: 84.8%;
-	}
-}
-
 @media screen and (min-width: 700px) {
 	.search-form__label {
 		top: -50px;
@@ -138,14 +107,14 @@ main {
 		left: -120px;
 	}
 
-	.search-form__input {
-		top: -35px;
-		left: 160px;
+	#search-input {
+		top: -40px;
+		left: 50%;
 	}
-
-	.search-form__btn {
-		top: -35px;
-		left: 437px;
+	
+	#search-btn {
+		top: -40px;
+		right: -50%;
 	}
 
 	.search-result {
@@ -186,14 +155,6 @@ main {
 		font-size: 18px;
 	}
 
-	.search-form__input {
-		left: 190px;
-	}
-
-	.search-form__btn {
-		left: 508px;
-	}
-
 	.search-results {
 		margin: 50px auto 80px auto;
 	}
@@ -214,21 +175,6 @@ main {
 		top: -15px;
 		left: -180px;
 		font-size: 20px;
-	}
-
-	.search-form__input {
-		max-width: 400px;
-		height: 40px;
-		top: -40px;
-		left: 230px;
-		font-size: 16px;
-	}
-
-	.search-form__btn {
-		width: 35px;
-		height: 39px;
-		top: -40px;
-		left: 594.5px;
 	}
 
 	.search-result {
