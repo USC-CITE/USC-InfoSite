@@ -23,7 +23,7 @@
 			<form class="search_form search_form--home" action="/search/" method="post" data-js="search_form">
 					<label for="search-input" class="sr_only">Search the USC Infosite</label>
 					<input id="search-input" class="search_form__input" type="text" name="search_query"/>
-					<button class="search_form__btn" type="submit">
+					<button id="search-btn" class="search_form__btn" type="submit">
 							<img alt="" src="<?= $config->urls->templates ?>assets/icons/magnifier.svg" /><span class="sr_only">Search</span>
 					</button>
 			</form>
