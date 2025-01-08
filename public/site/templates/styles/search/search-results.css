@@ -37,15 +37,27 @@ main {
 
 
 #search-input {
+	width: 85%;
+	height: 32px;
 	position: absolute;
 	top: -10px;
 	left: 0;
+	font-size: 16px;
 }
 
 #search-btn {
+	width: 15%;
+	height: 32px;
 	position: absolute;
 	top: -10px;
 	right: 0;
+	font-size: 16px;
+}
+
+#search-btn img {
+	width: 15px;
+	height: 15px;
+	top: 32%;
 }
 
 .search-results {
@@ -108,13 +120,20 @@ main {
 	}
 
 	#search-input {
+		height: 40px;
 		top: -40px;
 		left: 50%;
 	}
 	
 	#search-btn {
+		height: 40px;
 		top: -40px;
 		right: -50%;
+	}
+
+	#search-btn img {
+		width: 18px;
+		height: 18px;
 	}
 
 	.search-result {
@@ -175,6 +194,14 @@ main {
 		top: -15px;
 		left: -180px;
 		font-size: 20px;
+	}
+
+	#search-input {
+		width: 88%;
+	}
+	
+	#search-btn {
+		width: 12%;
 	}
 
 	.search-result {
