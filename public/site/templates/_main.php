@@ -60,7 +60,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 			</div>
 		</div>
 	</header>
-	<div class="container container--header_accord" id="header_accord">
+	<div class="container container--header_accord" id="header_accord" data-js="header_accord_container">
 		<div class="header_accord" data-js="header_accord">
 			<menu class="link_list link_list--info" data-js="info_menu">
 				<h1 class="link_list__hdng">Information</h1>

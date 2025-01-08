@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+    const headerAccordCont = document.querySelector('[data-js=header_accord_container]');
     const headerAccord = document.querySelector('[data-js=header_accord]');
 
     const menuIcon = document.querySelector('[data-js=menu_btn_icon]');
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Toggle the icon and background color based on the visibility of the search bar
         if (!searchForm.classList.contains('visible')) {
+            headerAccordCont.style.borderBottom = "3px solid #D9D4D7";
             searchForm.classList.add('visible');
 
             // Set background color to #f6f6f6 when search link is clicked
@@ -34,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             menuIcon.style.transform = 'none';
             menuBtn.style.backgroundColor = '#ffffff';
         } else {
+            headerAccordCont.style.borderBottom = "none";
             headerAccord.classList.remove('header_accord--search');
             searchForm.classList.remove('visible');
 
@@ -51,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Toggle the icon and background color based on the visibility of infoMenu
         if (!infoMenu.classList.contains('visible')) {
+            headerAccordCont.style.borderBottom = "3px solid #D9D4D7";
             infoMenu.classList.add('visible');
             srvcsMenu.classList.add('visible');
 
@@ -59,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
             // Revert background color of the search link when menu button is clicked
             searchBtn.style.backgroundColor = '#ffffff';
         } else {
+            headerAccordCont.style.borderBottom = "none";
             headerAccord.classList.remove('header_accord--menu');
             infoMenu.classList.remove('visible');
             srvcsMenu.classList.remove('visible');
