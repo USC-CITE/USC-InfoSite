@@ -17,7 +17,9 @@ namespace ProcessWire;
 
 $home = $pages->get('/'); /** @var HomePage $home */
 
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head id="head">
@@ -32,6 +34,9 @@ $home = $pages->get('/'); /** @var HomePage $home */
 </head>
 
 <body id="body">
+	<div class="skip-to-main">
+		<a href="#content">Skip to main content</a>
+	</div>
 	<header id="header">
 		<div class="header__container">
 			<div class="header__banner">
@@ -87,7 +92,6 @@ $home = $pages->get('/'); /** @var HomePage $home */
 			</form>
 		</div>
 	</div>
-
 	<main id="content">
     <iframe id="report_form" class="report_form" data-tally-src="https://tally.so/embed/n9QXe5?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="Report a problem with this page"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
 
