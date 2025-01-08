@@ -28,7 +28,8 @@ main {
 }
 
 .main__items {
-    padding-top: 21px;
+    margin-top: 21px;
+    width: 90%;
     font-size: 16px;
     font-weight: 600;
 }
