@@ -170,6 +170,14 @@ header {
 	text-decoration: none;
 }
 
+.header__btns a:hover {
+	background-color: #F6F6F6;
+}
+
+.header__btns a.selected {
+	background-color: #F6F6F6;
+}
+
 .header__menu {
 	margin-right: 23px;
 	width: 100px;

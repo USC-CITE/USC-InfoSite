@@ -31,17 +31,17 @@ document.addEventListener('DOMContentLoaded', function () {
             searchForm.classList.add('visible');
 
             // Set background color to #f6f6f6 when search link is clicked
-            searchBtn.style.backgroundColor = '#f6f6f6';
+            searchBtn.classList.add('selected');
             // Revert background color of the menu button when search link is clicked
             menuIcon.style.transform = 'none';
-            menuBtn.style.backgroundColor = '#ffffff';
+            menuBtn.classList.remove('selected');
         } else {
             headerAccordCont.style.borderBottom = "none";
             headerAccord.classList.remove('header_accord--search');
             searchForm.classList.remove('visible');
 
             // Revert background color of the search link when search bar is closed
-            searchBtn.style.backgroundColor = '#ffffff';
+            searchBtn.classList.remove('selected');
         }
     });
 
@@ -59,9 +59,9 @@ document.addEventListener('DOMContentLoaded', function () {
             srvcsMenu.classList.add('visible');
 
             menuIcon.style.transform = 'rotate(-180deg)';
-            menuBtn.style.backgroundColor = '#f6f6f6';
+            menuBtn.classList.add('selected');
             // Revert background color of the search link when menu button is clicked
-            searchBtn.style.backgroundColor = '#ffffff';
+            searchBtn.classList.remove('selected');
         } else {
             headerAccordCont.style.borderBottom = "none";
             headerAccord.classList.remove('header_accord--menu');
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
             srvcsMenu.classList.remove('visible');
 
             menuIcon.style.transform = 'none';
-            menuBtn.style.backgroundColor = '#ffffff';
+            menuBtn.classList.remove('selected');
         }
     });
 });
