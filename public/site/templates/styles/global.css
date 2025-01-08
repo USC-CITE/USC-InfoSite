@@ -246,6 +246,7 @@ header a p {
 }
 
 .header_accord--search {
+	padding: 0 20px;
 	align-items: center;
 }
 
@@ -270,6 +271,7 @@ header a p {
 
 .search_form__label {
 	margin-bottom: 20px;
+	width: 100%;
 	position: absolute;
 	top: -50px;
 	left: 50%;
@@ -519,5 +521,15 @@ footer a:hover {
 
 	.footer__links {
 		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.search_form__input {
+		width: 85%;
+	}
+
+	.search_form__btn {
+		width: 15%;
 	}
 }
