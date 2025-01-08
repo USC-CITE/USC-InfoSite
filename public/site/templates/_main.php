@@ -63,7 +63,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 	<div class="container container--header_accord" id="header_accord">
 		<div class="header_accord" data-js="header_accord">
 			<menu class="link_list link_list--info" data-js="info_menu">
-				<h1 class="link_list__hdng">Information:</h1>
+				<h1 class="link_list__hdng">Information</h1>
 				<li><a href="/announcements">Announcements</a></li>
 				<li><a href="/events">Events</a></li>
 				<li><a href="/organizations">Organizations</a></li>
@@ -71,7 +71,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 				<li><a href="/usc/officers">Officers of the USC</a></li>
 			</menu>
 			<menu class="link_list link_list--srvcs" data-js="srvcs_menu">
-				<h1 class="link_list__hdng">Services:</h1>
+				<h1 class="link_list__hdng">Services</h1>
 				<li><a href="/services/volunteer">Volunteer Opportunities</a></li>
 				<li><a href="/services/education">Education and Training</a></li>
 				<li><a href="/usc/contact">Contact the USC</a></li>
