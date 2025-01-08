@@ -38,7 +38,7 @@ if (!empty($_SESSION["search_query"])) {
 
 	<?php if (!empty($sq)): ?>
 			<section class="search">
-					<form class="search-form" action="/search/" method="post">
+					<form class="search-form visible" action="/search/" method="post">
 							<label class="search-form__label" for="search-input"
 									>Search the USC InfoSite</label
 							>
@@ -59,7 +59,7 @@ if (!empty($_SESSION["search_query"])) {
 					</form>
 			</section>
 	<?php else: ?>
-		<form class="search_form search_form--page" action="/search/" method="post">
+		<form class="search_form visible" action="/search/" method="post">
 			<label for="search" class="search_form__label">Search the USC InfoSite</label>
 			<input id="search" class="search_form__input" name="search_query" type="text" />
 			<button class="search_form__btn" type="submit">
