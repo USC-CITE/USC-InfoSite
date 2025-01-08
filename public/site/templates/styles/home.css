@@ -6,33 +6,27 @@
 
 .container--banner {
     margin: 0 auto;
+    padding: 0 20px;
     max-width: 1000px;
 }
 
 .banner__hdng {
-    padding: 0 20px;
     font-size: 14px;
     font-weight: 400;
 }
 
 .banner__subhdng {
-    padding: 0 20px;
     font-size: 30px;
     font-weight: 600;
 }
 
 .banner__desc {
     margin: 10px 0 20px 0;
-    padding: 0 20px;
     font-size: 14px;
 }
 
 .search_form--home {
     display: inline-block;
-}
-
-.search_form__input {
-    width: 100%;
 }
 
 .acad_clndr {

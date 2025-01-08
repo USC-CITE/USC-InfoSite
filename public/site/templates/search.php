@@ -42,17 +42,12 @@ if (!empty($_SESSION["search_query"])) {
 							<label class="search-form__label" for="search-input"
 									>Search the USC InfoSite</label
 							>
-							<input
-									class="search-form__input"
-									id="search-input"
-									name="search_query"
-									type="search" value="<?=$sq?>"/>
-							<button class="search-form__btn" type="submit">
-									<img alt="" src="<?=$config->urls->templates ?>assets/icons/magnifier.svg" /><span
-											>Search the USC InfoSite</span
-									>
+							<input id="search-input" class="search_form__input" type="text" name="search_query" value="<?=$sq?>"/>
+							<button id="search-btn" class="search_form__btn" type="submit">
+									<img alt="" src="<?= $config->urls->templates ?>assets/icons/magnifier.svg" /><span class="sr_only">Search</span>
 							</button>
-							<Yo class="search-form__matches">
+							</button>
+							<p class="search-form__matches">
 								<?php if(count($results) > 1): ?>
 									Your search matched <?= count($results) ?> results
 								<?php elseif(count($results) === 1): ?>

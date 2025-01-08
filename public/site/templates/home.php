@@ -21,8 +21,8 @@
 			<h2 class="banner__subhdng">University Student Council</h2>
 			<p class="banner__desc">serving you with utmost transparency and equality</p>
 			<form class="search_form search_form--home" action="/search/" method="post" data-js="search_form">
-					<label for="search" class="sr_only">Search the USC Infosite</label>
-					<input id="search" class="search_form__input" type="text" name="search_query"/>
+					<label for="search-input" class="sr_only">Search the USC Infosite</label>
+					<input id="search-input" class="search_form__input" type="text" name="search_query"/>
 					<button class="search_form__btn" type="submit">
 							<img alt="" src="<?= $config->urls->templates ?>assets/icons/magnifier.svg" /><span class="sr_only">Search</span>
 					</button>
