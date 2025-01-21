@@ -57,6 +57,7 @@ html {
 
 .main .main__list-item a {
     display: flex;
+    width: 100%;
     min-height: 4rem;
     padding: 0 10px;
     align-items: center;
