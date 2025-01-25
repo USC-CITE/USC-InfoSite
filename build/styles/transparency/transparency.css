@@ -1,6 +1,7 @@
 main{
     width: 100%;
-    height:clamp(76vh, calc(12px - 39vw), 0px);
+    height:100%;
+    min-height: 74vh;
     background-color: #FFFFFF;
 }
 .title {
@@ -14,14 +15,14 @@ main{
     line-height: 1.5em;
 }
 .text-container{
-    margin: 32px;
+    padding: 32px;
     padding-right: 128px;
     width:100%;
     max-width: 100%;
     margin-right:0;
 }
 .resolution-container{
-    margin:32px;
+    margin:24px;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -47,36 +48,100 @@ main{
 }
 .icon{
     width:100%;
-    height:auto;
-    max-width: 20%;
+    height:100%;
+    max-width: 70px;
+    min-width:40px;
     margin-right:40px;
 }
-.report-container{
+.reportbtn{
     display:flex;
     align-items: center;
     justify-content: center;
     margin-top: auto;
-    margin-left: 32px;
 }
-@media screen and (max-width: 1024px){
-    .title {
-        font-size:clamp(20px, 3vw, 82px);
+.report_form{
+    border: black 2px solid;
+}
+@media screen and (max-width: 980px){
+    .text-container{
+        padding-right: 60px;
+    }
+}
+@media screen and (max-width: 800px){
+    .title{
+        font-size:24px;
+        font-weight: 600;
+        line-height: 1.5em;
     }
     .desc {
-        font-size:clamp(14px, 2vw, 64px);
-    }
-    .resolution-container{
-        padding-left: 3vw;
-        padding-right: 12vw;
+        font-size:18px;
+        font-weight: 400;
+        line-height: 1.5em;
     }
     .text-container{
-        padding-right: 9vw;
+        padding-right: 40px;
     }
     .resolution-text{
-        font-size: clamp(16px, 2vw, 40px);
-    }
-    .icon{
-        margin-right:clamp(28px, 3vw, 40px);
+        margin-right: 2px;
     }
 }
+@media screen and (max-width: 600px){
+    .title{
+        font-size:22px;
+        font-weight: 600;
+        line-height: 1.5em;
+    }
+    .desc {
+        font-size:16px;
+        font-weight: 400;
+        line-height: 1.5em;
+    }
+    .text-container{
+        padding-right: 22px;
+    }
+    .resolution-text{
+        margin-right: 2px;
+        font-size:18px;
+        padding-right: 62px;    
+    }
+    .icon{
+        width: 50px;
+        height: 46px;
 
+    }
+    
+}
+@media screen and (max-width: 600px){
+    .resolution-container{
+        padding-right:62px;
+    }
+}
+@media screen and (max-width: 400px){
+    .title{
+        font-size:20px;
+        font-weight: 600;
+        line-height: 1.5em;
+    }
+    .desc {
+        font-size:14px;
+        font-weight: 400;
+        line-height: 1.5em;
+    }
+    .text-container{
+        padding-right: 38px;
+    }
+    .resolution-text{
+        margin-right: 2px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .resolution-container{
+        padding-right: 46px;
+        margin-left: 6px;
+    }
+    .icon{
+        margin-right:24px;
+        width: 40px;
+        height:36px;
+    }
+}
