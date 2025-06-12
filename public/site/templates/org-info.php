@@ -50,7 +50,7 @@ namespace ProcessWire;
       <?php if (!empty($page->org_email)): ?>
         <div class="main__contact first-contact">
           <img src="<?= $config->urls->templates ?>assets/icons/mail.svg" alt="">
-          <a href="mailto:fd@wvsu.edu.ph"> <?= $page->org_email ?> </a>
+          <a href="mailto:<?= $page->org_email ?>"> <?= $page->org_email ?> </a>
         </div>
       <?php endif; ?>
       
