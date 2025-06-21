@@ -68,13 +68,6 @@
     font-weight: 600;
 }
 
-.events__link {
-    margin: 40px auto 0 auto;
-    max-width: 500px;
-    display: block;
-    text-align: center;
-}
-
 .event-card {
     text-align: center;
     font-weight: 600;
@@ -172,6 +165,49 @@
 
 .event-start-time {
     font-weight: 400;
+}
+
+.services__link,
+.ancmts__link,
+.events__link {
+    margin: 10px auto 0 auto;
+    padding: 6px 0px 4px 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    column-gap: 16px;
+    text-decoration: none;
+}
+
+.services__link:hover,
+.ancmts__link:hover,
+.events__link:hover {
+    text-decoration: underline;
+}
+
+.services__link img,
+.ancmts__link img,
+.events__link img {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .services__link,
+    .ancmts__link,
+    .events__link {
+        font-size: 14px;
+        padding: 4px 0px 2px 10px;
+    }
+
+    .services__link img,
+    .ancmts__link img,
+    .events__link img {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 @media screen and (max-width:360px) {
@@ -277,14 +313,6 @@
 .service__desc {
     margin: 10px 0;
     color: #8F8B8B;
-}
-
-.services__link,
-.ancmts__link {
-    margin: 10px auto 0 auto;
-    max-width: 500px;
-    display: block;
-    text-align: center;
 }
 
 .ancmts__hdng {
@@ -394,10 +422,7 @@
     }
 
     .service__name,
-    .service__desc,
-    .events__link,
-    .services__link,
-    .ancmts__link {
+    .service__desc {
         font-size: 18px;
     }
 
