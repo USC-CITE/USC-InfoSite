@@ -106,7 +106,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     column-gap: 16px;
     line-height: normal;
@@ -169,7 +169,7 @@ main .last-box {
     }
 
     .main__box .link {
-        font-size: 15.5px;
+        font-size: 17.5px;
     }
 
     .last-box .text {
@@ -270,7 +270,6 @@ main .last-box {
   } */
 
     .main__box .link {
-        font-size: 14.5px;
         padding-left: 19px;
     }
 
@@ -330,10 +329,6 @@ main .last-box {
     /* .organization .org-logo {
       width: 62.5px;
   } */
-
-    .main__box .link {
-        font-size: 14px;
-    }
 
     .last-box .text {
         width: 350px;
