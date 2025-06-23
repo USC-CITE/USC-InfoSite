@@ -105,7 +105,7 @@
 		<?php endif; ?>
 		<?php $event_num += 1; ?>
 		<?php endforeach; ?>
-		<a class="events__link" href="/events">Find more events held by the University Student Council and other organizations</a>
+		<a class="events__link" href="/events"><img src="<?= $config->urls->templates ?>assets/icons/arrow-right-with-bg.svg" alt="">Find more events held by the University Student Council</a>
 	</section>
 	<section class="services">
 		<h2 class="services__hdng">Services and other information</h2>
@@ -127,7 +127,7 @@
 			<a class="service__name" href="/services/education">Education Programs</a>
 			<p class="service__desc">Seminars and workshops that are open for participation</p>
 		</div>
-		<a class="services__link" href="/services">Find more services of the University Student Council</a>
+		<a class="services__link" href="/services"><img src="<?= $config->urls->templates ?>assets/icons/arrow-right-with-bg.svg" alt="">Find more services of the University Student Council</a>
 	</section>
 	<section class="ancmts">
 		<h2 class="ancmts__hdng">Latest Announcements</h2>
@@ -148,6 +148,6 @@
             </time>
         </div>
     	<?php endforeach; ?>
-		<a class="ancmts__link" href="/announcements">See more announcements made by the University Student Council</a>
+		<a class="ancmts__link" href="/announcements"><img src="<?= $config->urls->templates ?>assets/icons/arrow-right-with-bg.svg" alt="">Find more announcements from WVSU and the University Student Council</a>
 	</section>
 </main>
