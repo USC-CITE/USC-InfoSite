@@ -34,8 +34,7 @@ namespace ProcessWire;
           </a>
         <?php endforeach; ?>
       </div>
-      <a class="link link--center" href="/organizations/college-based">See the existing university colleges and organizations that operate under
-        it.</a>
+      <a class="link link--center" href="/organizations/college-based"><img src="<?= $config->urls->templates ?>assets/icons/arrow-right-with-bg.svg" alt="">Find more college-based organizations</a>
     </div>
     <div class="main__box">
       <h3 class="main__sub-heading">University-Based Organizations</h3>
@@ -52,7 +51,7 @@ namespace ProcessWire;
           </a>
         <?php endforeach; ?>
       </div>
-      <a class="link link--center" href="/organizations/university-based">See more organizations that operate on the university level.</a>
+      <a class="link link--center" href="/organizations/university-based"><img src="<?= $config->urls->templates ?>assets/icons/arrow-right-with-bg.svg" alt="">Find more university-based organizations</a>
     </div>
 
     <div class="main__box last-box">
