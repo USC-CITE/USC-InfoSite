@@ -36,8 +36,8 @@ main {
 .main__box {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 45px;
-    border-top: #D9D4D7 1px solid;
+    margin-top: 70px;
+    /* border-top: #D9D4D7 1px solid; */
     width: 1000px;
     height: auto;
 }
@@ -47,6 +47,7 @@ main {
     font-weight: 600;
     margin: 45px 0 50px;
     text-align: center;
+    color: #44425A;
 }
 
 .main__wrapper {
@@ -122,7 +123,7 @@ main {
 }
 
 main .last-box {
-    width: 800px;
+    width: 1000px;
     display: flex;
     flex-direction: column;
     margin-bottom: 115px;
@@ -134,10 +135,28 @@ main .last-box {
 
 .last-box .text {
     margin-bottom: 30px;
+    text-align: center;
 }
 
-.last-box .link {
-    align-self: self-start;
+.document-box {
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.document-box-heading {
+    margin-bottom: 10px;
+    color: #44425A;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1080px) {
+    .document-box {
+        max-width: 800px;
+        flex-flow: column nowrap;
+    }
+    .document-box section:not(:last-of-type) {
+        margin-bottom: 30px;
+    }
 }
 
 
@@ -257,10 +276,6 @@ main .last-box {
         margin: 20px 0 0;
     }
 
-    .main__box {
-        margin-top: 30px;
-    }
-
     .organization .org-link {
         font-size: 15px;
     }
@@ -304,6 +319,10 @@ main .last-box {
         max-width: 400px;
     }
 
+    .main__box {
+        margin-top: 50px;
+    }
+
     .main__heading1 {
         font-size: 30px;
         margin-top: 25px;
@@ -316,10 +335,6 @@ main .last-box {
 
     .main__sub-heading {
         font-size: 20px;
-    }
-
-    .main__box {
-        margin-top: 30px;
     }
 
     .organization .org-link {
