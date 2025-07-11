@@ -91,6 +91,31 @@ main {
 	background: #f6f6f6;
 }
 
+.document-link {
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.document-link:hover {
+	text-decoration: solid underline #21536C;
+}
+
+.document-link:not(:last-of-type) {
+	margin-bottom: 20px;
+}
+
+.document-link__text {
+	width: 85%;
+}
+
+.document-link__icon {
+	width: 15%;
+	height: 45px;
+}
+
 .link_list {
 	margin: 0;
 	padding: 0;
@@ -481,6 +506,13 @@ footer a:hover {
 	.link_list--info {
 		transform: translateX(0%);
 	}
+
+	.document-link {
+		font-size: 14px;
+	}
+	.document-link__icon {
+		height: 38px;
+	}
 }
 
 @media screen and (max-width: 680px) {
@@ -513,6 +545,10 @@ footer a:hover {
 @media screen and (max-width: 600px) {
 	.header__text {
 		display: none;
+	}
+
+	.document-link__icon {
+		height: 30px;
 	}
 }
 
