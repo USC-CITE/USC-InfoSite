@@ -1,7 +1,8 @@
 .banner {
     padding: 30px 0;
-    background: #E1A011;
-    color: #ffffff;
+    background: #ffffff;
+    color: black;
+    width:100%;
 }
 
 .container--banner {
@@ -11,8 +12,8 @@
 
 .banner__hdng {
     padding: 0 20px;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: 64px;
+    font-weight: 600;
 }
 
 .banner__subhdng {
@@ -30,9 +31,42 @@
 .search_form--home {
     display: inline-block;
 }
+.search_form{
+    margin-top:12px;
+}
 
 .search_form__input {
     width: 100%;
+    margin-top: 18px;
+}
+.search_form__btn{
+    border-left: none;
+    background: none;
+    margin-top: 18px;
+}
+.brush {
+  position: relative;
+  display: inline-block;
+}
+
+.brush::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 12px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.brush.yellow::after {
+  background-image: url('../assets/icons/yellow-brush-stroke.svg');
+}
+
+.brush.blue::after {
+  background-image: url('../assets/icons/blue-brush-stroke.svg');
 }
 
 .acad_clndr {
@@ -40,21 +74,25 @@
     height: 100px;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
     align-items: center;
-    background: #0057AA;
 }
 
-.acad_clndr__logo {
+.document-link__icon {
     width: 50px;
     height: 50px;
 }
 
-.acad_clndr__link {
-    margin-left: 20px;
-    max-width: 400px;
-    font-size: 14px;
-    color: #ffffff;
+.document-link__text {
+    max-width: 600px;
+    font-size: 20px;
+    font-weight:600;
+    margin-left: 16px;
+}
+.document-link{
+    text-decoration: none;
+    display:flex;
+    align-items: center;
+    
 }
 
 .present_events {
@@ -280,6 +318,16 @@
     .event-card {
         font-size: 20px;
     }
+    .banner__hdng{
+        font-size:30px;
+    }
+    .banner{
+        padding: 40px 0px 0px 0px;
+    }
+
+    .document-link__text{
+        font-size:14px
+    }
 
     .event-title {
         font-size: 20px;
@@ -370,14 +418,13 @@
 }
 
 @media only screen and (min-width: 480px) {
-    .banner {
-        padding: 40px 20px;
+    .banner{
+        padding: 40px 0px 0px 0px;
     }
 
     .banner__hdng {
-        font-size: 18px;
+        font-size: 30px;
     }
-
     .banner__subhdng {
         font-size: 40px;
     }
@@ -389,7 +436,7 @@
 
 @media only screen and (min-width: 700px) {
     .banner__hdng {
-        font-size: 22px;
+        font-size: 38px;
     }
 
     .banner__subhdng {
@@ -408,7 +455,7 @@
 
 @media only screen and (min-width: 800px) {
     .banner {
-        padding: 50px 20px;
+        padding: 60px 0px 10px 0px;
     }
 
     .services,
@@ -454,8 +501,11 @@
 }
 
 @media only screen and (min-width: 900px) {
+    .banner{
+         padding: 60px 0px 10px 0px;
+    }
     .banner__hdng {
-        font-size: 26px;
+        font-size: 48px;
     }
 
     .banner__subhdng {
@@ -469,11 +519,11 @@
 
 @media only screen and (min-width: 1000px) {
     .banner {
-        padding: 60px 20px;
+        padding: 60px 0px 10px 0px;
     }
 
     .banner__hdng {
-        font-size: 30px;
+        font-size: 64px;
     }
 
     .banner__subhdng {
