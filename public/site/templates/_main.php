@@ -58,11 +58,12 @@ $home = $pages->get('/'); /** @var HomePage $home */
 	<header id="header">
 		<div class="header__container">
 			<div class="header__banner">
-				<a href="/"><img src="<?= $config->urls->templates; ?>assets/logos/USC-logo.png" alt="USC-logo"
+				<a href="/"><img src="<?= $config->urls->templates; ?>assets/logos/USC-logo.png" alt=""
 						class="header__logo" />
 					<div class="header__text">
-						<h1>West Visayas State University</h1>
-						<h2>University Student Council</h2>
+						<h1>West Visayas State University
+							<span>University Student Council</span>
+						</h1>
 					</div>
 				</a>
 			</div>
@@ -77,7 +78,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 				<div class="header__search">
 					<a href="/search" data-js="search_btn">
 						<p class="sr_only">Search</p>
-						<img alt="Search" src="<?= $config->urls->templates; ?>assets/icons/magnifier.svg" />
+						<img alt="" src="<?= $config->urls->templates; ?>assets/icons/magnifier.svg" />
 					</a>
 				</div>
 			</div>
