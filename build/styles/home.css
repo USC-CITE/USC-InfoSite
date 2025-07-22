@@ -16,12 +16,6 @@
     font-weight: 600;
 }
 
-.banner__subhdng {
-    padding: 0 20px;
-    font-size: 30px;
-    font-weight: 600;
-}
-
 .banner__desc {
     margin: 10px 0 20px 0;
     padding: 0 20px;
@@ -37,13 +31,8 @@
 
 .search_form__input {
     width: 100%;
-    margin-top: 18px;
 }
-.search_form__btn{
-    border-left: none;
-    background: none;
-    margin-top: 18px;
-}
+
 .brush {
   position: relative;
   display: inline-block;
@@ -75,24 +64,6 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-}
-
-.document-link__icon {
-    width: 50px;
-    height: 50px;
-}
-
-.document-link__text {
-    max-width: 600px;
-    font-size: 20px;
-    font-weight:600;
-    margin-left: 16px;
-}
-.document-link{
-    text-decoration: none;
-    display:flex;
-    align-items: center;
-    
 }
 
 .present_events {
@@ -298,6 +269,10 @@
     .event-where-when {
         padding: 5px;
     }
+     .banner__hdng{
+        font-size:30px;
+        margin-bottom: 24px;
+    }
 }
 
 @media screen and (min-width: 500px) and (max-width:1000px) {
@@ -319,7 +294,8 @@
         font-size: 20px;
     }
     .banner__hdng{
-        font-size:30px;
+        font-size:32px;
+        margin-bottom: 24px;
     }
     .banner{
         padding: 40px 0px 0px 0px;
@@ -423,30 +399,26 @@
     }
 
     .banner__hdng {
-        font-size: 30px;
+        font-size: 38px;
+        margin-bottom: 24px;
     }
-    .banner__subhdng {
-        font-size: 40px;
+}
+@media only screen and (min-width: 512px) {
+    .banner__hdng{
+        font-size: 46px;
     }
-
-    .banner__desc {
-        font-size: 16px;
+}
+@media only screen and (min-width: 600px) {
+    .banner__hdng{
+        font-size: 46px;
     }
 }
 
 @media only screen and (min-width: 700px) {
     .banner__hdng {
-        font-size: 38px;
+        font-size: 54px;
+        margin-bottom: 24px;
     }
-
-    .banner__subhdng {
-        font-size: 48px;
-    }
-
-    .banner__desc {
-        font-size: 18px;
-    }
-
     .events__hdng, .services__hdng,
     .ancmts__hdng {
         font-size: 26px;
@@ -455,7 +427,7 @@
 
 @media only screen and (min-width: 800px) {
     .banner {
-        padding: 60px 0px 10px 0px;
+        padding: 40px 0px 10px 0px;
     }
 
     .services,
@@ -502,18 +474,11 @@
 
 @media only screen and (min-width: 900px) {
     .banner{
-         padding: 60px 0px 10px 0px;
+         padding: 40px 0px 10px 0px;
     }
     .banner__hdng {
-        font-size: 48px;
-    }
-
-    .banner__subhdng {
-        font-size: 54px;
-    }
-
-    .banner__desc {
-        font-size: 20px;
+        font-size: 60px;
+        margin-bottom: 24px;
     }
 }
 
@@ -521,15 +486,10 @@
     .banner {
         padding: 60px 0px 10px 0px;
     }
-
     .banner__hdng {
         font-size: 64px;
+        margin-bottom: 24px;
     }
-
-    .banner__subhdng {
-        font-size: 60px;
-    }
-
     .events__hdng, .services__hdng,
     .ancmts__hdng {
         font-size: 34px;
@@ -546,10 +506,6 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .banner__subhdng {
-        font-size: 64px;
-    }
-
     .events__hdng, .services__hdng,
     .ancmts__hdng {
         font-size: 40px;
