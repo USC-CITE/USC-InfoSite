@@ -1,43 +1,56 @@
 .banner {
     padding: 30px 0;
-    background: #E1A011;
-    color: #ffffff;
+    background: #ffffff;
+    color: black;
+    width:100%;
 }
 
 .container--banner {
     margin: 0 auto;
-    padding: 0 20px;
     max-width: 1000px;
 }
 
 .banner__hdng {
     padding: 0 20px;
-    font-size: 0.875rem;
-    font-weight: 400;
-}
-
-.banner__subhdng {
-    padding: 0 20px;
-    font-size: 1.875rem;
+    font-size: 64px;
     font-weight: 600;
+    white-space: pre-line;
 }
 
-.banner__desc {
-    margin: 10px 0 20px 0;
-    padding: 0 20px;
-    font-size: 0.875rem;
+.search_form{
+    margin-top: 12px;
 }
-
 .search_form--home {
     display: inline-block;
+    padding: 0 20px;
+}
+.search_form__button--home {
+    right: unset;
 }
 
-#search-input:focus-visible {
-    outline: 5px solid #21536C;
+.brush {
+  position: relative;
+  display: inline-block;
 }
 
-#search-btn:focus-visible {
-    outline: 5px solid #21536C;
+.brush::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 12px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.brush.yellow::after {
+  background-image: url('../assets/icons/yellow-brush-stroke.svg');
+}
+
+.brush.blue::after {
+  background-image: url('../assets/icons/blue-brush-stroke.svg');
 }
 
 .acad_clndr {
@@ -45,21 +58,7 @@
     height: 100px;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
     align-items: center;
-    background: #0057AA;
-}
-
-.acad_clndr__logo {
-    width: 50px;
-    height: 50px;
-}
-
-.acad_clndr__link {
-    margin-left: 20px;
-    max-width: 400px;
-    font-size: 0.875rem;
-    color: #ffffff;
 }
 
 .present_events {
@@ -374,35 +373,49 @@
     justify-self: center;
 }
 
+@media only screen and (max-width: 360px) {
+     .banner__hdng{
+        font-size: 1.875rem;
+        margin-bottom: 24px;
+    }
+}
+
 @media only screen and (min-width: 480px) {
-    .banner {
-        padding: 40px 20px;
+    .banner{
+        padding: 40px 0px 0px 0px;
     }
 
     .banner__hdng {
-        font-size: 1.125rem;
+        font-size: 2.375rem;
+        margin-bottom: 24px;
     }
+}
 
-    .banner__subhdng {
-        font-size: 2.5rem;
+@media screen and (min-width: 360px) and (max-width: 500px) {
+    .banner__hdng{
+        font-size: 2rem;
+        margin-bottom: 24px;
     }
+    .banner{
+        padding: 40px 0px 0px 0px;
+    }
+}
 
-    .banner__desc {
-        font-size: 1rem;
+@media only screen and (min-width: 512px) {
+    .banner__hdng{
+        font-size: 2.875rem;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .banner__hdng{
+        font-size: 2.875rem;
     }
 }
 
 @media only screen and (min-width: 700px) {
     .banner__hdng {
-        font-size: 1.375rem;
-    }
-
-    .banner__subhdng {
-        font-size: 3rem;
-    }
-
-    .banner__desc {
-        font-size: 1.125rem;
+        font-size: 3.375rem;
+        margin-bottom: 24px;
     }
 
     .events__hdng, .services__hdng,
@@ -413,7 +426,7 @@
 
 @media only screen and (min-width: 800px) {
     .banner {
-        padding: 50px 20px;
+        padding: 40px 0px 10px 0px;
     }
 
     .services,
@@ -459,30 +472,22 @@
 }
 
 @media only screen and (min-width: 900px) {
+    .banner{
+         padding: 40px 0px 10px 0px;
+    }
     .banner__hdng {
-        font-size: 1.625rem;
-    }
-
-    .banner__subhdng {
-        font-size: 54px;
-    }
-
-    .banner__desc {
-        font-size: 1.25rem;
+        font-size: 3.75rem;
+        margin-bottom: 24px;
     }
 }
 
 @media only screen and (min-width: 1000px) {
     .banner {
-        padding: 60px 20px;
+        padding: 60px 0px 10px 0px;
     }
-
     .banner__hdng {
-        font-size: 1.875rem;
-    }
-
-    .banner__subhdng {
-        font-size: 3.75rem;
+        font-size: 4rem;
+        margin-bottom: 24px;
     }
 
     .events__hdng, .services__hdng,
@@ -501,10 +506,6 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .banner__subhdng {
-        font-size: 4rem;
-    }
-
     .events__hdng, .services__hdng,
     .ancmts__hdng {
         font-size: 2.5rem;
