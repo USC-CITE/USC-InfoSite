@@ -39,7 +39,7 @@ html {
 
 .title-date {
     /*! padding-top: 75px; */
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
     color: white;
@@ -49,7 +49,7 @@ html {
     font-weight: 600;
     color: white;
     text-align: center;
-    font-size: 64px;
+    font-size: 4rem;
     max-width: 1000px;
 }
 
@@ -61,7 +61,7 @@ html {
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 600;
 }
 
@@ -69,7 +69,7 @@ html {
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     margin: 0 20px;
 }
@@ -81,7 +81,7 @@ html {
 main h2 {
     text-align: center;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
@@ -144,20 +144,20 @@ main h2 {
 
 
 .overview-title {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 600;
     color: #8F8B8B;
     margin-bottom: 10px;
 }
 
 .no-indent {
-    /*! font-size: 18px; */
+    /*! font-size: 1.125rem; */
     font-weight: 400;
 }
 
 .indented {
     margin-top: 14px;
-    /*! font-size: 18px; */
+    /*! font-size: 1.125rem; */
     font-weight: 400;
 }
 
@@ -165,14 +165,14 @@ main h2 {
     text-align: center;
     /*! margin-top: 50px; */
     /*! margin-bottom: 100px; */
-    font-size: 16px;
+    font-size: 1rem;
     max-width: 500px;
     margin: 50px auto 80px auto;
     padding: 0 20px;
 }
 
 .back-to-events {
-    /*! font-size: 16px; */
+    /*! font-size: 1rem; */
     text-align: center;
     margin-bottom: 30px;
 }
@@ -186,7 +186,7 @@ main h2 {
 }
 
 .back-to-archives {
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
     font-weight: 400;
 }
@@ -207,7 +207,7 @@ a {
     text-align: center;
     font-weight: 600;
     /*! font: Poppins; */
-    font-size: 34px;
+    font-size: 2.125rem;
     color: #8F8B8B;
     /*! margin: auto; */
     /*! width: 100%; */
@@ -250,7 +250,7 @@ a {
     /*! padding-left: 24px; */
     font-weight: 400;
     color: #44425A;
-    font-size: 18px;
+    font-size: 1.125rem;
     background-color: #E5E5E5;
     border-radius: 10px 10px 0px 0px;
     padding: 10px 30px;
@@ -273,13 +273,13 @@ a {
 
 .event-title {
     text-decoration-thickness: 2px;
-    font-size: 34px;
+    font-size: 2.125rem;
     font-weight: 600;
 }
 
 .event-date {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #44425A;
     /*! margin-bottom: 3vh; */
 }
@@ -292,7 +292,7 @@ a {
     height: fit-content;
     background-color: #F7F7F7;
     border-radius: 0px 0px 10px 10px;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #1E1E1E;
     padding: 20px 20px;
 }
@@ -355,7 +355,7 @@ a {
 .archive-description {
     position: relative;
     right: 15px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .event-archived {
@@ -367,11 +367,11 @@ a {
 
 @media screen and (max-width:800px) {
     .title-event {
-        font-size: 45px;
+        font-size: 2.81rem;
     }
 
     .title-date {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .archive-card {
@@ -406,7 +406,7 @@ a {
 @media screen and (max-width: 500px) {
 
     .events-about-container {
-        font-size: 16px;
+        font-size: 1rem;
     }
     .event-archived {
         /*! padding-left: 12px; */
@@ -434,12 +434,12 @@ a {
 
 @media screen and (max-width:360px) {
     .title-event {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     .title-date {
         /*! padding-top: 40px; */
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .events--container {
@@ -452,11 +452,11 @@ a {
     }
 
     .title {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     .sub-title {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .sub-title br {
@@ -469,15 +469,15 @@ a {
     }
 
     .events-about-container {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .event-archive {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .event-card {
-        font-size: 18px;
+        font-size: 1.125rem;
         margin-bottom: 30px;
     }
 
@@ -490,23 +490,23 @@ a {
     }
 
     .event-card-status {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .event-title {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .event-date {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .event-location {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .event-start-time {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .event-card-status {
@@ -544,24 +544,24 @@ a {
     }
 
     .back-to-events {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .overview-title {
         padding-top: 30px;
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .indented {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .no-indent {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .events-details-container {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     .overview-title {
@@ -569,7 +569,7 @@ a {
     }
 
     .back-to-archives {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
 
@@ -585,15 +585,15 @@ a {
     }
 
     .title {
-        font-size: 45px;
+        font-size: 2.81rem;
     }
 
     .sub-title {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .event-card {
-        font-size: 25px;
+        font-size: 1.56rem;
     }
 
     .event-title-card {
@@ -601,18 +601,18 @@ a {
     }
 
     .event-title {
-        font-size: 25px;
+        font-size: 1.56rem;
     }
 }
 
 @media screen and (min-width: 360px) and (max-width: 500px) {
     .title {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
 
     .sub-title {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .events-main--container {
@@ -620,15 +620,15 @@ a {
     }
 
     .event-archive {
-        font-size: 15px;
+        font-size: 0.9rem;
     }
 
     .event-card {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .event-title {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .flexed-event-card {
@@ -637,11 +637,11 @@ a {
     }
 
     .title-event {
-        font-size: 35px;
+        font-size: 2.1rem;
     }
 
     .title-date {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .events--container {
@@ -653,7 +653,7 @@ a {
 
 @media screen and (min-width: 500px) and (max-width:600px) {
     .title-event {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     .events--container {

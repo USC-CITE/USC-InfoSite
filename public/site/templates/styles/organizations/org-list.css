@@ -3,14 +3,14 @@
     color: #000;
     text-align: center;
     font-family: Poppins;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 600;
 }
 
 .title-about {
     text-align: center;
     font-family: Poppins;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     margin: 2vh;
 }
@@ -58,7 +58,7 @@
     justify-content: center;
     margin-left: 3vh;
     color: #21536C;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     text-decoration: underline;
     cursor: pointer;
@@ -82,11 +82,11 @@
 
 @media screen and (max-width:768px) {
     .title {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .title-about {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .org-logo {
@@ -95,7 +95,7 @@
     }
 
     .org-name {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .arrow {
@@ -110,7 +110,7 @@
     }
 
     .title-about {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .org-logo {
@@ -119,7 +119,7 @@
     }
 
     .org-name {
-        font-size: 17px;
+        font-size: 1.06rem;
     }
 
     .Organization-1 {
@@ -139,7 +139,7 @@
 
 @media screen and (max-width:360px) {
     .title {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     .org-logo {
@@ -155,7 +155,7 @@
     }
 
     .org-name {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .arrow {

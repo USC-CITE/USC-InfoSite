@@ -31,7 +31,7 @@ main {
 .main__items {
     margin-top: 21px;
     width: 90%;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -57,11 +57,11 @@ main {
 @media screen and (max-width: 1100px) {
     .main__text,
     .main__items {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .main__heading {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 }
 
@@ -75,11 +75,11 @@ main {
 
     .main__text,
     .main__items {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .main__heading {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
