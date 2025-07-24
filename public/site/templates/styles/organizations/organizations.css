@@ -20,14 +20,14 @@ main {
     margin-bottom: 15px;
     color: #000;
     text-align: center;
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 600;
 }
 
 .main__text1 {
     width: inherit;
     text-align: left;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 150%;
     /* 30px */
@@ -43,7 +43,7 @@ main {
 }
 
 .main__sub-heading {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 600;
     margin: 45px 0 50px;
     text-align: center;
@@ -96,7 +96,7 @@ main {
     text-align: center;
     justify-content: center;
     width: inherit;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 700;
 }
 
@@ -140,17 +140,17 @@ main .last-box {
 
 @media screen and (max-width: 1000px) {
     .main__heading1 {
-        font-size: 55.5px;
+        font-size: 3.4rem;
         margin-top: 75px;
     }
 
     .main__text1,
     .last-box .text {
-        font-size: 18.5px;
+        font-size: 1.125rem;
     }
 
     .main__sub-heading {
-        font-size: 27.5px;
+        font-size: 1.68rem;
     }
 
     .main__box {
@@ -158,7 +158,7 @@ main .last-box {
     }
 
     .organization .org-link {
-        font-size: 17px;
+        font-size: 1.06rem;
     }
 
     .organization .org-logo {
@@ -193,11 +193,11 @@ main .last-box {
 
     .main__text1,
     .last-box .text {
-        font-size: 17px;
+        font-size: 1.06rem;
     }
 
     .main__sub-heading {
-        font-size: 25px;
+        font-size: 1.56rem;
     }
 
     .organization {
@@ -205,7 +205,7 @@ main .last-box {
     }
 
     .organization .org-link {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .organization .org-logo {
@@ -213,7 +213,7 @@ main .last-box {
     }
 
     .main__box .link {
-        font-size: 15px;
+        font-size: 0.9rem;
     }
 
     .last-box .text {
@@ -236,22 +236,22 @@ main .last-box {
     }
 
     .main__heading1 {
-        font-size: 38.5px;
+        font-size: 2.4rem;
         margin-top: 25px;
     }
 
     .main__text1,
     .last-box .text {
-        font-size: 15.5px;
+        font-size: 0.9rem;
     }
 
     .main__sub-heading {
-        font-size: 22.5px;
+        font-size: 1.4rem;
         margin: 20px 0 0;
     }
 
     .organization .org-link {
-        font-size: 15px;
+        font-size: 0.9rem;
     }
 
     /* .organization .org-logo {
@@ -289,21 +289,21 @@ main .last-box {
     }
 
     .main__heading1 {
-        font-size: 30px;
+        font-size: 1.875rem;
         margin-top: 25px;
     }
 
     .main__text1,
     .last-box .text {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .main__sub-heading {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .organization .org-link {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     /* .organization .org-logo {
@@ -333,7 +333,7 @@ main .last-box {
     }
 
     .organization .org-link {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .last-box .text {

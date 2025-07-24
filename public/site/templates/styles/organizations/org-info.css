@@ -19,13 +19,13 @@ main {
 }
 
 .main__organization .org-name {
-    font-size: 34px;
+    font-size: 2.125rem;
     font-weight: 600;
 }
 
 .main__organization .org-type {
     color: #44425A;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
 }
 
@@ -57,7 +57,7 @@ main {
 }
 
 .main__info p {
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 600;
     margin-bottom: 10px;
@@ -65,7 +65,7 @@ main {
 
 .main__info p span {
     color: #44425A;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -108,12 +108,12 @@ main {
     }
 
     .main__organization .org-name {
-        font-size: 33.5px;
+        font-size: 2.125rem;
     }   
 
     .main__organization .org-type,
     .main__text {
-        font-size: 17px;
+        font-size: 1.06rem;
     }
 
     .main__content .rectangle {
@@ -126,11 +126,11 @@ main {
 
     .main__info p,
     .main__info p span {
-        font-size: 15.5px;
+        font-size: 0.9rem;
     }
 
     .main__contact a {
-        font-size: 13.5px;
+        font-size: 0.8rem;
     }
 
     .main__contact img {
@@ -145,12 +145,12 @@ main {
     }
 
     .main__organization .org-name {
-        font-size: 30px;
+        font-size: 1.875rem;
     }   
 
     .main__organization .org-type,
     .main__text {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .second-container {
@@ -163,11 +163,11 @@ main {
 
     .main__info p,
     .main__info p span {
-        font-size: 15px;
+        font-size: 0.9rem;
     }
 
     .main__contact a {
-        font-size: 13px;
+        font-size: 0.8rem;
     }
 
     .main__contact img {
@@ -194,12 +194,12 @@ main {
     }
 
     .main__organization .org-name {
-        font-size: 25px;
+        font-size: 1.56rem;
     }   
 
     .main__organization .org-type,
     .main__text {
-        font-size: 15px;
+        font-size: 0.9rem;
     }
 
     .main__content .rectangle {
@@ -208,11 +208,11 @@ main {
 
     .main__info p,
     .main__info p span {
-        font-size: 14.5px;
+        font-size: 0.875rem;
     }
 
     .main__contact a {
-        font-size: 12.5px;
+        font-size: 0.75rem;
     }
 
     .main__contact img {
@@ -227,12 +227,12 @@ main {
     }
 
     .main__organization .org-name {
-        font-size: 24px;
+        font-size: 1.5rem;
     }   
 
     .main__organization .org-type,
     .main__text {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .second-container {
@@ -250,11 +250,11 @@ main {
 
     .main__info p,
     .main__info p span {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .main__contact a {
-        font-size: 12px;
+        font-size: 0.625rem;
     }
 
     .main__contact img {

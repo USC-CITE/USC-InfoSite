@@ -12,20 +12,20 @@
 
 .banner__hdng {
     padding: 0 20px;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
 }
 
 .banner__subhdng {
     padding: 0 20px;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 600;
 }
 
 .banner__desc {
     margin: 10px 0 20px 0;
     padding: 0 20px;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .search_form--home {
@@ -58,7 +58,7 @@
 .acad_clndr__link {
     margin-left: 20px;
     max-width: 400px;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #ffffff;
 }
 
@@ -76,7 +76,7 @@
 .event-card {
     text-align: center;
     font-weight: 600;
-    font-size: 34px;
+    font-size: 2.125rem;
     color: #8F8B8B;
     margin: 0 auto 20px auto;
 }
@@ -95,7 +95,7 @@
     width: 100%;
     font-weight: 400;
     color: #44425A;
-    font-size: 18px;
+    font-size: 1.125rem;
     background-color: #E5E5E5;
     border-radius: 10px 10px 0px 0px;
     padding: 10px 30px;
@@ -120,17 +120,17 @@
 
 .event-title {
     text-decoration-thickness: 2px;
-    font-size: 34px;
+    font-size: 2.125rem;
     font-weight: 600;
 }
 
 .event-title--home {
-    font-size: 25px;
+    font-size: 1.56rem;
 }
 
 .event-date {
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #44425A;
 }
 
@@ -140,7 +140,7 @@
     height: fit-content;
     background-color: #F7F7F7;
     border-radius: 0px 0px 10px 10px;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #1E1E1E;
     padding: 20px 20px;
 }
@@ -181,7 +181,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     column-gap: 16px;
     text-decoration: none;
@@ -208,7 +208,7 @@
     .services__link,
     .ancmts__link,
     .events__link {
-        font-size: 16px;
+        font-size: 1rem;
         padding: 4px 0px 2px 10px;
     }
 
@@ -226,7 +226,7 @@
 
 @media screen and (max-width:360px) {
     .event-card {
-        font-size: 18px;
+        font-size: 1.125rem;
         margin-bottom: 30px;
     }
 
@@ -235,23 +235,23 @@
     }
 
     .event-card-status {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .event-title {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .event-date {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .event-location {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .event-start-time {
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 
     .event-card-status {
@@ -269,7 +269,7 @@
 
 @media screen and (min-width: 500px) and (max-width:1000px) {
     .event-card {
-        font-size: 25px;
+        font-size: 1.56rem;
     }
 
     .event-title-card {
@@ -277,17 +277,17 @@
     }
 
     .event-title {
-        font-size: 25px;
+        font-size: 1.56rem;
     }
 }
 
 @media screen and (min-width: 360px) and (max-width: 500px) {
     .event-card {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .event-title {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
@@ -320,7 +320,7 @@
 }
 
 .service__name {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -348,13 +348,13 @@
 }
 
 .ancmt__link {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
 }
 
 .ancmt__details,
 .ancmt__author {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 400;
     color: #44425A;
     display: flex;
@@ -380,34 +380,34 @@
     }
 
     .banner__hdng {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .banner__subhdng {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 
     .banner__desc {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
 @media only screen and (min-width: 700px) {
     .banner__hdng {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     .banner__subhdng {
-        font-size: 48px;
+        font-size: 3rem;
     }
 
     .banner__desc {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .events__hdng, .services__hdng,
     .ancmts__hdng {
-        font-size: 26px;
+        font-size: 1.625rem;
     }
 }
 
@@ -424,11 +424,11 @@
     .events__hdng, .services__hdng,
     .ancmts__hdng {
         margin-bottom: 30px;
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     .acad_clndr__link {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .service {
@@ -437,7 +437,7 @@
 
     .service__name,
     .service__desc {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .ancmt {
@@ -445,22 +445,22 @@
     }
 
     .ancmt__link {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .ancmt__details,
     .ancmt__author {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .ancmt__author {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
 @media only screen and (min-width: 900px) {
     .banner__hdng {
-        font-size: 26px;
+        font-size: 1.625rem;
     }
 
     .banner__subhdng {
@@ -468,7 +468,7 @@
     }
 
     .banner__desc {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
@@ -478,35 +478,35 @@
     }
 
     .banner__hdng {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
 
     .banner__subhdng {
-        font-size: 60px;
+        font-size: 3.75rem;
     }
 
     .events__hdng, .services__hdng,
     .ancmts__hdng {
-        font-size: 34px;
+        font-size: 2.125rem;
     }
 
     .service__name,
     .service__desc {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 
     .ancmt__link {
-        font-size: 20px;
+        font-size: 1.25rem;
     }
 }
 
 @media only screen and (min-width: 1200px) {
     .banner__subhdng {
-        font-size: 64px;
+        font-size: 4rem;
     }
 
     .events__hdng, .services__hdng,
     .ancmts__hdng {
-        font-size: 40px;
+        font-size: 2.5rem;
     }
 }
