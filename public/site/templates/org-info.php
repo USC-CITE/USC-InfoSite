@@ -81,6 +81,24 @@ namespace ProcessWire;
           <a href="<?= $page->org_x_link ?>"><?= $page->org_x_link ?></a>
         </div>
       <?php endif; ?>
+
+      <?php if (!empty($page->org_yt_link)): ?>
+        <div class="main__contact">
+          <img src="<?= $config->urls->templates ?>assets/icons/youtube.svg" alt="">
+          <a href="<?= $page->org_yt_link ?>"><?= $page->org_yt_link ?></a>
+        </div>
+      <?php endif; ?>
+
+      <?php if (!empty($page->org_other_links)): ?>
+        <?php
+          $links = explode(",", trim($page->org_other_links));
+          foreach ($links as $link): ?>
+          <div class="main__contact">
+            <img src="<?= $config->urls->templates ?>assets/icons/iconmonstr-link-1.svg" alt="">
+            <a href="<?= $link ?>"><?= $link ?></a>
+          </div>
+        <?php endforeach; ?>
+      <?php endif; ?>
     </div>
   </div>
 </main>
