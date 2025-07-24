@@ -25,19 +25,47 @@ namespace ProcessWire;
 
 			<div class="main__container main__container--contact-details main__container--contact-details--mobile">
 				<p>Adviser/s: <span><?= $page->org_advisers ?></span></p>
-				<div class="main__contact main__contact--first">
-					<img src="<?= $config->urls->templates?>assets/icons/phone.svg" alt="">
-					<a href="tel:<?= $page->org_phone ?>"> <?= $page->org_phone ?></a>
-				</div>
-				<div class="main__contact main__contact--second">
-					<img src="<?= $config->urls->templates?>assets/icons/facebook.svg" alt="">
-					<a href="<?= $page->org_fb_link ?>"><?= $page->org_fb_link ?></a>
-				</div>
-				<div class="main__contact">
-					<img src="<?= $config->urls->templates?>assets/icons/youtube.svg" alt="">
-					<a href="<?= $page->org_yt_link ?>"><?= $page->org_yt_link ?></a>
-				</div>
-			</div>
+				<?php if (!empty($page->org_phone)): ?>
+					<div class="main__contact main__contact--first">
+						<img src="<?= $config->urls->templates?>assets/icons/phone.svg" alt="">
+						<a href="tel:<?= $page->org_phone ?>"> <?= $page->org_phone ?></a>
+					</div>
+				<?php endif; ?>
+				<?php if (!empty($page->org_fb_link)): ?>
+					<div class="main__contact main__contact--second">
+						<img src="<?= $config->urls->templates?>assets/icons/facebook.svg" alt="">
+						<a href="<?= $page->org_fb_link ?>"><?= $page->org_fb_link ?></a>
+					</div>
+				<?php endif; ?>
+				<?php if (!empty($page->org_insta_link)): ?>
+					<div class="main__contact">
+						<img src="<?= $config->urls->templates?>assets/icons/instagram.svg" alt="">
+						<a href="<?= $page->org_insta_link ?>"><?= $page->org_insta_link ?></a>
+					</div>
+				<?php endif; ?>
+				<?php if (!empty($page->org_x_link)): ?>
+					<div class="main__contact">
+						<img src="<?= $config->urls->templates ?>assets/icons/twitter.svg" alt="">
+						<a href="<?= $page->org_x_link ?>"><?= $page->org_x_link ?></a>
+					</div>
+      	<?php endif; ?>
+				<?php if (!empty($page->org_yt_link)): ?>
+					<div class="main__contact">
+						<img src="<?= $config->urls->templates?>assets/icons/youtube.svg" alt="">
+						<a href="<?= $page->org_yt_link ?>"><?= $page->org_yt_link ?></a>
+					</div>
+				<?php endif; ?>
+				<?php if (!empty($page->org_other_links)): ?>
+        <?php
+          $links = explode(",", trim($page->org_other_links));
+          foreach ($links as $link): ?>
+          <div class="main__contact">
+            <img src="<?= $config->urls->templates ?>assets/icons/iconmonstr-link-1.svg" alt="">
+            <a href="<?= $link ?>"><?= $link ?></a>
+          </div>
+        <?php endforeach; ?>
+      <?php endif; ?>
+ 			</div>
 
 			<h2 class="main__sub-heading">Official Address:</h2>
 			<p class="main__details">2nd Floor, University Student Center</p>
@@ -48,18 +76,46 @@ namespace ProcessWire;
 		</div>
 		<div class="main__container main__container--contact-details">
 			<p>Adviser/s: <br><span><?= $page->org_advisers ?></span></p>
-			<div class="main__contact main__contact--first">
-				<img src="<?= $config->urls->templates?>assets/icons/phone.svg" alt="">
-				<a href="tel:<?= $page->org_phone ?>"><?= $page->org_phone ?></a>
-			</div>
-			<div class="main__contact main__contact--second">
-				<img src="<?= $config->urls->templates?>assets/icons/facebook.svg" alt="">
-				<a href="<?= $page->org_fb_link ?>"><?= $page->org_fb_link ?></a>
-			</div>
-			<div class="main__contact">
-				<img src="<?= $config->urls->templates?>assets/icons/youtube.svg" alt="">
-				<a href="<?= $page->org_yt_link ?>"><?= $page->org_yt_link ?></a>
-			</div>
+			<?php if (!empty($page->org_phone)): ?>
+					<div class="main__contact">
+						<img src="<?= $config->urls->templates?>assets/icons/phone.svg" alt="">
+						<a href="tel:<?= $page->org_phone ?>"> <?= $page->org_phone ?></a>
+					</div>
+				<?php endif; ?>
+				<?php if (!empty($page->org_fb_link)): ?>
+					<div class="main__contact">
+						<img src="<?= $config->urls->templates?>assets/icons/facebook.svg" alt="">
+						<a href="<?= $page->org_fb_link ?>"><?= $page->org_fb_link ?></a>
+					</div>
+				<?php endif; ?>
+				<?php if (!empty($page->org_insta_link)): ?>
+					<div class="main__contact">
+						<img src="<?= $config->urls->templates?>assets/icons/instagram.svg" alt="">
+						<a href="<?= $page->org_insta_link ?>"><?= $page->org_insta_link ?></a>
+					</div>
+				<?php endif; ?>
+				<?php if (!empty($page->org_x_link)): ?>
+					<div class="main__contact">
+						<img src="<?= $config->urls->templates ?>assets/icons/twitter.svg" alt="">
+						<a href="<?= $page->org_x_link ?>"><?= $page->org_x_link ?></a>
+					</div>
+      	<?php endif; ?>
+				<?php if (!empty($page->org_yt_link)): ?>
+					<div class="main__contact">
+						<img src="<?= $config->urls->templates?>assets/icons/youtube.svg" alt="">
+						<a href="<?= $page->org_yt_link ?>"><?= $page->org_yt_link ?></a>
+					</div>
+				<?php endif; ?>
+				<?php if (!empty($page->org_other_links)): ?>
+        <?php
+          $links = explode(",", trim($page->org_other_links));
+          foreach ($links as $link): ?>
+          <div class="main__contact">
+            <img src="<?= $config->urls->templates ?>assets/icons/iconmonstr-link-1.svg" alt="">
+            <a href="<?= $link ?>"><?= $link ?></a>
+          </div>
+        <?php endforeach; ?>
+      <?php endif; ?>
 		</div>
 	</div>
 </main>

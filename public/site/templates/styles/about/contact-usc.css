@@ -81,11 +81,11 @@ p {
     overflow-wrap: break-word;
 }
 
-.main__contact--first {
+.main__contact:first-of-type {
     margin-top: 2.5rem;
 }
 
-.main__contact--second {
+.main__contact:nth-of-type(2) {
     margin-top: 4.375rem;
 }
 
@@ -135,7 +135,7 @@ p {
         margin-top: 3rem;
     }
 
-    .main__contact--second {
+    .main__contact:nth-of-type(2) {
         margin-top: 0;
     }
 
