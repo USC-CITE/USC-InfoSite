@@ -72,14 +72,23 @@ document.addEventListener('DOMContentLoaded', function () {
             menuBtn.classList.remove('selected');
         }
     });
-});
 
+    const reportBtn = document.querySelector('.main__report');
+    const reportFrm = document.querySelector('.report_form');
 
-const reportBtn = document.querySelector('.main__report');
-const reportFrm = document.querySelector('.report_form');
+    reportBtn.setAttribute('role', 'button');
 
-reportBtn.addEventListener('click', function () {
-    reportFrm.style.display = "flex";
-    this.style.display = "none";
+    reportBtn.addEventListener('click', function () {
+        reportFrm.style.display = "flex";
+        this.style.display = "none";
+    });
+
+    reportBtn.addEventListener('keydown', function (e) {
+        if (e.keyCode === 32 || e.keyCode === 13) { // Space or Enter key
+            reportFrm.style.display = "flex";
+            reportFrm.focus();
+            this.style.display = "none";
+        }
+    });
 });
 
