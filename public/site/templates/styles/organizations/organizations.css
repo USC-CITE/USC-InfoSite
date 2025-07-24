@@ -72,6 +72,11 @@ main {
     gap: 30px;
 }
 
+.organization:nth-of-type(4),
+.organization:nth-of-type(5) {
+    margin-top: 50px;
+}
+
 .bottom-left {
     margin-top: 20px;
     padding-left: 16.5%;
