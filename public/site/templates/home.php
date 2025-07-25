@@ -20,7 +20,7 @@
 							<h1 class="banner__hdng">Yours in the <span class="brush yellow">service</span> 
 							of the <span class="brush blue">students</span>
 							</h1>
-					<form class="search_form search_form--home" action="/search" method="post" data-js="search_form">
+					<form class="search_form search_form--home" action="/search/" method="post" data-js="search_form">
 					<label for="search-input" class="sr_only">Search the USC Infosite</label>
 					<input id="search-input" class="search_form__input" type="text" name="search_query"/>
 					<button id="search-btn" class="search_form__btn search_form__button--home" type="submit">
