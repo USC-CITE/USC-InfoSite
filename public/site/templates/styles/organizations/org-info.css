@@ -46,20 +46,38 @@ main {
     margin-top: 50px;
 }
 
-.main__content > h1,
+.main__content > h1 {
+    margin-top: 20px;
+}
+
 .main__content > h2,
 .main__content > h3,
 .main__content > h4,
 .main__content > h5,
 .main__content > h6 {
-    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
-.main__content > p:not(:first-of-type),
+.main__content > p,
 .main__content > blockquote,
 .main__content > pre {
     margin-top: 20px;
 }
+
+.main__content > h1 + p,
+.main__content > h2 + p,
+.main__content > h3 + p,
+.main__content > h4 + p,
+.main__content > h5 + p,
+.main__content > h6 + p {
+    margin-top: 10px;
+}
+
+.main__content > p:first-child,
+.main__content > blockquote:first-child,
+.main__content > pre:first-child {
+    margin-top: 0;
+} 
 
 .main__content > p > img {
     margin-top: 20px;
