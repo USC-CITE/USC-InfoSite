@@ -85,7 +85,7 @@ html {
 }
 
 .events-about-container > h1 {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .events-about-container > h2,
@@ -111,6 +111,7 @@ html {
     margin-top: 10px;
 }
 
+.events-about-container > h1:first-child,
 .events-about-container > p:first-child,
 .events-about-container > blockquote:first-child,
 .events-about-container > pre:first-child {
@@ -118,7 +119,6 @@ html {
 } 
 
 .events-about-container > p > img {
-    margin-top: 20px;
     max-width: 100%;
     object-fit: cover;
 }

@@ -47,7 +47,7 @@ main {
 }
 
 .main__content > h1 {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .main__content > h2,
@@ -73,6 +73,7 @@ main {
     margin-top: 10px;
 }
 
+.main__content > h1:first-child,
 .main__content > p:first-child,
 .main__content > blockquote:first-child,
 .main__content > pre:first-child {
@@ -80,7 +81,6 @@ main {
 } 
 
 .main__content > p > img {
-    margin-top: 20px;
     max-width: 100%;
     object-fit: cover;
 }
