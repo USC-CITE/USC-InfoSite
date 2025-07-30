@@ -58,6 +58,78 @@ main {
     padding: 2.75rem 3.75rem;
 }
 
+.main__container--info > h1 {
+    margin-top: 20px;
+}
+
+.main__container--info > h2,
+.main__container--info > h3,
+.main__container--info > h4,
+.main__container--info > h5,
+.main__container--info > h6 {
+    margin-top: 10px;
+}
+
+.main__container--info > p,
+.main__container--info > blockquote,
+.main__container--info > pre {
+    margin-top: 20px;
+}
+
+.main__container--info > h1 + p,
+.main__container--info > h2 + p,
+.main__container--info > h3 + p,
+.main__container--info > h4 + p,
+.main__container--info > h5 + p,
+.main__container--info > h6 + p {
+    margin-top: 10px;
+}
+
+.main__container--info > p:first-child,
+.main__container--info > blockquote:first-child,
+.main__container--info > pre:first-child {
+    margin-top: 0;
+} 
+
+.main__container--info > p > img {
+    margin-top: 20px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.main__container--info ul,
+.main__container--info ol {
+    padding-left: 20px;
+}
+
+.main__container--info > ul,
+.main__container--info > ol {
+    margin-top: 20px;
+    padding-left: 40px;
+}
+
+.main__contact ul > li,
+.main__contact ol > li  {
+    padding-left: 20px;
+}
+
+.main__container--info > blockquote {
+    margin-left: 20px;
+    border-left: 1px solid #44425A;
+    padding-left: 20px;
+}
+.main__container--info > blockquote p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.main__container--info > table {
+    margin-top: 20px;
+}
+.main__container--info > table > tbody > tr > td {
+    padding: 3px;
+}
+
 .main__container--info img {
     width: 100%;
 }
