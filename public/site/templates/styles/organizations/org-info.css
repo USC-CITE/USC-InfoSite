@@ -46,9 +46,58 @@ main {
     margin-top: 50px;
 }
 
+.main__content > h1,
+.main__content > h2,
+.main__content > h3,
+.main__content > h4,
+.main__content > h5,
+.main__content > h6 {
+    margin-bottom: 20px;
+}
+
+.main__content > p:not(:first-of-type),
+.main__content > blockquote,
+.main__content > pre {
+    margin-top: 20px;
+}
+
 .main__content > p > img {
+    margin-top: 20px;
     max-width: 100%;
     object-fit: cover;
+}
+
+.main__content ul,
+.main__content ol {
+    padding-left: 20px;
+}
+
+.main__content > ul,
+.main__content > ol {
+    margin-top: 20px;
+    padding-left: 40px;
+}
+
+.main__contact ul > li,
+.main__contact ol > li  {
+    padding-left: 20px;
+}
+
+.main__content > blockquote {
+    margin-left: 20px;
+    border-left: 1px solid #44425A;
+    padding-left: 20px;
+}
+.main__content > blockquote p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.main__content > table {
+    margin-top: 20px;
+}
+.main__content > table > tbody > tr > td {
+    padding: 3px;
 }
 
 .main__info {
