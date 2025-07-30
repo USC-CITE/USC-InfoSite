@@ -48,6 +48,25 @@ main {
 	flex-direction: column;
 }
 
+code {
+	width: 100%;
+	padding: 5px 10px;
+	display: inline-block;
+	background: #F5F5F5;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 0.875rem;
+}
+
+pre {
+	font-family:'Courier New', Courier, monospace;
+	font-size: 0.875rem;
+}
+
+hr {
+	margin: 20px 0;
+  border: 1px solid #d9d4d7;
+}
+
 .skip-to-main > a {
 	width: 100%;
 	height: 0px;
@@ -83,6 +102,23 @@ main {
 .pw-edit-page > a:hover {
 	color: #add8e6;
 }
+
+/* START
+ * ProcessWire TinyMCE generated classes for text alignment
+ */
+.align_left {
+	text-align: left;
+}
+.align_right {
+	text-align: right;
+}
+.align_center {
+	text-align: center;
+}
+.align_full {
+	text-align: justify;
+}
+/* END */
 
 .container {
 	width: 100%;
