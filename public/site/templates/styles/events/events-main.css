@@ -78,17 +78,77 @@ html {
     display: none;
 }
 
-main h2 {
-    text-align: center;
-    font-family: Poppins;
-    font-size: 1.25rem;
-    font-weight: 400;
-}
-
 .events-about-container {
     margin: auto;
     width: 700px;
     margin-bottom: 50px;
+}
+
+.events-about-container > h1 {
+    margin-top: 20px;
+}
+
+.events-about-container > h2,
+.events-about-container > h3,
+.events-about-container > h4,
+.events-about-container > h5,
+.events-about-container > h6 {
+    margin-top: 10px;
+}
+
+.events-about-container > p,
+.events-about-container > blockquote,
+.events-about-container > pre {
+    margin-top: 20px;
+}
+
+.events-about-container > h1 + p,
+.events-about-container > h2 + p,
+.events-about-container > h3 + p,
+.events-about-container > h4 + p,
+.events-about-container > h5 + p,
+.events-about-container > h6 + p {
+    margin-top: 10px;
+}
+
+.events-about-container > p:first-child,
+.events-about-container > blockquote:first-child,
+.events-about-container > pre:first-child {
+    margin-top: 0;
+} 
+
+.events-about-container > p > img {
+    margin-top: 20px;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.events-about-container ul,
+.events-about-container ol {
+    padding-left: 20px;
+}
+
+.events-about-container > ul,
+.events-about-container > ol {
+    margin-top: 20px;
+    padding-left: 40px;
+}
+
+.events-about-container > blockquote {
+    margin-left: 20px;
+    border-left: 1px solid #44425A;
+    padding-left: 20px;
+}
+.events-about-container > blockquote p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.events-about-container > table {
+    margin-top: 20px;
+}
+.events-about-container > table > tbody > tr > td {
+    padding: 3px;
 }
 
 .events-about-container img {
