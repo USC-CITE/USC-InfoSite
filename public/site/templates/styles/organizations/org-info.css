@@ -96,11 +96,6 @@ main {
     padding-left: 40px;
 }
 
-.main__contact ul > li,
-.main__contact ol > li  {
-    padding-left: 20px;
-}
-
 .main__content > blockquote {
     margin-left: 20px;
     border-left: 1px solid #44425A;
