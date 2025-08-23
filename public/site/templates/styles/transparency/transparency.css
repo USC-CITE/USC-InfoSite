@@ -1,147 +1,154 @@
-main{
+main {
     width: 100%;
-    height:100%;
+    height: 100%;
     min-height: 74vh;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
+
 .title {
-    font-size:30px;
+    font-size: 30px;
     font-weight: 600;
     line-height: 1.5em;
 }
+
 .desc {
-    font-size:20px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.5em;
 }
-.text-container{
+
+.text-container {
     padding: 32px;
     padding-right: 128px;
-    width:100%;
+    width: 100%;
     max-width: 100%;
-    margin-right:0;
+    margin-right: 0;
 }
-.resolution-container{
-    margin:24px;
-    display:flex;
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 100%;
+    min-height: 48svh;
+}
+
+.resolution-container {
+    margin: 24px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    width:100%;
+    width: 100%;
     padding-left: 32px;
     padding-right: 116px;
     margin-right: 64px;
 }
-.icon-text{
-    display:flex;
+
+.icon-text {
+    display: flex;
     align-items: center;
 }
-.resolution-text{
+
+.resolution-text {
     line-height: 30px;
     font-weight: 700;
-    color:#21536c;
+    color: #21536c;
     text-decoration: underline;
     text-align: center;
-    font-size:20px;
+    font-size: 20px;
 }
-.arrow{
+
+.arrow {
     font-size: 15px;
 }
-.icon{
-    width:100%;
-    height:100%;
+
+.icon {
+    width: 100%;
+    height: 100%;
     max-width: 70px;
-    min-width:40px;
-    margin-right:40px;
+    min-width: 40px;
+    margin-right: 40px;
 }
-.reportbtn{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: auto;
-}
-.report_form{
-    border: black 2px solid;
-}
-@media screen and (max-width: 980px){
-    .text-container{
+
+@media screen and (max-width: 980px) {
+    .text-container {
         padding-right: 60px;
     }
 }
-@media screen and (max-width: 800px){
-    .title{
-        font-size:24px;
+@media screen and (max-width: 800px) {
+    .title {
+        font-size: 24px;
         font-weight: 600;
         line-height: 1.5em;
     }
     .desc {
-        font-size:18px;
+        font-size: 18px;
         font-weight: 400;
         line-height: 1.5em;
     }
-    .text-container{
+    .text-container {
         padding-right: 40px;
     }
-    .resolution-text{
+    .resolution-text {
         margin-right: 2px;
     }
 }
-@media screen and (max-width: 600px){
-    .title{
-        font-size:22px;
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 22px;
         font-weight: 600;
         line-height: 1.5em;
     }
     .desc {
-        font-size:16px;
+        font-size: 16px;
         font-weight: 400;
         line-height: 1.5em;
     }
-    .text-container{
+    .text-container {
         padding-right: 22px;
     }
-    .resolution-text{
+    .resolution-text {
         margin-right: 2px;
-        font-size:18px;
-        padding-right: 62px;    
+        font-size: 18px;
+        padding-right: 62px;
     }
-    .icon{
+    .icon {
         width: 50px;
         height: 46px;
-
-    }
-    
-}
-@media screen and (max-width: 600px){
-    .resolution-container{
-        padding-right:62px;
     }
 }
-@media screen and (max-width: 400px){
-    .title{
-        font-size:20px;
+@media screen and (max-width: 600px) {
+    .resolution-container {
+        padding-right: 62px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 20px;
         font-weight: 600;
         line-height: 1.5em;
     }
     .desc {
-        font-size:14px;
+        font-size: 14px;
         font-weight: 400;
         line-height: 1.5em;
     }
-    .text-container{
+    .text-container {
         padding-right: 38px;
     }
-    .resolution-text{
+    .resolution-text {
         margin-right: 2px;
         font-size: 16px;
         line-height: 24px;
     }
-    .resolution-container{
+    .resolution-container {
         padding-right: 46px;
         margin-left: 6px;
     }
-    .icon{
-        margin-right:24px;
+    .icon {
+        margin-right: 24px;
         width: 40px;
-        height:36px;
+        height: 36px;
     }
 }
