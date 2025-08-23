@@ -24,10 +24,10 @@ namespace ProcessWire;
         $category_icon = $_GET["category->transparency_category_icon_name"] ?? "resolutions-icon.svg";
         $category_reports = $category->transparency_report;?>
 
-        <div class="resolution-container">
+        <div class="category-container">
             <div class="icon-text">
                 <img class="icon" src="<?= $config->urls->templates ?>/assets/icons/<?= $category_icon ?>" alt="<?= $category_name ?> icon" draggable="false">
-                <p class="resolution-text"><?= $category_name ?></p>
+                <p class="category-text"><?= $category_name ?></p>
             </div>
             <div class="arrow">
                 <img src="<?= $config->urls->templates ?>/assets/icons/arrow-right.svg" alt="arrow-right">
