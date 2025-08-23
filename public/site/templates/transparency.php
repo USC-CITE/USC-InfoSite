@@ -25,13 +25,23 @@ namespace ProcessWire;
         $category_reports = $category->transparency_report;?>
 
         <div class="category-container">
-            <div class="icon-text">
-                <img class="icon" src="<?= $config->urls->templates ?>/assets/icons/<?= $category_icon ?>" alt="<?= $category_name ?> icon" draggable="false">
-                <p class="category-text"><?= $category_name ?></p>
+            <div class="category-header">
+                <div class="icon-text">
+                    <img class="icon" src="<?= $config->urls->templates ?>/assets/icons/<?= $category_icon ?>" alt="<?= $category_name ?> icon" draggable="false">
+                    <p class="category-text"><?= $category_name ?></p>
+                </div>
+                <div class="arrow">
+                    <img src="<?= $config->urls->templates ?>/assets/icons/arrow-right.svg" alt="arrow-right">
+                </div>
             </div>
-            <div class="arrow">
-                <img src="<?= $config->urls->templates ?>/assets/icons/arrow-right.svg" alt="arrow-right">
-            </div>
+            <ul class="reports-container">
+                <?php foreach($category_reports as $report): 
+                    $report_title = $report->transparency_report_title;
+                    $report_file = $report->transparency_report_files; ?>
+
+                    <li><a class="reports-link" href="#"><?= $report_title ?></a></li>
+                <?php endforeach; ?>
+            </ul>
         </div>
     <?php endforeach; ?>
 </div>
