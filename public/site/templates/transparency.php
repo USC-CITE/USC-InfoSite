@@ -11,6 +11,7 @@ namespace ProcessWire;
 
 <head id="head" pw-append>
     <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/transparency/transparency.css">
+    <script defer src="<?= $config->urls->templates ?>scripts/transparency.js"></script>
 </head>
 
 <main id="content" pw-prepend>
@@ -34,14 +35,18 @@ namespace ProcessWire;
                     <img src="<?= $config->urls->templates ?>/assets/icons/arrow-right.svg" alt="arrow-right">
                 </div>
             </div>
-            <ul class="reports-container">
-                <?php foreach($category_reports as $report): 
-                    $report_title = $report->transparency_report_title;
-                    $report_file = $report->transparency_report_files; ?>
+            <?php if(count($category_reports)==0): ?>
+                <div class="reports-container no-reports">No reports available</div>
+            <?php else: ?>
+                <ul class="reports-container">
+                    <?php foreach($category_reports as $report): 
+                        $report_title = $report->transparency_report_title;
+                        $report_file = $report->transparency_report_files; ?>
 
                     <li><a class="reports-link" href="#"><?= $report_title ?></a></li>
-                <?php endforeach; ?>
-            </ul>
+                    <?php endforeach; ?>
+                </ul>
+            <?php endif; ?>
         </div>
     <?php endforeach; ?>
 </div>
