@@ -37,7 +37,6 @@ main {
 }
 
 .resolution-container {
-    /* margin: 24px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,7 +62,6 @@ main {
     line-height: 30px;
     font-weight: 700;
     color: #21536c;
-    text-decoration: underline;
     text-align: left;
     font-size: 20px;
     flex-grow: 1;

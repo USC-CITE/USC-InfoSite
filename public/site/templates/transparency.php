@@ -19,14 +19,20 @@ namespace ProcessWire;
     <p class="desc">Resolutions and financial reports of the University Student Council that are open for access.</p>
 </div>
 <div class="content-container">
-    <div class="resolution-container">
-        <div class="icon-text">
-            <img class="icon" src="<?= $config->urls->templates ?>/assets/icons/resolutions-icon.svg" alt="resolutions-icon">
-        <p class="resolution-text">Resolutions</p>
+    <?php foreach($page->transparency_category as $category):
+        $category_name = $category->transparency_category_name;
+        $category_icon = $_GET["category->transparency_category_icon_name"] ?? "resolutions-icon.svg";
+        $category_reports = $category->transparency_report;?>
+
+        <div class="resolution-container">
+            <div class="icon-text">
+                <img class="icon" src="<?= $config->urls->templates ?>/assets/icons/<?= $category_icon ?>" alt="<?= $category_name ?> icon" draggable="false">
+                <p class="resolution-text"><?= $category_name ?></p>
+            </div>
+            <div class="arrow">
+                <img src="<?= $config->urls->templates ?>/assets/icons/arrow-right.svg" alt="arrow-right">
+            </div>
         </div>
-        <div class="arrow">
-            <img src="/build/assets/icons/arrow-right.svg" alt="">
-        </div>
-    </div>
+    <?php endforeach; ?>
 </div>
 </main> 
