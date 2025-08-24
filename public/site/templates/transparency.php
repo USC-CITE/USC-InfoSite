@@ -43,6 +43,15 @@ namespace ProcessWire;
             </div>
         </div>
     </div>
+    <?php if($report->transparency_report_files->count): ?>
+        <div class="file-viewer">
+        </div>
+    <?php else: ?>
+        <div class="no-file-wrapper">
+            <p class="no-file"> No files attached to this report</p>
+        </div>
+    <?php endif; ?>
+
 <?php else: ?>
     <div class="text-container">
         <p class="title">Transparency Reports</p>

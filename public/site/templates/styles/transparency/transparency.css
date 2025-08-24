@@ -142,6 +142,17 @@ main {
     margin-top: 5px;
 }
 
+.no-file-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 42svh;
+}
+
+.no-file {
+    text-align: center;
+
+}
 
 @media screen and (max-width: 980px) {
     .text-container {
