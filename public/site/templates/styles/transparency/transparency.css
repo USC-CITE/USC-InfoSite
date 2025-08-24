@@ -109,6 +109,40 @@ main {
     padding: 0;
 }
 
+.report-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-link {
+    font-size: 0.95rem;
+    text-decoration: none;
+    /* margin-bottom: 10px; */
+    color: #21536c;
+}
+
+.back-link > a {
+    color: #21536c;
+}
+
+.back-icon {
+    stroke: #21536c;
+    position: relative;
+    top: 3px;
+}
+
+.report-label {
+    font-size: 1rem;
+    color: #444;
+}
+
+.report-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+
 @media screen and (max-width: 980px) {
     .text-container {
         padding-right: 60px;
