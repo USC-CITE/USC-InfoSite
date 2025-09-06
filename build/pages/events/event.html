@@ -159,6 +159,42 @@
                 </svg>
                 Report a problem with this page
             </a>
+
+        <!-- image zoom --> 
+        <script>
+            document.addEventListener("DOMContentLoaded", () => {
+            const images = document.querySelectorAll("main img");
+
+        
+            const lightbox = document.createElement("div");
+            lightbox.className = "lightbox";
+            document.body.appendChild(lightbox);
+
+            const img = document.createElement("img");
+            lightbox.appendChild(img);
+
+        
+            images.forEach(image => {
+            image.style.cursor = "zoom-in";
+            image.addEventListener("click", () => {
+            img.src = image.src;
+            lightbox.classList.add("show");
+                });
+            });
+
+        
+            lightbox.addEventListener("click", () => {
+            lightbox.classList.remove("show");
+            });
+
+        
+            document.addEventListener("keydown", e => {
+                if (e.key === "Escape") {
+                lightbox.classList.remove("show");
+                }
+            });
+        });
+        </script>
         </main>
 
         <footer>
