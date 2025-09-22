@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const searchBtn = document.querySelector('[data-js=search_btn]');
     const searchForm = document.querySelector('[data-js=search_form]');
 
-
     menuBtn.setAttribute('role', 'button');
     searchBtn.setAttribute('role', 'button');
 
@@ -69,12 +68,38 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
 const reportBtn = document.querySelector('.main__report');
 const reportFrm = document.querySelector('.report_form');
 
 reportBtn.addEventListener('click', function () {
-    reportFrm.style.display = "flex";
-    this.style.display = "none";
+    reportFrm.style.display = 'flex';
+    this.style.display = 'none';
 });
 
+// Cookies Banner
+document.addEventListener('DOMContentLoaded', function () {
+    fetch('/components/cookies.html')
+        .then((response) => response.text())
+        .then((data) => {
+            document.body.insertAdjacentHTML('beforeend', data);
+
+            const banner = document.getElementById('cookies-banner');
+            const acceptBtn = document.getElementById('acceptCookies');
+            const denyBtn = document.getElementById('denyCookies');
+
+            // Show only if user hasn’t made a choice
+            if (!localStorage.getItem('cookiesChoice')) {
+                banner.style.display = 'block';
+            }
+
+            acceptBtn.addEventListener('click', () => {
+                localStorage.setItem('cookiesChoice', 'accepted');
+                banner.style.display = 'none';
+            });
+
+            denyBtn.addEventListener('click', () => {
+                localStorage.setItem('cookiesChoice', 'denied');
+                banner.style.display = 'none';
+            });
+        });
+});
