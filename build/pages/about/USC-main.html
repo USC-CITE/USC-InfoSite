@@ -8,16 +8,37 @@
 
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/build/styles/global.css" />
-        <link rel="stylesheet" href="/build/styles/about/usc-main.css">
+        <link rel="stylesheet" href="/build/styles/about/usc-main.css" />
 
         <!-- Custom JavaScript-->
         <script src="/build/scripts/main.js" defer></script>
     </head>
     <body>
+        <div class="cookies-banner" id="cookies-banner">
+            <div class="cookies-content">
+                <h2 class="cookies-title">Cookies & Privacy</h2>
+                <p class="cookies-text">
+                    The USC InfoSite uses “cookies” to track page visits, used browsers, and referring pages to analyze
+                    user patterns in accessing the website. This helps CITE determine what to add, remove, or modify
+                    within the website.
+                </p>
+                <p class="cookies-text">
+                    You have full rights to accepting or denying our request to place “cookies” on your browser. We
+                    guarantee your information is not shared to advertisers and other third parties.
+                </p>
+
+                <div class="cookies-actions">
+                    <button class="cookies-btn deny" id="denyCookies">Deny Cookies</button>
+                    <button class="cookies-btn accept" id="acceptCookies">Accept Cookies</button>
+                </div>
+            </div>
+        </div>
+
         <header>
             <div class="header__container">
                 <div class="header__banner">
-                    <a href="/"><img src="/build/assets/logos/USC-logo.png" alt="USC-logo" class="header__logo" />
+                    <a href="/"
+                        ><img src="/build/assets/logos/USC-logo.png" alt="USC-logo" class="header__logo" />
                         <div class="header__text">
                             <h1>West Visayas State University</h1>
                             <h2>University Student Council</h2>
@@ -61,7 +82,9 @@
                     <label for="search" class="search_form__label">Search the USC Infosite</label>
                     <input id="search" class="search_form__input" type="text" />
                     <button class="search_form__btn" type="submit">
-                        <img alt="" src="/build/assets/icons/magnifier.svg" /><span class="sr_only">Search the USC Infosite</span>
+                        <img alt="" src="/build/assets/icons/magnifier.svg" /><span class="sr_only"
+                            >Search the USC Infosite</span
+                        >
                     </button>
                 </form>
             </div>
@@ -70,10 +93,18 @@
         <main class="main">
             <h1 class="main__heading">The University Student Council</h1>
             <div class="main__container main__container--about-USC">
-                <img src="/build/assets/logos/USC-logo.png" alt="" class="USC-logo">
+                <img src="/build/assets/logos/USC-logo.png" alt="" class="USC-logo" />
                 <div class="main__container--text-content">
                     <h2 class="main__sub-heading">What is the University Student Council (USC)?</h2>
-                    <p class="main__text">The University Student Council is the supreme student organization of the West Visayas State University herein referred to as the USC. The USC shall have the jurisdiction over the entire student body of the West Visayas State University. The functions of the student councils should be such that through them students shall be able to exercise academic freedom and to apply academic means, participate in maintaining and improving the environment in which the freedom of each is not tempered by equality of all, and in the process develop their leadership potentials and values needed in nation-building.</p>
+                    <p class="main__text">
+                        The University Student Council is the supreme student organization of the West Visayas State
+                        University herein referred to as the USC. The USC shall have the jurisdiction over the entire
+                        student body of the West Visayas State University. The functions of the student councils should
+                        be such that through them students shall be able to exercise academic freedom and to apply
+                        academic means, participate in maintaining and improving the environment in which the freedom of
+                        each is not tempered by equality of all, and in the process develop their leadership potentials
+                        and values needed in nation-building.
+                    </p>
                 </div>
             </div>
 
@@ -84,35 +115,53 @@
                 <div class="main__USC-officers">
                     <div class="USC-officers__chairpersons">
                         <div class="main__container-card">
-                            <img src="/build/assets/images/USC-vice-chairperson-img.png" alt="" class="container-card__officer-image">
+                            <img
+                                src="/build/assets/images/USC-vice-chairperson-img.png"
+                                alt=""
+                                class="container-card__officer-image" />
                             <p class="container-card__officer-name">Hershey Geline Sumpay</p>
                             <p class="container-card__officer-position">Chairperson</p>
                         </div>
 
                         <div class="main__container-card">
-                            <img src="/build/assets/images/USC-vice-chairperson-img.png" alt="" class="container-card__officer-image">
+                            <img
+                                src="/build/assets/images/USC-vice-chairperson-img.png"
+                                alt=""
+                                class="container-card__officer-image" />
                             <p class="container-card__officer-name">Hershey Geline Sumpay</p>
                             <p class="container-card__officer-position">Chairperson</p>
                         </div>
                     </div>
                     <div class="USC-officers__councils">
                         <div class="main__container-card">
-                            <img src="/build/assets/images/USC-vice-chairperson-img.png" alt="" class="container-card__officer-image">
+                            <img
+                                src="/build/assets/images/USC-vice-chairperson-img.png"
+                                alt=""
+                                class="container-card__officer-image" />
                             <p class="container-card__officer-name">Hershey Geline Sumpay</p>
                             <p class="container-card__officer-position">Chairperson</p>
                         </div>
                         <div class="main__container-card">
-                            <img src="/build/assets/images/USC-vice-chairperson-img.png" alt="" class="container-card__officer-image">
+                            <img
+                                src="/build/assets/images/USC-vice-chairperson-img.png"
+                                alt=""
+                                class="container-card__officer-image" />
                             <p class="container-card__officer-name">Hershey Geline Sumpay</p>
                             <p class="container-card__officer-position">Chairperson</p>
                         </div>
                         <div class="main__container-card">
-                            <img src="/build/assets/images/USC-vice-chairperson-img.png" alt="" class="container-card__officer-image">
+                            <img
+                                src="/build/assets/images/USC-vice-chairperson-img.png"
+                                alt=""
+                                class="container-card__officer-image" />
                             <p class="container-card__officer-name">Hershey Geline Sumpay</p>
                             <p class="container-card__officer-position">Chairperson</p>
                         </div>
                         <div class="main__container-card">
-                            <img src="/build/assets/images/USC-vice-chairperson-img.png" alt="" class="container-card__officer-image">
+                            <img
+                                src="/build/assets/images/USC-vice-chairperson-img.png"
+                                alt=""
+                                class="container-card__officer-image" />
                             <p class="container-card__officer-name">Hershey Geline Sumpay</p>
                             <p class="container-card__officer-position">Chairperson</p>
                         </div>
@@ -126,15 +175,46 @@
                 <a href="" class="main__link">Contact the University Student Council Page</a>
             </div>
 
-            <iframe id="report_form" class="report_form" data-tally-src="https://tally.so/embed/n9QXe5?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0" title="Report a problem with this page"></iframe><script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
-    
-            <a href="#report_form" class="main__report"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" 
-                style="fill: rgba(0, 0, 0, 1);">
-                <path d="m14.303 6-3-2H6V2H4v20h2v-8h4.697l3 2H20V6z"></path></svg>
+            <iframe
+                id="report_form"
+                class="report_form"
+                data-tally-src="https://tally.so/embed/n9QXe5?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                loading="lazy"
+                width="100%"
+                height="500"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                title="Report a problem with this page"></iframe>
+            <script>
+                var d = document,
+                    w = 'https://tally.so/widgets/embed.js',
+                    v = function () {
+                        'undefined' != typeof Tally
+                            ? Tally.loadEmbeds()
+                            : d.querySelectorAll('iframe[data-tally-src]:not([src])').forEach(function (e) {
+                                  e.src = e.dataset.tallySrc;
+                              });
+                    };
+                if ('undefined' != typeof Tally) v();
+                else if (d.querySelector('script[src="' + w + '"]') == null) {
+                    var s = d.createElement('script');
+                    (s.src = w), (s.onload = v), (s.onerror = v), d.body.appendChild(s);
+                }
+            </script>
+
+            <a href="#report_form" class="main__report"
+                ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)">
+                    <path d="m14.303 6-3-2H6V2H4v20h2v-8h4.697l3 2H20V6z"></path>
+                </svg>
                 Report a problem with this page
             </a>
-
-            </main>
+        </main>
 
         <footer>
             <div class="footer__container">
@@ -148,8 +228,7 @@
                 <small class="footer__notice"
                     >All content within the USC Infosite is licensed under the
                     <a href="https://creativecommons.org/licenses/by-sa/4.0/"
-                        >Creative Commons Attribution-ShareAlike 4.0
-                        International.</a
+                        >Creative Commons Attribution-ShareAlike 4.0 International.</a
                     >
                     <img alt="" src="/build/assets/icons/cc.svg" />
                     <img alt="" src="/build/assets/icons/by.svg" />
