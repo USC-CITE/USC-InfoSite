@@ -78,28 +78,54 @@ reportBtn.addEventListener('click', function () {
 
 // Cookies Banner
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('/components/cookies.html')
-        .then((response) => response.text())
-        .then((data) => {
-            document.body.insertAdjacentHTML('beforeend', data);
+    const dialog = document.querySelector('[data-cookies-dialog]');
+    const acceptBtn = document.querySelector('[data-cookies-accept]');
+    const denyBtn = document.querySelector('[data-cookies-deny]');
+    let overlay;
 
-            const banner = document.getElementById('cookies-banner');
-            const acceptBtn = document.getElementById('acceptCookies');
-            const denyBtn = document.getElementById('denyCookies');
+    // Show only if the user hasn’t made a choice
+    if (!localStorage.getItem('cookiesChoice')) {
+        if (typeof dialog.showModal === 'function') {
+            dialog.showModal();
+        } else {
+            // Fallback for browsers that don't support <dialog>
+            dialog.style.display = 'block';
+            dialog.style.position = 'fixed';
+            dialog.style.top = '30%';
+            dialog.style.left = '50%';
+            dialog.style.transform = 'translate(-50%, -50%)';
+            dialog.style.backgroundColor = ' #fff';
+            dialog.style.zIndex = '3000';
 
-            // Show only if user hasn’t made a choice
-            if (!localStorage.getItem('cookiesChoice')) {
-                banner.style.display = 'block';
+            // Create overlay dynamically
+            overlay = document.createElement('div');
+            overlay.style.position = 'fixed';
+            overlay.style.top = '0';
+            overlay.style.left = '0';
+            overlay.style.width = '100%';
+            overlay.style.height = '100%';
+            overlay.style.background = 'rgba(0, 0, 0, 0.65)';
+            overlay.style.zIndex = '2999';
+            document.body.appendChild(overlay);
+        }
+    }
+
+    function closeDialog() {
+        localStorage.setItem('cookiesChoice', this.dataset.choice);
+
+        if (typeof dialog.close === 'function') {
+            dialog.close();
+        } else {
+            dialog.style.display = 'none';
+            if (overlay) {
+                document.body.removeChild(overlay);
             }
+        }
+    }
 
-            acceptBtn.addEventListener('click', () => {
-                localStorage.setItem('cookiesChoice', 'accepted');
-                banner.style.display = 'none';
-            });
+    acceptBtn.dataset.choice = 'accepted';
+    denyBtn.dataset.choice = 'denied';
 
-            denyBtn.addEventListener('click', () => {
-                localStorage.setItem('cookiesChoice', 'denied');
-                banner.style.display = 'none';
-            });
-        });
+    acceptBtn.addEventListener('click', closeDialog);
+    denyBtn.addEventListener('click', closeDialog);
 });
