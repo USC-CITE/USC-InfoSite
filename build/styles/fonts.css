@@ -127,23 +127,3 @@
             url('../assets/fonts/poppins-v21-latin-700italic.ttf') format('truetype');
     /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
-
-/* Inter Regular 400 */
-@font-face {
-    font-display: swap;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../assets/fonts/inter-v4-latin-400.woff2') format('woff2'),
-        url('../assets/fonts/inter-v4-latin-400.ttf') format('truetype');
-}
-
-/* Inter Italic 400 */
-@font-face {
-    font-display: swap;
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: 400;
-    src: url('../assets/fonts/inter-v4-latin-400italic.woff2') format('woff2'),
-        url('../assets/fonts/inter-v4-latin-400italic.ttf') format('truetype');
-}
