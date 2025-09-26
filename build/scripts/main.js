@@ -78,9 +78,10 @@ reportBtn.addEventListener('click', function () {
 
 // Cookies Banner
 document.addEventListener('DOMContentLoaded', function () {
-    const dialog = document.querySelector('[data-cookies-dialog]');
-    const acceptBtn = document.querySelector('[data-cookies-accept]');
-    const denyBtn = document.querySelector('[data-cookies-deny]');
+    localStorage.removeItem('cookiesChoice');
+    const dialog = document.querySelector('[data-js-cookies-dialog]');
+    const acceptBtn = document.querySelector('[data-js-cookies-accept]');
+    const denyBtn = document.querySelector('[data-js-cookies-deny]');
     let overlay;
 
     // Show only if the user hasn’t made a choice
@@ -89,23 +90,12 @@ document.addEventListener('DOMContentLoaded', function () {
             dialog.showModal();
         } else {
             // Fallback for browsers that don't support <dialog>
+            dialog.classList.add('cookies-banner--fallback');
             dialog.style.display = 'block';
-            dialog.style.position = 'fixed';
-            dialog.style.top = '30%';
-            dialog.style.left = '50%';
-            dialog.style.transform = 'translate(-50%, -50%)';
-            dialog.style.backgroundColor = ' #fff';
-            dialog.style.zIndex = '3000';
 
             // Create overlay dynamically
             overlay = document.createElement('div');
-            overlay.style.position = 'fixed';
-            overlay.style.top = '0';
-            overlay.style.left = '0';
-            overlay.style.width = '100%';
-            overlay.style.height = '100%';
-            overlay.style.background = 'rgba(0, 0, 0, 0.65)';
-            overlay.style.zIndex = '2999';
+            overlay.className = 'cookies-banner__overlay';
             document.body.appendChild(overlay);
         }
     }
