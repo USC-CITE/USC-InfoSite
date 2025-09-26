@@ -61,41 +61,57 @@ namespace ProcessWire;
         </div>
       <?php endif; ?>
 
-      <?php if (!empty($page->org_fb_link)): ?>
+      <?php if (!empty($page->org_fb_link)): 
+        $fb_link_name = preg_replace("/https?:\/\/(www\.)?.*\//", "", $page->org_fb_link);
+        $fb_link_name = preg_replace("/\?.*$/", "", $fb_link_name);
+        ?>
         <div class="main__contact third-contact">
           <img src="<?= $config->urls->templates ?>assets/icons/facebook.svg" alt="">
-          <a href="<?= $page->org_fb_link ?>"><?= $page->org_fb_link ?></a>
+          <a href="<?= $page->org_fb_link ?>"><?= $fb_link_name ?></a>
         </div>
       <?php endif; ?>
       
-      <?php if (!empty($page->org_insta_link)): ?>
+      <?php if (!empty($page->org_insta_link)): 
+        $insta_link_name = preg_replace("/https?:\/\/(www\.)?.*\//", "", $page->org_insta_link);
+        $insta_link_name = preg_replace("/\?.*$/", "", $insta_link_name);
+        ?>
         <div class="main__contact">
           <img src="<?= $config->urls->templates ?>assets/icons/instagram.svg" alt="">
-          <a href="<?= $page->org_insta_link ?>"><?= $page->org_insta_link ?></a>
+          <a href="<?= $page->org_insta_link ?>"><?= $insta_link_name ?></a>
         </div>
       <?php endif; ?>
 
-      <?php if (!empty($page->org_x_link)): ?>
+      <?php if (!empty($page->org_x_link)): 
+        $x_link_name = preg_replace("/https?:\/\/(www\.)?.*\//", "", $page->org_x_link);
+        $x_link_name = preg_replace("/\?.*$/", "", $x_link_name);
+        ?>
         <div class="main__contact">
           <img src="<?= $config->urls->templates ?>assets/icons/twitter.svg" alt="">
-          <a href="<?= $page->org_x_link ?>"><?= $page->org_x_link ?></a>
+          <a href="<?= $page->org_x_link ?>"><?= $x_link_name ?></a>
         </div>
       <?php endif; ?>
 
-      <?php if (!empty($page->org_yt_link)): ?>
+      <?php if (!empty($page->org_yt_link)): 
+        $yt_link_name = preg_replace("/https?:\/\/(www\.)?.*\//", "", $page->org_yt_link);
+        $yt_link_name = preg_replace("/\?.*$/", "", $yt_link_name);
+        ?>
         <div class="main__contact">
           <img src="<?= $config->urls->templates ?>assets/icons/youtube.svg" alt="">
-          <a href="<?= $page->org_yt_link ?>"><?= $page->org_yt_link ?></a>
+          <a href="<?= $page->org_yt_link ?>"><?= $yt_link_name ?></a>
         </div>
       <?php endif; ?>
 
       <?php if (!empty($page->org_other_links)): ?>
         <?php
           $links = explode(",", trim($page->org_other_links));
-          foreach ($links as $link): ?>
+          foreach ($links as $link): 
+            $link_name = preg_replace("/https?:\/\/(www\.)?.*\//", "", $link);
+            $link_name = preg_replace("/\?.*$/", "", $link_name);
+          ?>
+          
           <div class="main__contact">
             <img src="<?= $config->urls->templates ?>assets/icons/iconmonstr-link-1.svg" alt="">
-            <a href="<?= $link ?>"><?= $link ?></a>
+            <a href="<?= $link ?>"><?= $link_name ?></a>
           </div>
         <?php endforeach; ?>
       <?php endif; ?>
