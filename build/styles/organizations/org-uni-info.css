@@ -97,7 +97,7 @@ main {
     height: auto;
 }
 
-
+/* ZOOM STYLES */
 .lightbox {
     position: fixed;
     top: 0;
@@ -112,6 +112,7 @@ main {
     pointer-events: none;
     transition: opacity 0.3s ease;
     z-index: 9999;
+    overflow: hidden;
 }
 
 .lightbox.show {
@@ -120,11 +121,12 @@ main {
 }
 
 .lightbox img {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: auto;
     transform: scale(0.8);
     opacity: 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1000;
 }
 
 .lightbox.show img {
@@ -132,6 +134,70 @@ main {
     opacity: 1;
 }
 
+.main__content .rectangle img{
+    height:100%;
+    width:auto;
+    object-fit:cover;
+}
+
+.lightbox-controls {
+  position: absolute;
+  bottom: 120px;
+  display: flex;
+  z-index: 10000;
+  justify-content: center;
+  width:100%;
+  gap:8px;
+}
+
+.lightbox-controls button img{
+    width: 22px;
+    height:auto;
+}
+
+.lightbox-controls button {
+  background: rgba(255, 255, 255, 0.438);
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  border-radius: 20px;  
+}
+
+.lightbox-controls button:hover {
+  background: white;
+}
+
+@media screen and (max-width: 768px) {
+    .lightbox-controls{
+        bottom:160px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .lightbox-controls{
+        bottom:210px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .lightbox-controls{
+        bottom:240px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .lightbox-controls{
+        bottom:290px;
+    }
+}
+
+/* END */
 
 
 @media screen and (max-width: 1100px) {

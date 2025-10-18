@@ -12,6 +12,7 @@
 
     <!-- Custom JavaScript-->
     <script src="/build/scripts/main.js" defer></script>
+    <script src="/build/scripts/zoom.js" defer></script>
 </head>
 <body>
     <header>
@@ -116,41 +117,6 @@
             <path d="m14.303 6-3-2H6V2H4v20h2v-8h4.697l3 2H20V6z"></path></svg>
             Report a problem with this page
         </a>
-   <!-- image zoom --> 
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-            const images = document.querySelectorAll(".main__content img");
-
-        
-            const lightbox = document.createElement("div");
-            lightbox.className = "lightbox";
-            document.body.appendChild(lightbox);
-
-            const img = document.createElement("img");
-            lightbox.appendChild(img);
-
-        
-            images.forEach(image => {
-            image.style.cursor = "zoom-in";
-            image.addEventListener("click", () => {
-            img.src = image.src;
-            lightbox.classList.add("show");
-                });
-            });
-
-        
-            lightbox.addEventListener("click", () => {
-            lightbox.classList.remove("show");
-            });
-
-        
-            document.addEventListener("keydown", e => {
-            if (e.key === "Escape") {
-                lightbox.classList.remove("show");
-            }
-            });
-        });
-        </script>
     </main>
 
     <footer>
