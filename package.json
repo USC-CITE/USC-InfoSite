@@ -1,0 +1,29 @@
+{
+  "name": "wvsu-usc.org",
+  "version": "2.0.0",
+  "description": "The University Student Council (USC) website of West Visayas State University (WVSU) aims to be a centralized platform for WVSU students to access information regarding their academics, extracurricular activities, and university-related events.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/USC-CITE/USC-InfoSite.git"
+  },
+  "keywords": [
+    "infosite",
+    "usc-infosite",
+    "usc-website",
+    "wvsu-usc-infosite",
+    "wvsu-usc-website"
+  ],
+  "author": "USC - Commission on Innovation and Tech Empowerment",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/USC-CITE/USC-InfoSite/issues"
+  },
+  "homepage": "https://github.com/USC-CITE/USC-InfoSite#readme",
+  "devDependencies": {
+    "standard": "^17.1.2"
+  }
+}
