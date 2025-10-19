@@ -2,6 +2,7 @@ apache2/
 mysql/
 
 vendor/
+node_modules/
 
 .processwire_env
 processwire.sql
