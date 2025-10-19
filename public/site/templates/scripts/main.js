@@ -99,6 +99,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const denyBtn = document.querySelector('[data-js-cookies-deny]');
     let overlay;
 
+    function insertCookieScripts() {
+        if (localStorage.getItem('cookiesChoice') === 'accepted') {
+            const head = document.querySelector('head');
+            const scripts = `<insert actual cookie consent scripts here>`;
+            head.insertAdjacentHTML('beforeend', scripts);
+        }
+    }
+
     // Show only if the user hasn’t made a choice
     if (!localStorage.getItem('cookiesChoice')) {
         if (typeof dialog.showModal === 'function') {
@@ -116,15 +124,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.body.style.overflow = 'hidden';
     } else {
-        if (localStorage.getItem('cookiesChoice') === 'accepted') {
-            const head = document.querySelector('head');
-            const scripts = `<insert actual cookie consent scripts here>`;
-            head.insertAdjacentHTML('beforeend', scripts);
-        }
+        insertCookieScripts();
     }
 
     function closeDialog() {
         localStorage.setItem('cookiesChoice', this.dataset.choice);
+
+        insertCookieScripts();
 
         if (typeof dialog.close === 'function') {
             dialog.close();
