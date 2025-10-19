@@ -34,6 +34,29 @@ $home = $pages->get('/'); /** @var HomePage $home */
 </head>
 
 <body id="body">
+	<dialog class="cookies-banner" data-js-cookies-dialog>
+		<div class="cookies-banner__content">
+			<h2 class="cookies-banner__title">Cookies & Privacy</h2>
+			<p class="cookies-banner__text">
+					The USC InfoSite uses “cookies” to track page visits, used browsers, and referring pages to analyze
+					user patterns in accessing the website. This helps CITE determine what to add, remove, or modify
+					within the website.
+			</p>
+			<p class="cookies-banner__text">
+					You have full rights to accepting or denying our request to place “cookies” on your browser. We
+					guarantee your information is not shared to advertisers and other third parties.
+			</p>
+
+			<div class="cookies-banner__actions">
+					<button class="cookies-banner__btn cookies-banner__btn--deny" data-js-cookies-deny>
+							Deny Cookies
+					</button>
+					<button class="cookies-banner__btn cookies-banner__btn--accept" data-js-cookies-accept>
+							Accept Cookies
+					</button>
+			</div>
+		</div>
+	</dialog>
 	<div class="skip-to-main">
 		<a href="#content">Skip to main content</a>
 	</div>

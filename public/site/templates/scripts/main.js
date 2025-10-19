@@ -92,3 +92,46 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+// Cookies Banner
+document.addEventListener('DOMContentLoaded', function () {
+    const dialog = document.querySelector('[data-js-cookies-dialog]');
+    const acceptBtn = document.querySelector('[data-js-cookies-accept]');
+    const denyBtn = document.querySelector('[data-js-cookies-deny]');
+    let overlay;
+
+    // Show only if the user hasn’t made a choice
+    if (!localStorage.getItem('cookiesChoice')) {
+        if (typeof dialog.showModal === 'function') {
+            dialog.showModal();
+        } else {
+            // Fallback for browsers that don't support <dialog>
+            dialog.classList.add('cookies-banner--fallback');
+            dialog.style.display = 'block';
+
+            // Create overlay dynamically
+            overlay = document.createElement('div');
+            overlay.className = 'cookies-banner__overlay';
+            document.body.appendChild(overlay);
+        }
+    }
+
+    function closeDialog() {
+        localStorage.setItem('cookiesChoice', this.dataset.choice);
+
+        if (typeof dialog.close === 'function') {
+            dialog.close();
+        } else {
+            dialog.style.display = 'none';
+            if (overlay) {
+                document.body.removeChild(overlay);
+            }
+        }
+    }
+
+    acceptBtn.dataset.choice = 'accepted';
+    denyBtn.dataset.choice = 'denied';
+
+    acceptBtn.addEventListener('click', closeDialog);
+    denyBtn.addEventListener('click', closeDialog); 
+});
+
