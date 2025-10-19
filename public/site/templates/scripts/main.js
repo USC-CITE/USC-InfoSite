@@ -113,6 +113,12 @@ document.addEventListener('DOMContentLoaded', function () {
             overlay.className = 'cookies-banner__overlay';
             document.body.appendChild(overlay);
         }
+    } else {
+        if (localStorage.getItem('cookiesChoice') === 'accepted') {
+            const head = document.querySelector('head');
+            const scripts = `<insert actual cookie consent scripts here>`;
+            head.insertAdjacentHTML('beforeend', scripts);
+        }
     }
 
     function closeDialog() {
