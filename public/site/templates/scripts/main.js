@@ -113,6 +113,8 @@ document.addEventListener('DOMContentLoaded', function () {
             overlay.className = 'cookies-banner__overlay';
             document.body.appendChild(overlay);
         }
+
+        document.body.style.overflow = 'hidden';
     } else {
         if (localStorage.getItem('cookiesChoice') === 'accepted') {
             const head = document.querySelector('head');
