@@ -43,14 +43,40 @@ namespace ProcessWire;
             </div>
         </div>
     </div>
-    <?php if($report->transparency_report_files->count): ?>
-        <div class="file-viewer">
-        </div>
-    <?php else: ?>
-        <div class="no-file-wrapper">
-            <p class="no-file"> No files attached to this report</p>
-        </div>
-    <?php endif; ?>
+    <div class="text-container">
+        <?php if($report->transparency_report_files->count): ?>
+            <?php foreach($report->transparency_report_files as $file): ?>
+                <div class="file-header">
+                    <div class="file-selector">
+                        <img class="file-icon" src="<?= $config->urls->templates ?>/assets/icons/archived-icon.svg" alt="file icon" draggable="false">
+                        <p class="file-name"><?= $file->name ?></p>
+                    </div>
+                    <div class="file-actions">
+                        <a href="<?= $file->url ?>" download class="download-btn">Download</a>
+                    </div>
+                </div>
+                <div class="pdf-viewer-container">
+                    <iframe 
+                        src="<?= $file->httpUrl ?>#toolbar=1&navpanes=1&scrollbar=1" 
+                        class="pdf-viewer"
+                        type="application/pdf"
+                        title="<?= $file->name ?>"
+                        frameborder="0">
+                        <div class="pdf-fallback">
+                            <p>Your browser does not support viewing PDFs directly.</p>
+                            <a href="<?= $file->url ?>" download class="fallback-download-btn">
+                                Download PDF to view
+                            </a>
+                        </div>
+                    </iframe>
+                </div>
+            <?php endforeach; ?>
+        <?php else: ?>
+            <div class="no-file-wrapper">
+                <p class="no-file"> No files attached to this report</p>
+            </div>
+        <?php endif; ?>
+    </div>
 
 <?php else: ?>
     <div class="text-container">
