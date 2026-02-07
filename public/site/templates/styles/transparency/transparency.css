@@ -1,0 +1,44 @@
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+    margin: 30px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.date {
+    font-size: 0.rem;
+    color: #8F8B8B;
+    padding: 5px 0px 10px 0px;
+    margin-bottom: 5px;
+}
+
+.desc {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8rem;
+}
+
+.fallback-missing {
+    text-align: center;
+    margin: 20px 0px 5px 0px;
+    color: #8F8B8B;
+}
+
+@media screen and (min-width: 480px) {
+    main {
+        margin: 30px 50px 30px 60px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    main {
+        margin: 30px auto 0 auto;
+        padding: 0 120px 0 115px;
+    }   
+}
