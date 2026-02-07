@@ -31,7 +31,6 @@ main {
 .resolution-container {
     margin: 0px 24px 24px 24px;
     flex-grow: 1;
-    gap: 5px;
 }
 
 .resolution {
@@ -47,6 +46,10 @@ main {
     border-bottom: solid 1px #D9D4D7;
 }
 
+.resolution:hover {
+    background-color: #F6F6F6;
+}
+
 /* Icon and Text */
 .icon-text {
     display: flex;
@@ -59,10 +62,6 @@ main {
     color: #21536c;
     text-decoration: none;
     font-size: 20px;
-}
-
-.resolution:hover .resolution-text {
-    text-decoration: underline;
 }
 
 .arrow {
