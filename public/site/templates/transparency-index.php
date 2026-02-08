@@ -20,16 +20,16 @@ namespace ProcessWire;
         </p>
     </div>
 
-    <?php if (!$page->transparency_category->count()): ?>
+    <?php if (!$page->children()->count()): ?>
         <p class="status-unavailable">Content Unavailable</p>
 
     <?php else: ?>
         <div class="resolution-container">
-            <?php foreach ($page->transparency_category as $category):
+            <?php foreach ($page->children() as $category):
                 $category_name = $category->transparency_category_name;
                 $category_icon = (empty($category->transparency_category_icon)) ? "resolution-icon.svg" : $category->transparency_category_icon; ?>
 
-                <a class="resolution" href="/">
+                <a class="resolution" href="<?=$category->url?>">
                     <div class="icon-text">
                         <img class="icon" src="<?= $config->urls->templates ?>assets/icons/<?= $category_icon ?>" alt="">
                         <p class="resolution-text"><?= $category_name ?></p>
