@@ -1,0 +1,131 @@
+:root {
+    --text-body: #212121;
+    --text-sub-heading: #8F8B8B;
+    --bg-top: #D9D9D9;
+    --bg-fill: #F7F7F7;
+}
+
+html {
+    font-size: 16px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    padding: 0 1.625rem;
+}
+
+.main .main__heading {
+    margin: 2.625rem 0 1rem;
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+.main .main__text {
+    color: var(--text-body);
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+.main .main__sub-heading {
+    display: block;
+    align-self: flex-start;
+    margin: 3.25rem 0 0.75rem;
+    color: var(--text-sub-heading);
+    font-size: 1.875rem;
+    font-weight: 600;
+}
+
+.main .main__list {
+    border-top: solid 1px var(--bg-top);
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+    padding: 1.875rem 0 6.25rem;
+}
+
+.main .main__list--reversed {
+    flex-direction: column-reverse;
+}
+
+.main .main__list-item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.main .main__list-item a {
+    display: flex;
+    width: 100%;
+    min-height: 4rem;
+    padding: 0 10px;
+    align-items: center;
+    flex-direction: row;
+    text-underline-offset: 2px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.main .main__list-item a:hover {
+    background-color: var(--bg-fill);
+    text-decoration: underline;
+}
+
+.main .main__list-item span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background-color: var(--bg-fill);
+    color: var(--text-body);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1000px) {
+    .main__text {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 700px) {
+    html {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 12px;
+    }
+
+    .main {
+        padding: 0 26px;
+    }
+
+    .main .main__heading,
+    .main .main__sub-heading {
+        font-size: 20px;
+    }
+
+    .main .main__text,
+    .main .main__list-item a {
+        font-size: 14px;    
+    }
+
+    .main .main__list {
+        row-gap: 15px;
+    }
+
+}
