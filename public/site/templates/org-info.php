@@ -11,6 +11,9 @@ namespace ProcessWire;
 
 <head id="head" pw-append>
   <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/organizations/org-info.css">
+  <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/zoom.css">
+
+  <script src="<?= $config->urls->templates ?>scripts/zoom.js" defer></script>
 </head>
 
 <main id="content" pw-prepend>
@@ -34,7 +37,18 @@ namespace ProcessWire;
 
   <div class="main__container second-container">
     <div class="main__content">
-      <?= $page->org_about ?>
+      <?php 
+      $content = $page->org_about;
+      $srcs;
+      preg_match_all("/(class=\"[\w\d\.-]*\" )?src=\".*\"/", $content, $srcs); 
+      $srcs = $srcs[0];
+
+      foreach ($srcs as $src) {
+      $content = preg_replace("/<img (class=\".*\" )?src=\".*\"[^data-js]*>/", "<img $src data-js=image>", $content, limit: 1);
+      }
+      
+      echo $content;
+      ?>
     </div>
 
     <div class="main__info">
