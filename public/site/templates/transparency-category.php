@@ -17,7 +17,9 @@ namespace ProcessWire;
     <h1 class="main__heading"><?=$page->title?></h1>
     <p class="main__text"><?=$page->transparency_category_desc?></p>
     <?php if (!$page->children()->count()): ?>
-        <p class="status-unavailable">Content Unavailable</p>
+        <div class="status-empty">
+           This category is empty and will be populated soon. Come back within 24 hours!
+        </div>
 
     <?php else: ?>
         <ul class="main__list">

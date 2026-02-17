@@ -90,6 +90,25 @@ main {
     margin-top: auto;
 }
 
+.empty-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    border-top: solid 1px #D9D4D7;
+    border-bottom: solid 1px #D9D4D7;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    margin-top: 15vh;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #000;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+
 .report_form {
     border: 2px solid black;
 }

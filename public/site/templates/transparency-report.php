@@ -15,7 +15,7 @@ namespace ProcessWire;
 </head>
 
 <main id="content">
-    <h1 class="title"><?= $page->transparency_report_subject ?></h1>
+    <h1 class="title"><?= $page->transparency_report_name ?></h1>
     <p class="date"><?= $page->transparency_report_date ?></p>
 
     <table class="multifile-table">

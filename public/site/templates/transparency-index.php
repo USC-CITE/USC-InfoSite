@@ -27,12 +27,14 @@ namespace ProcessWire;
 <main id="content" pw-prepend>
     <div class="text-container">
         <p class="title">Transparency Reports</p>
-        <p class="desc">Resolutions and financial reports of the University Student Council that are open for access.
+        <p class="desc">Minutes, resolutions, passed policies, and narrative reports of the University Student Council that are ready for access.
         </p>
     </div>
 
     <?php if (!$page->children()->count()): ?>
-        <p class="status-unavailable">Content Unavailable</p>
+        <div class="status-empty">
+           This is currently empty and will be populated soon. Come back later!
+        </div>
 
     <?php else: ?>
         <div class="resolution-container">
