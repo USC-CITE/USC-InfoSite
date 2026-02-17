@@ -18,6 +18,10 @@ namespace ProcessWire;
     <h1 class="title"><?= $page->transparency_report_name ?></h1>
     <p class="date"><?= $page->transparency_report_date ?></p>
 
+    <?php if (!empty($page->transparency_report_desc)): ?>
+        <p class="desc"><?= $page->transparency_report_desc ?></p>
+    <?php endif ?>
+    
     <table class="multifile-table">
         <thead>
             <tr>
@@ -26,7 +30,7 @@ namespace ProcessWire;
             </tr>
         </thead>
 
-        <?php if (empty($page->transparency_report_files)): ?>
+    <?php if (empty($page->transparency_report_files)): ?>
         </table>
         <p class="fallback-missing">Content Missing</p>
 
@@ -40,10 +44,5 @@ namespace ProcessWire;
             <?php endforeach; ?>
         </tbody>
         </table>
-    <?php endif ?>
-
-
-    <?php if (!empty($page->transparency_report_desc)): ?>
-        <p class="desc"><?= $page->transparency_report_desc ?></p>
     <?php endif ?>
 </main>
