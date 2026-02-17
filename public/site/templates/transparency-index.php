@@ -7,6 +7,17 @@ namespace ProcessWire;
  * @var Config $config
  *
  */
+
+/**
+ * Transparency is under Information
+ * Index
+ *  Category
+ *      Report-AY
+ *          Reports
+ * 
+ * Upload transparency_ategory_icon?
+ * Subject? or just name? Test with councilors
+ */
 ?>
 
 <head id="head" pw-append>
@@ -27,11 +38,11 @@ namespace ProcessWire;
         <div class="resolution-container">
             <?php foreach ($page->children() as $category):
                 $category_name = $category->transparency_category_name;
-                $category_icon = (empty($category->transparency_category_icon)) ? "resolution-icon.svg" : $category->transparency_category_icon; ?>
+                $category_icon = $category->transparency_category_icon; ?>
 
                 <a class="resolution" href="<?=$category->url?>">
                     <div class="icon-text">
-                        <img class="icon" src="<?= $config->urls->templates ?>assets/icons/<?= $category_icon ?>" alt="">
+                        <img class="icon" src="<?=$category_icon->url?>" alt="">
                         <p class="resolution-text"><?= $category_name ?></p>
                     </div>
                     <img class="arrow" src="<?= $config->urls->templates ?>assets/icons/arrow-right.svg" alt="">
