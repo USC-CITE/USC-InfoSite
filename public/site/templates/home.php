@@ -114,6 +114,10 @@
 			<p class="service__desc">What is the University Student Council? Who are the people elected behind it?</p>
 		</div>
 		<div class="service">
+			<a class="service__name" href="/transparency-reports">Transparency Reports</a>
+			<p class="service__desc">Find minutes, resolutions, passed policies, and narrative reports that are ready for access</p>
+		</div>
+		<div class="service">
 			<a class="service__name" href="/services/volunteer">Volunteer Opportunities</a>
 			<p class="service__desc">Donation drives, community service, and other philantrophic work</p>
 		</div>

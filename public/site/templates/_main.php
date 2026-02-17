@@ -93,6 +93,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 				<li><a href="/organizations">Organizations</a></li>
 				<li><a href="/usc">About the USC</a></li>
 				<li><a href="/usc/officers">Officers of the USC</a></li>
+				<li><a href="/transparency-reports">Transparency Reports</a></li>
 			</menu>
 			<menu class="link_list link_list--srvcs" data-js="srvcs_menu">
 				<h1 class="link_list__hdng">Services</h1>

@@ -24,6 +24,7 @@ namespace ProcessWire;
 				<a href="/organizations" class="main__items">Organizations</a>
 				<a href="/usc" class="main__items">About the USC</a>
 				<a href="/usc/officers" class="main__items">Officers of the USC</a>
+				<a href="/transparency-reports" class="main__items">Transparency Reports</a>
 			</div>
 		</div>
 		<div class="main__services">
