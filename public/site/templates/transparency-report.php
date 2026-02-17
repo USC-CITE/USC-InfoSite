@@ -14,14 +14,14 @@ namespace ProcessWire;
     <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/transparency/transparency-report.css">
 </head>
 
-<main id="content">
+<main id="content" pw-prepend>
     <h1 class="title"><?= $page->transparency_report_name ?></h1>
     <p class="date"><?= $page->transparency_report_date ?></p>
 
     <?php if (!empty($page->transparency_report_desc)): ?>
         <p class="desc"><?= $page->transparency_report_desc ?></p>
     <?php endif ?>
-    
+
     <table class="multifile-table">
         <thead>
             <tr>
