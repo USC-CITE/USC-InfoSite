@@ -89,7 +89,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 				<a href="/"><img src="<?= $config->urls->templates; ?>assets/logos/USC-logo.png" alt=""
 						class="header__logo" />
 					<div class="header__text">
-						<h1>West Visayas State University
+						<h1>West Visayas State University<br>
 							<span>University Student Council</span>
 						</h1>
 					</div>
