@@ -30,6 +30,8 @@ $home = $pages->get('/'); /** @var HomePage $home */
 	<meta name="keywords" content="<?=$page->page_keywords?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="canonical" href="<?=$page->httpUrl?>"/>
+	<link rel="alternate" href="<?=$page->httpUrl?>" hreflang="en-ph" />
+	<link rel="alternate" href="<?=$page->httpUrl?>" hreflang="en-us" />
 	<link rel="icon" type="image/png" href="<?= $config->urls->templates?>assets/logos/USC-logo.png">
 	<title><?= $page->title ?> <?= !empty($input->pageNum) ? "- Page " . $input->pageNum : "" ?></title>
 	<link rel="stylesheet" type="text/css" href="<?= $config->urls->templates; ?>styles/global.css" />
