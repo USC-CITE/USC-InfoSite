@@ -101,7 +101,7 @@ ErrorDocument 503 /503
   Header set X-XSS-Protection "1; mode=block"
 
   # Optionally (O) prevent mime-based attacks via content sniffing (IE+Chrome)
-  # Header set X-Content-Type-Options "nosniff" 
+  # Header set X-Content-Type-Options "nosniff" # (uncomment for production)
 </IfModule>
 
 
