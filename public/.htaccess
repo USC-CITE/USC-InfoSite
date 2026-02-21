@@ -497,7 +497,7 @@ DirectoryIndex index.php index.html index.htm
   # ----------------------------------------------------------------------------------------------- 
 
   # Header always set Referrer-Policy "strict-origin-when-cross-origin" "expr=%{CONTENT_TYPE} =~ m#text\/(css|html|javascript)|application\/pdf|xml#i" # (uncomment for production)
-<IfModule>
+</IfModule>
 
 #################################################################################################
 # END USC INFOSITE HTACCESS DIRECTIVES
