@@ -331,8 +331,8 @@ DirectoryIndex index.php index.html index.htm
  
   # 13C. Redirect www.domain.com to domain.com (do not combine with 13A or 13B):
   # -----------------------------------------------------------------------------------------------
-  # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-  # RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L]
+  # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC] # (uncomment for production)
+  # RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L] # (uncomment for production)
 
 
   # ----------------------------------------------------------------------------------------------- 
