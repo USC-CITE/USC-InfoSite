@@ -9,6 +9,10 @@ namespace ProcessWire;
  */
 ?>
 
+<head id="head" pw-prepend>
+	<meta name="robots" content="nofollow">
+</head>
+
 <head id="head" pw-append>
   <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/organizations/org-info.css">
   <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/zoom.css">
