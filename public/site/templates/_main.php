@@ -26,7 +26,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 <head id="head">
 	<meta http-equiv="Referrer-Policy" content="no-referrer, strict-origin-when-cross-origin" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-	<title><?= $page->title ?> <?= !empty($input->pageNum) ? "- Page " . $input->pageNum : "" ?></title>
+	<title><?= $page->title ?> <?= $input->pageNum > 1 ? "- Page " . $input->pageNum : "" ?></title>
 	<meta name="description" content="<?=$page->page_desc?>" />
 	<meta name="keywords" content="<?=$page->page_keywords?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
