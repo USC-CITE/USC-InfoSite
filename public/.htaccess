@@ -197,8 +197,8 @@ DirectoryIndex index.php index.html index.htm
 
   # 9A. To redirect HTTP requests to HTTPS, uncomment the lines below (also see note above):
   # -----------------------------------------------------------------------------------------------
-  # RewriteCond %{HTTPS} !=on
-  # RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  # RewriteCond %{HTTPS} !=on # (uncomment for production)
+  # RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] # (uncomment for production)
 
 
   # 9B. If using load balancer/AWS or behind proxy, use the following rather than 9A above: (L)
@@ -243,7 +243,7 @@ DirectoryIndex index.php index.html index.htm
     # Header always set Strict-Transport-Security "max-age=31536000;"
     # Header always set Strict-Transport-Security "max-age=31536000; includeSubdomains"
     # Header always set Strict-Transport-Security "max-age=31536000; preload"
-    # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" # (uncomment for production)
   </IfModule>
 
 
