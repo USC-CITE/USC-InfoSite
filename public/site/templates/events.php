@@ -28,6 +28,10 @@ $events = $pages->find("template=event, archive_event=0, sort=event_start_date")
 $page->of(true);
 ?>
 
+<head id="head" pw-prepend>
+	<meta name="robots" content="all">
+</head>
+
 <head id="head" pw-append>
   <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/events/events-main.css">
   <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/no-content-placeholder.css">

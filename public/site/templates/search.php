@@ -25,6 +25,10 @@ if (!empty($_SESSION["search_query"])) {
 
 ?>
 
+<head id="head" pw-prepend>
+	<meta name="robots" content="nofollow">
+</head>
+
 <head id="head" pw-append>
 	<?php if (!empty($sq)): ?>
 		<link rel="stylesheet" href="<?= $config->urls->templates ?>styles/search/search-results.css">
