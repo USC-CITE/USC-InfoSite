@@ -23,6 +23,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 <html lang="en">
 
 <head id="head">
+	<meta http-equiv="Referrer-Policy" content="no-referrer, strict-origin-when-cross-origin" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="description" content="<?=$page->page_desc?>" />
 	<meta name="keywords" content="<?=$page->page_keywords?>" />

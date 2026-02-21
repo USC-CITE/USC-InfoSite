@@ -482,3 +482,23 @@ DirectoryIndex index.php index.html index.htm
 #################################################################################################
 # END PROCESSWIRE HTACCESS DIRECTIVES
 #################################################################################################
+
+
+#################################################################################################
+# START USC INFOSITE HTACCESS DIRECTIVES
+# @version 1.0
+# @htaccessVersion 301
+#################################################################################################
+
+<IfModule mod_headers.c>
+  # ----------------------------------------------------------------------------------------------- 
+  # 1. Set Referrer-Policy to preserve full referrer data, share only the origin with external sites 
+  # and never leak data over insecure connections.
+  # ----------------------------------------------------------------------------------------------- 
+
+  # Header always set Referrer-Policy "strict-origin-when-cross-origin" "expr=%{CONTENT_TYPE} =~ m#text\/(css|html|javascript)|application\/pdf|xml#i" # (uncomment for production)
+<IfModule>
+
+#################################################################################################
+# END USC INFOSITE HTACCESS DIRECTIVES
+#################################################################################################
