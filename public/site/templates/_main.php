@@ -26,6 +26,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 <head id="head">
 	<meta http-equiv="Referrer-Policy" content="no-referrer, strict-origin-when-cross-origin" />
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title><?= $page->title ?> <?= !empty($input->pageNum) ? "- Page " . $input->pageNum : "" ?></title>
 	<meta name="description" content="<?=$page->page_desc?>" />
 	<meta name="keywords" content="<?=$page->page_keywords?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -33,7 +34,6 @@ $home = $pages->get('/'); /** @var HomePage $home */
 	<link rel="alternate" href="<?=$page->httpUrl?>" hreflang="en-ph" />
 	<link rel="alternate" href="<?=$page->httpUrl?>" hreflang="en-us" />
 	<link rel="icon" type="image/png" href="<?= $config->urls->templates?>assets/logos/USC-logo.png">
-	<title><?= $page->title ?> <?= !empty($input->pageNum) ? "- Page " . $input->pageNum : "" ?></title>
 	<link rel="stylesheet" type="text/css" href="<?= $config->urls->templates; ?>styles/global.css" />
 	<script src="<?= $config->urls->templates; ?>scripts/main.js" defer></script>
 </head>
