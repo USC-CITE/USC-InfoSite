@@ -12,6 +12,7 @@ namespace ProcessWire;
 /** @var Page $page
  *  @var Pages $pages
  *  @var Config $config
+ *  @var WireInput $input
  */
 
 
@@ -30,7 +31,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="canonical" href="<?=$page->httpUrl?>"/>
 	<link rel="icon" type="image/png" href="<?= $config->urls->templates?>assets/logos/USC-logo.png">
-	<title><?php echo $page->title; ?></title>
+	<title><?= $page->title ?> <?= !empty($input->pageNum) ? "- Page " . $input->pageNum : "" ?></title>
 	<link rel="stylesheet" type="text/css" href="<?= $config->urls->templates; ?>styles/global.css" />
 	<script src="<?= $config->urls->templates; ?>scripts/main.js" defer></script>
 </head>
