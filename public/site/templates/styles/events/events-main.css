@@ -225,7 +225,7 @@ html {
     /*! margin-top: 50px; */
     /*! margin-bottom: 100px; */
     font-size: 1rem;
-    max-width: 500px;
+    max-width: 600px;
     margin: 50px auto 80px auto;
     padding: 0 20px;
 }
@@ -492,6 +492,10 @@ a {
 
     .events-details-container {
         width: 80vw;
+    }
+
+    .event-archive .link--center {
+        font-size: 0.9rem;
     }
 
     .schedule-img {

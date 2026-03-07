@@ -159,9 +159,8 @@ $page->of(true);
     </div>
   <?php endif; ?>
   </div>
-
+  
   <div class="event-archive">
-    <a href="/events/archive">Look at our event archive</a> to see the countless events we have conducted over the
-    years.
+    <a class="link link--center" href="/events/archive/"><img src="<?= $config->urls->templates ?>assets/icons/arrow-right-with-bg.svg" alt="">Find archived events on a separate page</a>
   </div>
 </main>
