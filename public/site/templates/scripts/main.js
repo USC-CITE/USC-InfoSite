@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let overlay
 
   function insertCookieScripts () {
-    if (localStorage.getItem('cookiesChoice') === 'accepted') {
+    if (window.localStorage.getItem('cookiesChoice') === 'accepted') {
       // Load Umami analytics script
       // const script = document.createElement('script')
       // script.defer = true
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // Show only if the user hasn’t made a choice
-  if (!localStorage.getItem('cookiesChoice')) {
+  if (!window.localStorage.getItem('cookiesChoice')) {
     if (typeof dialog.showModal === 'function') {
       dialog.showModal()
     } else {
@@ -138,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function closeDialog () {
-    localStorage.setItem('cookiesChoice', this.dataset.choice)
+    window.localStorage.setItem('cookiesChoice', this.dataset.choice)
 
     insertCookieScripts()
 
