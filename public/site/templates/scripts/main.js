@@ -100,9 +100,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function insertCookieScripts () {
     if (localStorage.getItem('cookiesChoice') === 'accepted') {
-      const head = document.querySelector('head')
-      const scripts = '<insert actual cookie consent scripts here>'
-      head.insertAdjacentHTML('beforeend', scripts)
+      // Load Umami analytics script
+      // const script = document.createElement('script')
+      // script.defer = true
+      // script.src = 'https://cloud.umami.is/script.js'
+      // script.setAttribute('data-website-id', '6cfb1fe2-e31d-4304-897f-89fd14b546d0')
+      // script.setAttribute('data-auto-track', 'false') // Disable auto-track
+      // document.head.appendChild(script)
+
+      // Manually track once loaded
+      // script.onload = () => {
+      //   if (typeof umami !== 'undefined') {
+      //     umami.track()
+      //   }
+      // }
     }
   }
 
