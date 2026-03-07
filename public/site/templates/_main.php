@@ -97,16 +97,16 @@ $home = $pages->get('/'); /** @var HomePage $home */
 			</div>
 			<div class="header__btns">
 				<div class="header__menu">
-					<a href="/browse" data-js="menu_btn">
+					<a href="/browse" data-js="menu_btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="info_menu services_menu">
 						<p>Menu</p>
 						<img alt="" src="<?= $config->urls->templates; ?>assets/icons/chevron_down.svg"
-							data-js="menu_btn_icon" />
+							data-js="menu_btn_icon" aria-hidden="true" />
 					</a>
 				</div>
 				<div class="header__search">
-					<a href="/search" data-js="search_btn">
+					<a href="/search" data-js="search_btn" aria-label="Toggle search form" aria-expanded="false" aria-controls="search_form_container">
 						<p class="sr_only">Search</p>
-						<img alt="" src="<?= $config->urls->templates; ?>assets/icons/magnifier.svg" />
+						<img alt="" src="<?= $config->urls->templates; ?>assets/icons/magnifier.svg" aria-hidden="true" />
 					</a>
 				</div>
 			</div>
@@ -114,7 +114,7 @@ $home = $pages->get('/'); /** @var HomePage $home */
 	</header>
 	<div class="container container--header_accord" id="header_accord" data-js="header_accord_container">
 		<div class="header_accord" data-js="header_accord">
-			<menu class="link_list link_list--info" data-js="info_menu">
+			<menu class="link_list link_list--info" data-js="info_menu" id="info_menu" aria-label="Information menu">
 				<h1 class="link_list__hdng">Information</h1>
 				<li><a href="/announcements">Announcements</a></li>
 				<li><a href="/events">Events</a></li>
@@ -122,14 +122,14 @@ $home = $pages->get('/'); /** @var HomePage $home */
 				<li><a href="/usc">About the USC</a></li>
 				<li><a href="/usc/officers">Officers of the USC</a></li>
 			</menu>
-			<menu class="link_list link_list--srvcs" data-js="srvcs_menu">
+			<menu class="link_list link_list--srvcs" data-js="srvcs_menu" id="services_menu" aria-label="Services menu">
 				<h1 class="link_list__hdng">Services</h1>
 				<li><a href="/services/volunteer">Volunteer Opportunities</a></li>
 				<li><a href="/services/education">Education and Training</a></li>
 				<li><a href="/usc/contact">Contact the USC</a></li>
 				<li><a href="/usc/cite">Contact the USC-CITE</a></li>
 			</menu>
-			<form class="search_form" action="/search/" method="post" data-js="search_form">
+			<form class="search_form" id="search_form_container" action="/search/" method="post" data-js="search_form" aria-label="Search form">
 				<label for="search" class="search_form__label">Search the USC InfoSite</label>
 				<input id="search" class="search_form__input" type="text" name="search_query" />
 				<button class="search_form__btn" type="submit">

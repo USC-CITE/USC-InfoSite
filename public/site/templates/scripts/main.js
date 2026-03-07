@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!searchForm.classList.contains('visible')) {
       headerAccordCont.style.borderBottom = '3px solid #D9D4D7'
       searchForm.classList.add('visible')
+      searchBtn.setAttribute('aria-expanded', 'true')
+      menuBtn.setAttribute('aria-expanded', 'false')
 
       // Set background color to #f6f6f6 when search link is clicked
       searchBtn.classList.add('selected')
@@ -38,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
       headerAccordCont.style.borderBottom = 'none'
       headerAccord.classList.remove('header_accord--search')
       searchForm.classList.remove('visible')
+      searchBtn.setAttribute('aria-expanded', 'false')
 
       // Revert background color of the search link when search bar is closed
       searchBtn.classList.remove('selected')
@@ -56,6 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
       headerAccordCont.style.borderBottom = '3px solid #D9D4D7'
       infoMenu.classList.add('visible')
       srvcsMenu.classList.add('visible')
+      menuBtn.setAttribute('aria-expanded', 'true')
+      searchBtn.setAttribute('aria-expanded', 'false')
 
       menuIcon.style.transform = 'rotate(-180deg)'
       menuBtn.classList.add('selected')
@@ -66,6 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
       headerAccord.classList.remove('header_accord--menu')
       infoMenu.classList.remove('visible')
       srvcsMenu.classList.remove('visible')
+      menuBtn.setAttribute('aria-expanded', 'false')
 
       menuIcon.style.transform = 'none'
       menuBtn.classList.remove('selected')
