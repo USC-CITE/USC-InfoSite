@@ -14,6 +14,22 @@ document.addEventListener('DOMContentLoaded', function () {
   menuBtn.setAttribute('role', 'button')
   searchBtn.setAttribute('role', 'button')
 
+  // Keyboard support for menu button (Space and Enter)
+  menuBtn.addEventListener('keydown', function (e) {
+    if (e.keyCode === 32 || e.keyCode === 13) { // Space or Enter key
+      e.preventDefault()
+      this.click()
+    }
+  })
+
+  // Keyboard support for search button (Space and Enter)
+  searchBtn.addEventListener('keydown', function (e) {
+    if (e.keyCode === 32 || e.keyCode === 13) { // Space or Enter key
+      e.preventDefault()
+      this.click()
+    }
+  })
+
   // Event listener for clicking the search link
   searchBtn.addEventListener('click', function (e) {
     e.preventDefault()
