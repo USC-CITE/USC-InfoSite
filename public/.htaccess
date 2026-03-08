@@ -101,7 +101,7 @@ ErrorDocument 503 /503
   Header set X-XSS-Protection "1; mode=block"
 
   # Optionally (O) prevent mime-based attacks via content sniffing (IE+Chrome)
-  # Header set X-Content-Type-Options "nosniff" 
+  # Header set X-Content-Type-Options "nosniff" # (uncomment for production)
 </IfModule>
 
 
@@ -197,8 +197,8 @@ DirectoryIndex index.php index.html index.htm
 
   # 9A. To redirect HTTP requests to HTTPS, uncomment the lines below (also see note above):
   # -----------------------------------------------------------------------------------------------
-  # RewriteCond %{HTTPS} !=on
-  # RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  # RewriteCond %{HTTPS} !=on # (uncomment for production)
+  # RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301] # (uncomment for production)
 
 
   # 9B. If using load balancer/AWS or behind proxy, use the following rather than 9A above: (L)
@@ -243,7 +243,7 @@ DirectoryIndex index.php index.html index.htm
     # Header always set Strict-Transport-Security "max-age=31536000;"
     # Header always set Strict-Transport-Security "max-age=31536000; includeSubdomains"
     # Header always set Strict-Transport-Security "max-age=31536000; preload"
-    # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+    # Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" # (uncomment for production)
   </IfModule>
 
 
@@ -331,8 +331,8 @@ DirectoryIndex index.php index.html index.htm
  
   # 13C. Redirect www.domain.com to domain.com (do not combine with 13A or 13B):
   # -----------------------------------------------------------------------------------------------
-  # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-  # RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L]
+  # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC] # (uncomment for production)
+  # RewriteRule ^ %{ENV:PROTO}://%1%{REQUEST_URI} [R=301,L] # (uncomment for production)
 
 
   # ----------------------------------------------------------------------------------------------- 
@@ -481,4 +481,24 @@ DirectoryIndex index.php index.html index.htm
 
 #################################################################################################
 # END PROCESSWIRE HTACCESS DIRECTIVES
+#################################################################################################
+
+
+#################################################################################################
+# START USC INFOSITE HTACCESS DIRECTIVES
+# @version 1.0
+# @htaccessVersion 301
+#################################################################################################
+
+<IfModule mod_headers.c>
+  # ----------------------------------------------------------------------------------------------- 
+  # 1. Set Referrer-Policy to preserve full referrer data, share only the origin with external sites 
+  # and never leak data over insecure connections.
+  # ----------------------------------------------------------------------------------------------- 
+
+  # Header always set Referrer-Policy "strict-origin-when-cross-origin" "expr=%{CONTENT_TYPE} =~ m#text\/(css|html|javascript)|application\/pdf|xml#i" # (uncomment for production)
+</IfModule>
+
+#################################################################################################
+# END USC INFOSITE HTACCESS DIRECTIVES
 #################################################################################################

@@ -9,6 +9,10 @@ namespace ProcessWire;
  */
 ?>
 
+<head id="head" pw-prepend>
+	<meta name="robots" content="noindex, nofollow">
+</head>
+
 <head id="head" pw-append>
 	<?php if ($page->title === '503 Service Unavailable'): ?>
 		<link rel="stylesheet" type="text/css" href="<?= $config->urls->templates ?>styles/status_code/503.css">

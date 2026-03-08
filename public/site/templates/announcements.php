@@ -9,6 +9,10 @@ namespace ProcessWire;
  */
 ?>
 
+<head id="head" pw-prepend>
+	<meta name="robots" content="all">
+</head>
+
 <head id="head" pw-append>
 	<link rel="stylesheet" href="<?= $config->urls->templates ?>styles/announcements/announcements.css">
     <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/no-content-placeholder.css">

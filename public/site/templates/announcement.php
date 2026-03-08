@@ -10,8 +10,15 @@ namespace ProcessWire;
  */
 ?>
 
+<head id="head" pw-prepend>
+	<meta name="robots" content="nofollow">
+</head>
+
 <head id="head" pw-append>
 	<link rel="stylesheet" href="<?= $config->urls->templates ?>styles/announcements/announcement.css">
+    <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/zoom.css">
+
+    <script src="<?= $config->urls->templates ?>scripts/zoom.js" defer></script>
 </head>
 
 <main id="content" pw-prepend>
@@ -28,7 +35,18 @@ namespace ProcessWire;
         </span>
     </div>
     <div class="main__container main__container--info">
-        <?= $page->ancmt_content ?>
+        <?php 
+        $content = $page->ancmt_content;
+        $srcs;
+        preg_match_all("/(class=\"[\w\d\.-]*\" )?src=\".*\"/", $content, $srcs); 
+        $srcs = $srcs[0];
+
+        foreach ($srcs as $src) {
+        $content = preg_replace("/<img (class=\".*\" )?src=\".*\"[^data-js]*>/", "<img $src data-js=image>", $content, limit: 1);
+        }
+        
+        echo $content;
+        ?>
     </div>
 
     <p class="announcements-link">You've reached the end of this announcement. <a href="/announcements">Find more announcements.</a></p>

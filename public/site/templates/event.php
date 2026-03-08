@@ -24,9 +24,15 @@ $page->save();
 $page->of(true);
 ?>
 
+<head id="head" pw-prepend>
+	<meta name="robots" content="nofollow">
+</head>
 
 <head id="head" pw-append>
   <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/events/events-main.css">
+  <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/zoom.css">
+
+  <script src="<?= $config->urls->templates ?>scripts/zoom.js" defer></script>
 </head>
 
 <main id="content" pw-before>
@@ -41,7 +47,18 @@ $page->of(true);
 
 <main id="content" pw-prepend>
   <div class="events-about-container">
-    <?= $page->event_about ?>
+    <?php 
+    $content = $page->event_about;
+    $srcs;
+    preg_match_all("/(class=\"[\w\d\.-]*\" )?src=\".*\"/", $content, $srcs); 
+    $srcs = $srcs[0];
+
+    foreach ($srcs as $src) {
+      $content = preg_replace("/<img (class=\".*\" )?src=\".*\"[^data-js]*>/", "<img $src data-js=image>", $content, limit: 1);
+    }
+    
+    echo $content;
+    ?>
   </div>
 
   <div class="line-border"></div>
@@ -67,7 +84,7 @@ $page->of(true);
     <div class="activities-container">
       <?php
       foreach ($page->event_schedule as $image) {
-        echo "<a class='activity-1' href='$image->url'><img src='$image->url' alt='$image->description' loading='lazy'></a>";
+        echo "<img class='activity-1' src='$image->url' alt='$image->description' loading='lazy' data-js='image'>";
       }
       ?>
     </div>
@@ -80,7 +97,7 @@ $page->of(true);
     <div class="activities-container">
       <?php
       foreach ($page->event_activities as $image) {
-        echo "<a class='activity-1' href='$image->url'><img src='$image->url' alt='$image->description' loading='lazy'></a>";
+        echo "<img class='activity-1' src='$image->url' alt='$image->description' loading='lazy' data-js='image'>";
       }
       ?>
     </div>
