@@ -53,40 +53,48 @@
 			<?php if ($event_num < 2): ?>
         <div class="event-card">
           <div class="event-card--borderless">
-            <div class="event-card-status">
-              <?php  
-              $event_date = new \DateTime($event->event_start_date);
-              $date_now = new \DateTime(date("Y-m-d"));
-              $difference = $event_date->diff($date_now);
-          
-              if ($date_now > $event_date) {
-                echo "Event has <span>already ended<span></span>";
-              }
-              else if ($difference->days > 1) {
-                echo "<span>$difference->days days </span> till event starts";
-              }
-              else if ($difference->days === 1) {
-                echo "Event starts <span>tomorrow</span>";
-              }
-              else if ($difference->days === 0) {
-                echo "Event starts <span>today</span>";
-              }
-              ?>
+            <div class="event-status-date">
+              <div class="event-status
+                <?php
+                $event_date = new \DateTime($event->event_start_date);
+                $date_now = new \DateTime(date("Y-m-d"));
+                $difference = $event_date->diff($date_now);
+
+                if (!($date_now > $event_date)) {
+                  if ($difference->days >= 1) {
+                    echo "event-status--starts-on";
+                  } else if ($difference->days === 0) {
+                    echo "event-status--ongoing";
+                  } 
+                }
+                ?>
+                ">
+                  <?php
+                  if ($date_now > $event_date) {
+                    echo "Event concluded";
+                  } else if ($difference->days >= 1) {
+                    echo "Event starts on";
+                  } else if ($difference->days === 0) {
+                    echo "Event ongoing";
+                  }
+                  ?>
+                </div>
+                <div class="event-date">
+                  <?= $event_date->format("F") ?>
+                  <span><?= $event_date->format("j") ?></span>
+                </div>
             </div>
             <div class="event-title-card">
-              <a class="event-title" href="<?= $event->url ?>"><?= $event->event_name; ?></a>
-							<div class="event-date"><?= $event->event_start_date ?></div>
-            </div>
-            <div class="event-where-when">
-              <div class="event-location">
-                <img class="location-vector" src="<?= $config->urls->templates ?>assets/icons/location-vector.svg" />
-                <strong>Venue:</strong> <?= $event->event_venues_and_st[0]->event_venue; ?>
+                <a class="event-title" href="<?= $event->url ?>"><?= $event->event_name; ?></a>
+                <div class="event-location">
+                  <img class="location-vector" src="<?= $config->urls->templates ?>assets/icons/location-vector.svg" />
+                  <strong>Venue:</strong> <?= $event->event_venues_and_st[0]->event_venue; ?>
+                </div>
+                <div class="event-start-time">
+                  <img class="clock-vector" src="<?= $config->urls->templates ?>assets/icons/clock-vector.svg" />
+                  <strong>Start Time:</strong> <?= $event->event_venues_and_st[0]->event_venue_st; ?>
+                </div>
               </div>
-              <div class="event-start-time">
-                <img class="clock-vector" src="<?= $config->urls->templates ?>assets/icons/clock-vector.svg" />
-                <strong>Start Time:</strong> <?= $event->event_venues_and_st[0]->event_venue_st; ?>
-              </div>
-            </div>
           </div>
         </div>
 		</div>
@@ -97,7 +105,7 @@
 				<div class="event-card--borderless">
 						<div class="event-title-card event-title-card--home">
 								<a class="event-title event-title--home" href="<?= $event->url ?>"><?= $event->event_name; ?></a>
-								<div class="event-date"><?= $event->event_start_date ?></div>
+								<div class="event-date--home"><?= $event->event_start_date ?></div>
 						</div>
 						<div class="event-where-when event-where-when--home">
 						</div>

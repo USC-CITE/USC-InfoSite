@@ -81,12 +81,40 @@
 }
 
 .event-card--borderless {
+    padding-top: 20px;
     margin: auto;
+    margin: 0 auto;
     position: relative;
-    margin-top: 3vh;
     width: 100%;
     height: 100%;
     max-width: 700px;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.event-status-date {
+    min-width: 80px;
+}
+
+.event-status {
+    padding: 5px 0 5px 0;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    color: #212121;
+    font-size: 0.6rem;
+    border-radius: 10px 10px 0 0;
+    background-color: #e5e5e5;
+}
+
+.event-status--ongoing {
+    background-color: #BD8711;
+    color: #ffffff;
+}
+
+.event-status--starts-on {
+    background-color: #BD871177;
+    color: #44425A;
 }
 
 .event-card-status {
@@ -107,10 +135,12 @@
 
 .event-title-card {
     width: 100%;
+    padding: 0 0 0 40px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
     text-align: start;
-    border: solid 1px #E5E5E5;
-    color: #21536C;
-    padding: 30px;
+    color: #212121;
 }
 
 .event-title-card--home {
@@ -121,16 +151,47 @@
     text-decoration-thickness: 2px;
     font-size: 2.125rem;
     font-weight: 600;
+    color: #21536c;
 }
 
-.event-title--home {
+.event-title-card.event-title-card--home {
+    width: 100%;
+    text-align: start;
+    border: solid 1px #E5E5E5;
+    color: #21536C;
+    padding: 30px;
+}
+
+.event-title--home { 
     font-size: 1.56rem;
 }
 
+
 .event-date {
+    min-width: 80px;
+    padding: 5px;
+    display: flex;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    border-radius: 0 0 10px 10px;
+    flex-flow: column wrap;
+    font-weight: 400;
+    color: #44425a;
+    font-size: 0.8rem;
+}
+
+.event-date--home {
+    min-width: unset;
     font-weight: 400;
     font-size: 1.125rem;
     color: #44425A;
+}
+
+.event-date > span {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #21536c;
 }
 
 .event-where-when {
@@ -165,10 +226,12 @@
 
 .event-location {
     font-weight: 400;
+   font-size: 1.125rem;
 }
 
 .event-start-time {
     font-weight: 400;
+    font-size: 1.125rem;
 }
 
 .services__link,
@@ -220,6 +283,10 @@
     .events__link img {
         width: 25px;
         height: 25px;
+    }
+
+    .event-date > span {
+        font-size: 1.25rem;
     }
 }
 
@@ -405,6 +472,23 @@
     .banner__hdng{
         font-size: 2.875rem;
     }
+
+    .event-status {
+        font-size: 0.8rem;
+    }
+
+     .event-status-date {
+        min-width: 120px;
+    }
+
+    .event-date {
+        padding: 10px 20px 10px 20px;
+        font-size: 1rem;
+    }
+
+    .event-date > span {
+        font-size: 2rem;
+    }
 }
 @media only screen and (min-width: 600px) {
     .banner__hdng{
@@ -438,6 +522,22 @@
     .ancmts__hdng {
         margin-bottom: 30px;
         font-size: 1.875rem;
+    }
+
+    .event-status {
+        font-size: 1rem;
+    }
+
+    .event-status-date {
+        min-width: 145px;
+    }
+
+    .event-date {
+        font-size: 1.125rem;
+    }
+
+    .event-date > span {
+        font-size: 2.5rem;
     }
 
     .acad_clndr__link {
