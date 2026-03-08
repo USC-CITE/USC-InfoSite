@@ -94,27 +94,26 @@
                   <img class="clock-vector" src="<?= $config->urls->templates ?>assets/icons/clock-vector.svg" />
                   <strong>Start Time:</strong> <?= $event->event_venues_and_st[0]->event_venue_st; ?>
                 </div>
-              </div>
-          </div>
-        </div>
-		</div>
-		<h2 class="events__hdng">Upcoming Events</h2>
-		<?php $event_num += 1; ?>
-		<?php else: ?>
-		<div class="event-card">
-				<div class="event-card--borderless">
-						<div class="event-title-card event-title-card--home">
-								<a class="event-title event-title--home" href="<?= $event->url ?>"><?= $event->event_name; ?></a>
-								<div class="event-date--home"><?= $event->event_start_date ?></div>
-						</div>
-						<div class="event-where-when event-where-when--home">
-						</div>
+          	</div>
+        	</div>
 				</div>
+			<?php else: ?>
+				<?php if ($event_num === 2): ?>
+					<h2 class="events__hdng">Upcoming Events</h2>	
+				<?php endif; ?>
+				<div class="event-card">
+					<div class="event-card--borderless">
+							<div class="event-title-card event-title-card--home">
+									<a class="event-title event-title--home" href="<?= $event->url ?>"><?= $event->event_name; ?></a>
+									<div class="event-date--home"><?= $event->event_start_date ?></div>
+							</div>
+							<div class="event-where-when event-where-when--home">
+							</div>
+					</div>
 				</div>
-		</div>
-		<?php endif; ?>
-		<?php $event_num += 1; ?>
-		<?php endforeach; ?>
+			<?php endif; ?>
+			<?php $event_num += 1; ?>
+	<?php endforeach; ?>
 		<a class="events__link" href="/events"><img src="<?= $config->urls->templates ?>assets/icons/arrow-right-with-bg.svg" alt="">Find more events held by the University Student Council</a>
 	</section>
 	<section class="services">
