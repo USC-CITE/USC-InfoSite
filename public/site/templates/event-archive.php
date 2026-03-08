@@ -16,6 +16,7 @@ namespace ProcessWire;
 <head id="head" pw-append>
   <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/events/events-main.css">
   <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/no-content-placeholder.css">
+  <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/pagination.css">
 </head>
 
 <main id="content" pw-before>
@@ -27,7 +28,7 @@ namespace ProcessWire;
 
 <main id="content" pw-prepend>
   <div class="main-archive">
-  <?php $events = $pages->find("template=event, archive_event=1, sort=-event_start_date"); 
+  <?php $events = $pages->find("template=event, archive_event=1, limit=10, sort=-event_start_date"); 
   if (count($events) < 1):
   ?>
     <div class="no-content-placeholder">
@@ -51,5 +52,20 @@ namespace ProcessWire;
       </div>
       <?php endforeach; ?>
     <?php endif;?>
+  </div>
+  <div class="pagination">
+        <?php
+            echo $events->renderPager(array(
+                'numPageLinks' => 5,
+                'nextItemLabel' => "Next",
+                'previousItemLabel' => "Prev",
+                'nextItemClass' => "button next-button",
+                'previousItemClass' => "button back-button",
+                'currentItemClass' => "list-item--active",
+                'listMarkup' => "<ul class='page-list'>{out}</ul>",
+                'itemMarkup' => "<li class='list-item {class}'>{out}</li>",
+                'linkMarkup' => "<a class='page-link' href='{url}'>{out}</a>",
+            ));
+        ?>
   </div>
 </main>
