@@ -11,6 +11,7 @@
 ?>
 
 <head id="head" pw-append>
+	<link rel="stylesheet" href="<?= $config->urls->templates ?>styles/no-content-placeholder.css">
     <link rel="stylesheet" href="<?= $config->urls->templates ?>styles/home.css">
 </head>
 
@@ -48,73 +49,91 @@
 	<section class="present_events">
 	<?php 
 		$events = $pages->find("template=event, archive_event=0, sort=event_start_date, limit=3");
-		$event_num = 1;
-    foreach ($events as $event): ?>
-			<?php if ($event_num < 2): ?>
-        <div class="event-card">
-          <div class="event-card--borderless">
-            <div class="event-status-date">
-              <div class="event-status
-                <?php
-                $event_date = new \DateTime($event->event_start_date);
-                $date_now = new \DateTime(date("Y-m-d"));
-                $difference = $event_date->diff($date_now);
+		$event_num = 1; ?>
+		<?php if (count($events) < 1): ?>
+			<!-- Missing events -->
+			<div class="event-card">
+				<div class="event-card--borderless">
+						<div class="event-title-card event-title-card--no-content">
+								<h2 class="no-content-placeholder__text no-content-placeholder__text--home">No upcoming events at the moment</h2>
+						</div>
+						<div class="event-where-when event-where-when--home">
+						</div>
+				</div>
+			</div>
+			<a class="events__link" href="/events/archive/"><img src="<?= $config->urls->templates ?>assets/icons/arrow-right-with-bg.svg" alt="">Find archived events on a separate page</a>
+  	<?php else: ?>
+			<?php foreach ($events as $event): ?>
+				<?php if ($event_num < 2): ?>
+					<div class="event-card">
+						<div class="event-card--borderless">
+							<div class="event-status-date">
+								<div class="event-status
+									<?php
+									$event_date = new \DateTime($event->event_start_date);
+									$date_now = new \DateTime(date("Y-m-d"));
+									$difference = $event_date->diff($date_now);
 
-                if (!($date_now > $event_date)) {
-                  if ($difference->days >= 1) {
-                    echo "event-status--starts-on";
-                  } else if ($difference->days === 0) {
-                    echo "event-status--ongoing";
-                  } 
-                }
-                ?>
-                ">
-                  <?php
-                  if ($date_now > $event_date) {
-                    echo "Event concluded";
-                  } else if ($difference->days >= 1) {
-                    echo "Event starts on";
-                  } else if ($difference->days === 0) {
-                    echo "Event ongoing";
-                  }
-                  ?>
-                </div>
-                <div class="event-date">
-                  <?= $event_date->format("F") ?>
-                  <span><?= $event_date->format("j") ?></span>
-                </div>
-            </div>
-            <div class="event-title-card">
-                <a class="event-title" href="<?= $event->url ?>"><?= $event->event_name; ?></a>
-                <div class="event-location">
-                  <img class="location-vector" src="<?= $config->urls->templates ?>assets/icons/location-vector.svg" />
-                  <strong>Venue:</strong> <?= $event->event_venues_and_st[0]->event_venue; ?>
-                </div>
-                <div class="event-start-time">
-                  <img class="clock-vector" src="<?= $config->urls->templates ?>assets/icons/clock-vector.svg" />
-                  <strong>Start Time:</strong> <?= $event->event_venues_and_st[0]->event_venue_st; ?>
-                </div>
-          	</div>
-        	</div>
-				</div>
-			<?php else: ?>
-				<?php if ($event_num === 2): ?>
-					<h2 class="events__hdng">Upcoming Events</h2>	
-				<?php endif; ?>
-				<div class="event-card">
-					<div class="event-card--borderless">
-							<div class="event-title-card event-title-card--home">
-									<a class="event-title event-title--home" href="<?= $event->url ?>"><?= $event->event_name; ?></a>
-									<div class="event-date--home"><?= $event->event_start_date ?></div>
+									if (!($date_now > $event_date)) {
+										if ($difference->days >= 1) {
+											echo "event-status--starts-on";
+										} else if ($difference->days === 0) {
+											echo "event-status--ongoing";
+										} 
+									}
+									?>
+									">
+										<?php
+										if ($date_now > $event_date) {
+											echo "Event concluded";
+										} else if ($difference->days >= 1) {
+											echo "Event starts on";
+										} else if ($difference->days === 0) {
+											echo "Event ongoing";
+										}
+										?>
+									</div>
+									<div class="event-date">
+										<?= $event_date->format("F") ?>
+										<span><?= $event_date->format("j") ?></span>
+									</div>
 							</div>
-							<div class="event-where-when event-where-when--home">
+							<div class="event-title-card">
+									<a class="event-title" href="<?= $event->url ?>"><?= $event->event_name; ?></a>
+									<div class="event-location">
+										<img class="location-vector" src="<?= $config->urls->templates ?>assets/icons/location-vector.svg" />
+										<strong>Venue:</strong> <?= $event->event_venues_and_st[0]->event_venue; ?>
+									</div>
+									<div class="event-start-time">
+										<img class="clock-vector" src="<?= $config->urls->templates ?>assets/icons/clock-vector.svg" />
+										<strong>Start Time:</strong> <?= $event->event_venues_and_st[0]->event_venue_st; ?>
+									</div>
 							</div>
+						</div>
 					</div>
-				</div>
-			<?php endif; ?>
-			<?php $event_num += 1; ?>
-	<?php endforeach; ?>
-		<a class="events__link" href="/events"><img src="<?= $config->urls->templates ?>assets/icons/arrow-right-with-bg.svg" alt="">Find more events held by the University Student Council</a>
+				<?php else: ?>
+					<?php if ($event_num === 2): ?>
+						<h2 class="events__hdng">Upcoming Events</h2>	
+					<?php endif; ?>
+					<div class="event-card">
+						<div class="event-card--borderless">
+								<div class="event-title-card event-title-card--home">
+										<a class="event-title event-title--home" href="<?= $event->url ?>"><?= $event->event_name; ?></a>
+										<div class="event-date--home"><?= $event->event_start_date ?></div>
+								</div>
+								<div class="event-where-when event-where-when--home">
+								</div>
+						</div>
+					</div>
+				<?php endif; ?>
+				<?php $event_num += 1; ?>
+			<?php endforeach; ?>
+				<?php if ($event_num < 3): ?>
+					<a class="events__link" href="/events/archive/"><img src="<?= $config->urls->templates ?>assets/icons/arrow-right-with-bg.svg" alt="">Find archived events on a separate page</a>
+				<?php else: ?>
+					<a class="events__link" href="/events"><img src="<?= $config->urls->templates ?>assets/icons/arrow-right-with-bg.svg" alt="">Find more events held by the University Student Council</a>
+				<?php endif; ?>
+		<?php endif; ?>
 	</section>
 	<section class="services">
 		<h2 class="services__hdng">Services and other information</h2>
