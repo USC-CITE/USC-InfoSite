@@ -72,7 +72,6 @@ main {
 }
 
 @media screen and (max-width: 800px) {
-
     .main__text,
     .main__items {
         font-size: 0.875rem;
@@ -84,7 +83,6 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-
     .main__text {
         margin: 25px 0 25px;
         padding: 0;
