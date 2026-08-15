@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/USC-CITE/USC-InfoSite#readme",
   "devDependencies": {
+    "prettier": "^3.9.6",
     "standard": "^17.1.2"
   }
 }
