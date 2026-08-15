@@ -1,4 +1,4 @@
-.services-container{
+.services-container {
     display: flex;
     flex-flow: column;
     width: 100%;
@@ -6,26 +6,26 @@
     margin: 25px auto 75px auto;
 }
 
-.title-container{
-  width: 90%;
-  display: flex;
-  flex-direction: column;
+.title-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
-.title{
+.title {
     font-weight: 600;
     font-size: 1.875rem;
     line-height: 45px;
     margin-left: 20px;
 }
 
-.services-about{
+.services-about {
     font-weight: 400;
     font-size: 1.25rem;
     margin-left: 20px;
 }
 
-.volunteer_education-container{
+.volunteer_education-container {
     display: flex;
     flex-direction: row;
     gap: 6vh;
@@ -43,7 +43,9 @@
     height: 225px;
     flex-shrink: 0;
     border-radius: 10px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/site/templates/assets/images/volunteer-img.jpg');
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('/site/templates/assets/images/volunteer-img.jpg');
     background-color: lightgray;
     background-position: center;
     background-size: cover;
@@ -51,7 +53,7 @@
     justify-content: center;
 }
 
-.education-container{
+.education-container {
     display: flex;
     flex-direction: column;
     flex-shrink: 0;
@@ -61,7 +63,9 @@
     height: 225px;
     flex-shrink: 0;
     border-radius: 10px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('/site/templates/assets/images/education-img.jpg');
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+        url('/site/templates/assets/images/education-img.jpg');
     background-color: lightgray;
     background-position: center;
     justify-content: center;
@@ -69,8 +73,8 @@
     background-repeat: no-repeat;
 }
 
-.volunteer-content{
-    color: #21536C;
+.volunteer-content {
+    color: #21536c;
     text-align: center;
     font-size: 1.25rem;
     font-style: normal;
@@ -78,8 +82,8 @@
     text-decoration-line: underline;
     cursor: pointer;
 }
-.education-content{
-    color: #21536C;
+.education-content {
+    color: #21536c;
     text-align: center;
     font-size: 1.25rem;
     font-style: normal;
@@ -93,106 +97,105 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .volunteer-oppurtunities{
+.volunteer-oppurtunities {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
-    border-top: solid 1px #D9D4D7;
-    border-bottom: solid 1px #D9D4D7;
+    border-top: solid 1px #d9d4d7;
+    border-bottom: solid 1px #d9d4d7;
     padding-top: 7vh;
     padding-bottom: 7vh;
     margin-top: 15vh;
     margin-left: 20px;
     margin-right: 20px;
-  }
+}
 
-  .opportunities-contents{
+.opportunities-contents {
     color: #000;
     text-align: center;
     font-size: 1.125rem;
     font-weight: 400;
-  }
+}
 
-
-@media screen and (max-width:360px) {
-    header{
+@media screen and (max-width: 360px) {
+    header {
         margin-bottom: 0vh;
     }
-    .title{
-    font-size: 1.25rem;
-    line-height: 30px;
+    .title {
+        font-size: 1.25rem;
+        line-height: 30px;
     }
-    .title-container{
+    .title-container {
         width: 100%;
         margin-left: 0px;
     }
-    .volunteer_education-container{
-        gap:3vh ;
+    .volunteer_education-container {
+        gap: 3vh;
     }
-    .services-about{
+    .services-about {
         font-size: 0.875rem;
     }
-    .volunteer-content{
+    .volunteer-content {
         font-size: 0.875rem;
     }
-    .education-content{
+    .education-content {
         font-size: 0.875rem;
     }
-    .volunteer-container{
+    .volunteer-container {
         height: 150px;
     }
-    .education-container{
+    .education-container {
         height: 150px;
     }
-    .opportunities-contents{
+    .opportunities-contents {
         font-size: 0.875rem;
         margin: 12px;
     }
 }
 
-@media screen and (min-width: 361px) and (max-width:500px){
-    .title{
+@media screen and (min-width: 361px) and (max-width: 500px) {
+    .title {
         font-size: 1.5rem;
     }
-    .services-about{
+    .services-about {
         font-size: 1.125rem;
     }
-    .volunteer-content{
+    .volunteer-content {
         font-size: 1rem;
     }
-    .education-content{
+    .education-content {
         font-size: 1rem;
     }
-    .education-container{
+    .education-container {
         max-width: 401px;
         width: 90%;
     }
-    .opportunities-contents{
+    .opportunities-contents {
         font-size: 1rem;
     }
-    .volunteer-container{
+    .volunteer-container {
         max-width: 401px;
         width: 90%;
     }
 }
 
-@media screen and (max-width:1050px){
-    .volunteer_education-container{
-        flex-direction: column; 
+@media screen and (max-width: 1050px) {
+    .volunteer_education-container {
+        flex-direction: column;
     }
-    .title-container{
+    .title-container {
         justify-content: center;
         align-self: center;
     }
 }
 @media screen and (min-width: 361px) and (max-width: 1050px) {
-.report-container{
-    margin-top: 38vh;
-    position: relative;
-    align-self: center;
-    align-items: center;
+    .report-container {
+        margin-top: 38vh;
+        position: relative;
+        align-self: center;
+        align-items: center;
     }
 }
