@@ -1,12 +1,12 @@
 main {
-    min-height: 600px;
-    padding: 100px 20px 0 20px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: end;
+  min-height: 600px;
+  padding: 100px 20px 0 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: end;
 }
 
 .main__report {
-    margin-top: auto;
+  margin-top: auto;
 }

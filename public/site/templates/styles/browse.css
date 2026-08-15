@@ -1,104 +1,104 @@
 main {
-    display: flex;
-    flex-direction: column;
-    padding: 0 10%;
-    align-items: center;
-    text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+  align-items: center;
+  text-align: left;
 }
 
 .main__container {
-    padding-left: 30px;
-    width: 100%;
-    max-width: 500px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+  padding-left: 30px;
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .main__heading {
-    color: black;
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0;
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
 }
 
 .main__links {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0;
 }
 
 .main__items {
-    margin-top: 21px;
-    width: 90%;
-    font-size: 1rem;
-    font-weight: 600;
+  margin-top: 21px;
+  width: 90%;
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .main__text {
-    margin: 55px 0 30px;
-    text-align: center;
+  margin: 55px 0 30px;
+  text-align: center;
 }
 
 .main__services {
-    margin: 35px 0 79px;
+  margin: 35px 0 79px;
 }
 
 .main__report {
-    align-self: center;
+  align-self: center;
 }
 
 @media screen and (min-width: 1281px) {
-    main {
-        width: inherit;
-    }
+  main {
+    width: inherit;
+  }
 }
 
 @media screen and (max-width: 1100px) {
-    .main__text,
-    .main__items {
-        font-size: 1rem;
-    }
+  .main__text,
+  .main__items {
+    font-size: 1rem;
+  }
 
-    .main__heading {
-        font-size: 1.125rem;
-    }
+  .main__heading {
+    font-size: 1.125rem;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    main {
-        padding: 0 6.5%;
-    }
+  main {
+    padding: 0 6.5%;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .main__text,
-    .main__items {
-        font-size: 0.875rem;
-    }
+  .main__text,
+  .main__items {
+    font-size: 0.875rem;
+  }
 
-    .main__heading {
-        font-size: 1rem;
-    }
+  .main__heading {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .main__text {
-        margin: 25px 0 25px;
-        padding: 0;
-    }
+  .main__text {
+    margin: 25px 0 25px;
+    padding: 0;
+  }
 
-    .main__services {
-        margin: 35px 0 53px;
-    }
+  .main__services {
+    margin: 35px 0 53px;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .main__links {
-        grid-template-columns: repeat(1, 1fr);
-    }
+  .main__links {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
-    main {
-        padding: 5vw;
-    }
+  main {
+    padding: 5vw;
+  }
 }
