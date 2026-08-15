@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const headerAccordCont = document.querySelector('[data-js=header_accord_container]')
+  const headerAccordCont = document.querySelector(
+    '[data-js=header_accord_container]'
+  )
   const headerAccord = document.querySelector('[data-js=header_accord]')
 
   const menuIcon = document.querySelector('[data-js=menu_btn_icon]')
