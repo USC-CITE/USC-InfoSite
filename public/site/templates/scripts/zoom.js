@@ -157,7 +157,10 @@ document.addEventListener('DOMContentLoaded', () => {
   )
 
   function endPointer (e) {
-    if (!isDragging || (activePointerId !== null && e.pointerId !== activePointerId)) return
+    if (
+      !isDragging ||
+      (activePointerId !== null && e.pointerId !== activePointerId)
+    ) { return }
     isDragging = false
     activePointerId = null
     img.style.cursor = 'grab'
