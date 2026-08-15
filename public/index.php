@@ -30,7 +30,11 @@ if (!defined("PROCESSWIRE"))
 $rootPath = __DIR__;
 if (DIRECTORY_SEPARATOR != '/')
 	$rootPath = str_replace(DIRECTORY_SEPARATOR, '/', $rootPath);
-$composerAutoloader = dirname(__DIR__, 1) . '/vendor/autoload.php'; // composer autoloader
+if (basename($rootPath) == 'staging') {
+	$composerAutoloader = dirname(__DIR__, 2) . '/vendor/autoload.php'; // composer autoloader
+} else {
+	$composerAutoloader = dirname(__DIR__, 1) . '/vendor/autoload.php'; // composer autoloader
+}
 if (file_exists($composerAutoloader))
 	require_once($composerAutoloader);
 if (!class_exists("ProcessWire\\ProcessWire", false))
