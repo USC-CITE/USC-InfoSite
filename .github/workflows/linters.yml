@@ -1,4 +1,4 @@
- name: Linters
+name: Linters
 
 on:
   pull_request:
@@ -21,7 +21,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-
   linters:
     name: linters
     runs-on: ubuntu-latest
