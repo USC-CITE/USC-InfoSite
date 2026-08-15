@@ -28,7 +28,11 @@ use Dotenv\Dotenv;
 if (!defined('PROCESSWIRE'))
   die();
 
-Dotenv::createImmutable(dirname(__DIR__, 2), '.processwire_env')->load();
+if (basename(dirname(__DIR__)) == 'staging') {
+  Dotenv::createImmutable(dirname(__DIR__, 1), '.processwire_staging_env')->load();
+} else {
+  Dotenv::createImmutable(dirname(__DIR__, 2), '.processwire_env')->load();
+}
 
 /** @var Config $config */
 
