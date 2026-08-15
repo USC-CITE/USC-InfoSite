@@ -319,13 +319,13 @@ a {
 }
 
 .event-status--ongoing {
-    background-color: #BD8711;
+    background-color: #bd8711;
     color: #ffffff;
 }
 
 .event-status--starts-on {
-    background-color: #BD871177;
-    color: #44425A;
+    background-color: #bd871177;
+    color: #44425a;
 }
 
 .event-date {
@@ -345,7 +345,7 @@ a {
 }
 
 .event-title-card {
-    width: 100%; 
+    width: 100%;
     padding: 0 0 0 40px;
     display: flex;
     flex-flow: column wrap;
@@ -377,7 +377,6 @@ a {
     font-weight: 400;
     font-size: 1.125rem;
 }
-
 
 .location-vector {
     width: 25px;

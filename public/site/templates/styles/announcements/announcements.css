@@ -36,7 +36,7 @@ main {
 
 .main__box {
     width: 100%;
-    border-top: 1px solid #D9D4D7;
+    border-top: 1px solid #d9d4d7;
     padding: 2.2rem 1.875rem;
 }
 
@@ -45,10 +45,11 @@ main {
     font-weight: 600;
 }
 
-.main__box .details, .main__box .author {
+.main__box .details,
+.main__box .author {
     font-size: 1rem;
     font-weight: 400;
-    color: #44425A;
+    color: #44425a;
     display: flex;
     gap: 8px;
     line-height: 180%;
@@ -87,11 +88,11 @@ main {
 
     .announcements p {
         font-size: 15.5px;
-     }
- 
-     .announcements__heading {
-         font-size: 46.5px;
-     }
+    }
+
+    .announcements__heading {
+        font-size: 46.5px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -100,7 +101,7 @@ main {
     }
 
     .announcements p {
-       font-size: 15px;
+        font-size: 15px;
     }
 
     .announcements__heading {
@@ -116,11 +117,11 @@ main {
     .announcements p {
         font-size: 14.5px;
         margin-top: 5px;
-     }
- 
-     .announcements__heading {
-         font-size: 35.5px;
-     }
+    }
+
+    .announcements__heading {
+        font-size: 35.5px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -131,5 +132,5 @@ main {
     .announcements p {
         font-size: 14px;
         line-height: 150%;
-     }
+    }
 }

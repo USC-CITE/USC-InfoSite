@@ -2,7 +2,7 @@
     padding: 30px 0;
     background: #ffffff;
     color: black;
-    width:100%;
+    width: 100%;
 }
 
 .container--banner {
@@ -17,7 +17,7 @@
     white-space: pre-line;
 }
 
-.search_form{
+.search_form {
     margin-top: 12px;
 }
 .search_form--home {
@@ -29,28 +29,28 @@
 }
 
 .brush {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .brush::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 12px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 12px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
 }
 
 .brush.yellow::after {
-  background-image: url('../assets/icons/yellow-brush-stroke.svg');
+    background-image: url('../assets/icons/yellow-brush-stroke.svg');
 }
 
 .brush.blue::after {
-  background-image: url('../assets/icons/blue-brush-stroke.svg');
+    background-image: url('../assets/icons/blue-brush-stroke.svg');
 }
 
 .acad_clndr {
@@ -63,15 +63,15 @@
 
 .no-content-placeholder__text--home {
     font-weight: 600;
-    color: #44425A;
+    color: #44425a;
 }
 
 .event-title-card--no-content {
     width: 100%;
     text-align: start;
-    border: solid 1px #E5E5E5;
+    border: solid 1px #e5e5e5;
     border-radius: 10px;
-    color: #21536C;
+    color: #21536c;
 }
 
 .present_events {
@@ -89,7 +89,7 @@
     text-align: center;
     font-weight: 600;
     font-size: 2.125rem;
-    color: #8F8B8B;
+    color: #8f8b8b;
     margin: 0 auto 20px auto;
 }
 
@@ -121,28 +121,28 @@
 }
 
 .event-status--ongoing {
-    background-color: #BD8711;
+    background-color: #bd8711;
     color: #ffffff;
 }
 
 .event-status--starts-on {
-    background-color: #BD871177;
-    color: #44425A;
+    background-color: #bd871177;
+    color: #44425a;
 }
 
 .event-card-status {
     text-align: start;
     width: 100%;
     font-weight: 400;
-    color: #44425A;
+    color: #44425a;
     font-size: 1.125rem;
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
     border-radius: 10px 10px 0px 0px;
     padding: 10px 30px;
 }
 
 .event-card-status span {
-    color: #A93415;
+    color: #a93415;
     font-weight: 600;
 }
 
@@ -170,15 +170,14 @@
 .event-title-card.event-title-card--home {
     width: 100%;
     text-align: start;
-    border: solid 1px #E5E5E5;
-    color: #21536C;
+    border: solid 1px #e5e5e5;
+    color: #21536c;
     padding: 30px;
 }
 
-.event-title--home { 
+.event-title--home {
     font-size: 1.56rem;
 }
-
 
 .event-date {
     min-width: 80px;
@@ -198,23 +197,23 @@
     min-width: unset;
     font-weight: 400;
     font-size: 1.125rem;
-    color: #44425A;
+    color: #44425a;
 }
 
 .event-date > span {
-  font-size: 2.5rem;
-  font-weight: 600;
-  color: #21536c;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #21536c;
 }
 
 .event-where-when {
     text-align: start;
     width: 100%;
     height: fit-content;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     border-radius: 0px 0px 10px 10px;
     font-size: 1.125rem;
-    color: #1E1E1E;
+    color: #1e1e1e;
     padding: 20px 20px;
 }
 
@@ -239,7 +238,7 @@
 
 .event-location {
     font-weight: 400;
-   font-size: 1.125rem;
+    font-size: 1.125rem;
 }
 
 .event-start-time {
@@ -303,7 +302,7 @@
     }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width: 360px) {
     .event-card {
         font-size: 1.125rem;
         margin-bottom: 30px;
@@ -350,7 +349,7 @@
     }
 }
 
-@media screen and (min-width: 500px) and (max-width:1000px) {
+@media screen and (min-width: 500px) and (max-width: 1000px) {
     .event-card {
         font-size: 1.56rem;
     }
@@ -384,7 +383,7 @@
     }
 }
 
-@media screen and (min-width: 360px) and (max-width:1000px) {
+@media screen and (min-width: 360px) and (max-width: 1000px) {
     .event-title-card {
         width: 100%;
     }
@@ -405,7 +404,7 @@
 
 .service {
     padding: 20px 10px 10px 10px;
-    border-top: 1px solid #D9D4D7;
+    border-top: 1px solid #d9d4d7;
 }
 
 .service:not(:first-of-type) {
@@ -419,7 +418,7 @@
 
 .service__desc {
     margin: 10px 0;
-    color: #8F8B8B;
+    color: #8f8b8b;
 }
 
 .ancmts__hdng {
@@ -436,7 +435,7 @@
 }
 
 .ancmt {
-    border-top: 1px solid #D9D4D7;
+    border-top: 1px solid #d9d4d7;
     padding: 25px 15px;
 }
 
@@ -449,7 +448,7 @@
 .ancmt__author {
     font-size: 0.875rem;
     font-weight: 400;
-    color: #44425A;
+    color: #44425a;
     display: flex;
     gap: 8px;
     line-height: 180%;
@@ -468,14 +467,14 @@
 }
 
 @media only screen and (max-width: 360px) {
-     .banner__hdng{
+    .banner__hdng {
         font-size: 1.875rem;
         margin-bottom: 24px;
     }
 }
 
 @media only screen and (min-width: 480px) {
-    .banner{
+    .banner {
         padding: 40px 0px 0px 0px;
     }
 
@@ -486,17 +485,17 @@
 }
 
 @media screen and (min-width: 360px) and (max-width: 500px) {
-    .banner__hdng{
+    .banner__hdng {
         font-size: 2rem;
         margin-bottom: 24px;
     }
-    .banner{
+    .banner {
         padding: 40px 0px 0px 0px;
     }
 }
 
 @media only screen and (min-width: 512px) {
-    .banner__hdng{
+    .banner__hdng {
         font-size: 2.875rem;
     }
 
@@ -504,7 +503,7 @@
         font-size: 0.8rem;
     }
 
-     .event-status-date {
+    .event-status-date {
         min-width: 120px;
     }
 
@@ -518,7 +517,7 @@
     }
 }
 @media only screen and (min-width: 600px) {
-    .banner__hdng{
+    .banner__hdng {
         font-size: 2.875rem;
     }
 }
@@ -529,7 +528,8 @@
         margin-bottom: 24px;
     }
 
-    .events__hdng, .services__hdng,
+    .events__hdng,
+    .services__hdng,
     .ancmts__hdng {
         font-size: 1.625rem;
     }
@@ -545,7 +545,8 @@
         margin-top: 60px;
     }
 
-    .events__hdng, .services__hdng,
+    .events__hdng,
+    .services__hdng,
     .ancmts__hdng {
         margin-bottom: 30px;
         font-size: 1.875rem;
@@ -599,8 +600,8 @@
 }
 
 @media only screen and (min-width: 900px) {
-    .banner{
-         padding: 40px 0px 10px 0px;
+    .banner {
+        padding: 40px 0px 10px 0px;
     }
     .banner__hdng {
         font-size: 3.75rem;
@@ -622,7 +623,8 @@
         padding-bottom: 50px;
     }
 
-    .events__hdng, .services__hdng,
+    .events__hdng,
+    .services__hdng,
     .ancmts__hdng {
         font-size: 2.125rem;
     }
@@ -638,7 +640,8 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .events__hdng, .services__hdng,
+    .events__hdng,
+    .services__hdng,
     .ancmts__hdng {
         font-size: 2.5rem;
     }
